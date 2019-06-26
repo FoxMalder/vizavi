@@ -1,0 +1,62 @@
+$footer-bg-color:     #232D3A;
+$footer-border-color: rgba(114, 124, 140, .2);
+
+.footer {
+  background-color: #232D3A;
+
+  &__wrap {
+    height: 100%;
+  }
+
+  &--bottom-border {
+    border-bottom: 1px solid $footer-border-color;
+  }
+}
+
+/* Базовые блок подвала */
+.footer-main {
+
+  &__wrap {
+    padding: 30px 0;
+    justify-content: space-between;
+  }
+}
+
+/* Копирайт в подвале */
+.footer-copyright {
+  background-color: $footer-border-color;
+  text-align: center;
+  color: #fff;
+  height: 50px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &__wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}
+
+.footer-tel {
+  text-decoration: none;
+  border-bottom: 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFFFFF;
+  font-weight: bold;
+
+  &__ico {
+    align-self: center;
+    margin-right: 10px;
+  }
+}
+
+.footer-logo {
+  text-decoration: none;
+  border-bottom: 0;
+}

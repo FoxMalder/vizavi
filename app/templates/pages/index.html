@@ -1,0 +1,180 @@
+---
+title:
+description:
+keywords:
+bodyclass:
+sitemap:
+ - name:           'Главная страница'
+   url:             main.html
+   path:            main.html
+   progress:        0
+   progress_mobile: 0
+   progress_tablet: 0
+ - name:           '404'
+   url:             404.html
+   path:            404.html
+   progress:        0
+   progress_mobile: 0
+   progress_tablet: 0
+---
+
+{% extends "layouts/layout.html" %}
+{% import "utils/utils.html" as utils %}
+
+{% block header %}
+  <style>
+    .ui-page { padding-top: 30px; padding-bottom: 30px; }
+    .ui-page_wrap { width: 100%; margin: 0; padding: 0 40px; }
+    .ui-page_sitemap { background-color: #fff; margin-top: 30px; padding-top: 30px; padding-bottom: 40px; border-top: 1px solid #f7f7f5; border-bottom: 1px solid #f7f7f5; }
+    .ui-page_kit { background-color: #fff; padding-top: 30px; padding-bottom: 40px; border-bottom: 1px solid #f7f7f5; }
+    .ui-page .box-headline h2 { margin: 0; }
+    .sitemap-list { list-style-type: none; margin: 0; padding: 0; display: flex;  flex-direction: column; font-family: 'Montserrat'; }
+    .sitemap_item { display: flex; align-items: flex-start; align-content: flex-start; margin-bottom: 5px; font-size: 14px; }
+    .sitemap_item:last-child { margin-bottom: 0; }
+    .sitemap_item_progress { display: flex; align-items: center; align-content: center; }
+    .sitemap_item-col,
+    .sitemap_item-headline { margin-right: 40px; }
+    .sitemap_item-head { font-weight: bold; border-bottom: 2px solid #f7f7f5; padding-bottom: 10px; padding-top: 10px; }
+    .sitemap_item-col,
+    .sitemap_item-headline { min-width: 250px; }
+    .sitemap_item-col:first-child,
+    .sitemap_item-headline:first-child { min-width: 300px; width: 300px; }
+    .sitemap_item-col:last-child,
+    .sitemap_item-headline:last-child { margin-right: 0; }
+    .sitemap_item_path { margin-top: 2px; color: #b5b4b0; font-size: 12px; line-height: 12px; overflow: hidden; white-space: nowrap; display: block; text-overflow: ellipsis; }
+    .sitemap_item_progress_value { color: #b5b4b0; margin-left: 10px; font-size: 14px; line-height: 14px; }
+    .sitemap_item_progress_bar progress { width: 190px; vertical-align: middle; }
+  </style>
+{% endblock %}
+
+{% block content %}
+<!-- begin .ui-page -->
+<div class="ui-page">
+  <!-- begin .ui-page_wrap -->
+  <div class="ui-page_wrap">
+    <!-- begin .box-headline -->
+    <div class="box-headline">
+      <h1>Проект Vizavi</h1>
+    </div>
+    <!-- end .box-headline -->
+  </div>
+  <!-- end .ui-page_wrap -->
+  <!-- begin .ui-page_sitemap -->
+  <section class="ui-page_sitemap">
+    <!-- begin .ui-page_wrap -->
+    <div class="ui-page_wrap">
+      <!-- begin .box-headline -->
+      <div class="box-headline">
+        <h3>Карта сайта</h3>
+      </div>
+      <!-- end .box-headline -->
+      <!-- begin .ui-page_sitemap_list -->
+      <div class="ui-page_sitemap_list">
+        <!-- begin .sitemap-list -->
+        <ul class="sitemap-list">
+          <!-- begin .sitemap_item -->
+          <li class="sitemap_item sitemap_item-head">
+            <!-- begin .sitemap_item-headline -->
+            <div class="sitemap_item-headline">Страница</div>
+            <!-- end .sitemap_item-headline -->
+            <!-- begin .sitemap_item-headline -->
+            <div class="sitemap_item-headline">Десектоп</div>
+            <!-- end .sitemap_item-headline -->
+            <!-- begin .sitemap_item-headline -->
+            <div class="sitemap_item-headline">Мобилы</div>
+            <!-- end .sitemap_item-headline -->
+            <!-- begin .sitemap_item-headline -->
+            <div class="sitemap_item-headline">В WordPress</div>
+            <!-- end .sitemap_item-headline -->
+          </li>
+          <!-- end .sitemap_item -->
+          {% for i in sitemap %}
+          <li class="sitemap_item">
+            <!-- begin .sitemap_item-col -->
+            <div class="sitemap_item-col">
+              <!-- begin .sitemap_item_name -->
+              <div class="sitemap_item_name">
+                <a href="/{{i.url}}" class="tooltip" title="Путь к странице: app/templates/pages/{{i.path}}">{{i.name}}</a>
+              </div>
+              <!-- end .sitemap_item_name -->
+            </div>
+            <!-- end .sitemap_item-col -->
+            <!-- begin .sitemap_item-col -->
+            <div class="sitemap_item-col">
+              <!-- begin .sitemap_item_progress -->
+              <div class="sitemap_item_progress">
+                <!-- begin .sitemap_item_progress_bar -->
+                <div class="sitemap_item_progress_bar">
+                  <progress max="100" value="{{i.progress}}"></progress>
+                </div>
+                <!-- end .sitemap_item_progress_bar -->
+                <!-- begin .sitemap_item_progress_value -->
+                <div class="sitemap_item_progress_value">{{i.progress}}%</div>
+                <!-- end .sitemap_item_progress_value -->
+              </div>
+              <!-- end .sitemap_item_progress -->
+            </div>
+            <!-- end .sitemap_item-col -->
+            <!-- begin .sitemap_item-col -->
+            <div class="sitemap_item-col">
+              <!-- begin .sitemap_item_progress -->
+              <div class="sitemap_item_progress">
+                <!-- begin .sitemap_item_progress_bar -->
+                <div class="sitemap_item_progress_bar">
+                  <progress max="100" value="{{i.progress_mobile}}"></progress>
+                </div>
+                <!-- end .sitemap_item_progress_bar -->
+                <!-- begin .sitemap_item_progress_value -->
+                <div class="sitemap_item_progress_value">{{i.progress_mobile}}%</div>
+                <!-- end .sitemap_item_progress_value -->
+              </div>
+              <!-- end .sitemap_item_progress -->
+            </div>
+            <!-- end .sitemap_item-col -->
+            <!-- begin .sitemap_item-col -->
+            <div class="sitemap_item-col">
+              <!-- begin .sitemap_item_progress -->
+              <div class="sitemap_item_progress">
+                <!-- begin .sitemap_item_progress_bar -->
+                <div class="sitemap_item_progress_bar">
+                  <progress max="100" value="{{i.progress_tablet}}"></progress>
+                </div>
+                <!-- end .sitemap_item_progress_bar -->
+                <!-- begin .sitemap_item_progress_value -->
+                <div class="sitemap_item_progress_value">{{i.progress_tablet}}%</div>
+                <!-- end .sitemap_item_progress_value -->
+              </div>
+              <!-- end .sitemap_item_progress -->
+            </div>
+            <!-- end .sitemap_item-col -->
+          </li>
+          {% endfor %}
+        </ul>
+        <!-- end .sitemap-list -->
+      </div>
+      <!-- end .ui-page_sitemap_list -->
+    </div>
+    <!-- end .ui-page_wrap -->
+  </section>
+  <!-- end .ui-page_sitemap -->
+  <!-- begin .ui-page_kit -->
+  <section class="ui-page_kit">
+    <!-- begin .ui-page_wrap -->
+    <div class="ui-page_wrap">
+      <!-- begin .box-headline -->
+      <div class="box-headline">
+        <h3>Базовые UI-элементы</h3>
+      </div>
+      <!-- end .box-headline -->
+      <!-- begin .ui-page_sitemap_list -->
+      <div class="ui-page_kit_list">
+
+      </div>
+      <!-- end .ui-page_sitemap_list -->
+    </div>
+    <!-- end .ui-page_wrap -->
+  </section>
+  <!-- end .ui-page_kit -->
+</div>
+<!-- end .ui-page -->
+{% endblock %}
