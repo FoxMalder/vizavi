@@ -797,6 +797,41 @@ mark {
   background-color: #fff9cd;
 }
 
+.company-awards {
+  width: 100%;
+  position: relative;
+  padding-top: 70px;
+  min-height: 250px;
+  height: auto;
+  background-color: #F3F4F5;
+}
+
+.company-awards__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-image: url("../images/company-awards-bg.png");
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 250px;
+  z-index: 1;
+}
+
+.company-awards__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.company-awards__list {
+  margin-top: 60px;
+}
+
 .footer-menu {
   display: flex;
   flex-direction: column;
@@ -1365,6 +1400,38 @@ main {
 
 .start h1 {
   margin: 0 0 20px 0;
+}
+
+.h2 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.h2-red {
+  color: #EA252C;
+}
+
+.intro-box .h2 {
+  margin-bottom: 30px;
+}
+
+.intro-box p {
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+  color: #222B34;
+}
+
+.intro-box p:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
