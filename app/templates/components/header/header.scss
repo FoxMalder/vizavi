@@ -138,10 +138,10 @@ main {
 }
 
 .user-action {
-  margin-left: 20px;
+  margin-left: 45px;
   border: none;
   background-color: transparent;
-  padding: 23px 23px;
+  padding: 23px 0 20px 0;
   border-bottom: 3px solid transparent;
   transition: all .35s ease;
   display: flex;
@@ -156,6 +156,7 @@ main {
     margin-right: 8px;
     color: #A9B0B8;
     align-self: center;
+    line-height: 1;
 
     svg {
       transition: all .35s ease;
@@ -163,10 +164,16 @@ main {
   }
 
   &:hover {
+    color: #6E7A86;
 
     .user-action__icon {
-      color: #EA252C;
+      color: #6E7A86;
     }
+  }
+
+  &.is-active {
+    border-bottom-color: #EA252C;
+    color: #6E7A86;
   }
 }
 
