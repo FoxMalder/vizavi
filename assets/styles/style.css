@@ -1023,6 +1023,97 @@ mark {
   height: 24px;
 }
 
+.header-menu {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: 'Roboto';
+}
+
+.header-menu__item {
+  height: 100%;
+}
+
+.header-menu__item.is-active .header-menu__link {
+  color: #fff;
+}
+
+.header-menu__item.is-active .header-menu__link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #EA252C;
+  transform: skew(-20deg);
+}
+
+.header-menu__item.is-active .header-menu__link span:before {
+  background-color: #fff;
+}
+
+.header-menu__link {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  border-bottom: 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #222B34;
+  padding: 23px 50px;
+  position: relative;
+}
+
+.header-menu__link span {
+  position: relative;
+}
+
+.header-menu__link span:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  top: 5px;
+  left: -25px;
+  background: #EA252C;
+  transform: matrix(0.32, -0.89, 1.06, 0.09, 0, 0);
+}
+
+.header {
+  width: 100%;
+}
+
+.header__wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header__main {
+  height: 60px;
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
+}
+
+.header__logo {
+  margin-right: 45px;
+}
+
+/* Логотип-ссылка в подвале */
+.header-logo {
+  text-decoration: none;
+  border-bottom: 0;
+}
+
 .start {
   padding: 20px 40px;
 }
