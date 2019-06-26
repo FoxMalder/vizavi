@@ -9,7 +9,7 @@ const config      = require('../config');
 
 // Очистка кэша для CSS- и JS-файлов
 gulp.task('cleancache', function() {
-  gulp.src(config.build.html + '/**/*.html')
+  gulp.src(config.build.html + '/*.html')
     .pipe(plumber({ errorHandler: config.errorHandler }))
     .pipe(cachebust())
     .pipe(gulp.dest(config.build.html))

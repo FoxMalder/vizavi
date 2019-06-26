@@ -6,10 +6,16 @@ $footer-border-color: rgba(114, 124, 140, .2);
 
   &__wrap {
     height: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
   }
 
   &--bottom-border {
     border-bottom: 1px solid $footer-border-color;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -22,16 +28,52 @@ $footer-border-color: rgba(114, 124, 140, .2);
   }
 }
 
+/* Предупредждение */
+.footer-disclaimer {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+
+  &__wrap {
+    padding: 30px 0;
+  }
+
+  &__icon {
+    margin-right: 40px;
+    margin-top: 5px;
+  }
+
+  &__message {
+
+  }
+}
+
+/* Информация */
+.footer-info {
+  color: #6E7A86;
+  font-size: 11px;
+  flex-shrink: 12px;
+
+  &__wrap {
+    padding: 30px 60px;
+    text-align: center;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+}
+
 /* Копирайт в подвале */
 .footer-copyright {
   background-color: $footer-border-color;
   text-align: center;
   color: #fff;
   height: 50px;
-
-  p:last-child {
-    margin-bottom: 0;
-  }
 
   &__wrap {
     height: 100%;
@@ -42,6 +84,7 @@ $footer-border-color: rgba(114, 124, 140, .2);
   }
 }
 
+/* Телефонный номер с иконкой */
 .footer-tel {
   text-decoration: none;
   border-bottom: 0;
@@ -56,6 +99,7 @@ $footer-border-color: rgba(114, 124, 140, .2);
   }
 }
 
+/* Логотип-ссылка в подвале */
 .footer-logo {
   text-decoration: none;
   border-bottom: 0;

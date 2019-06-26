@@ -8,7 +8,7 @@ gulp.task('server', function() {
   portfinder.getPort(function(err, port) {
     browserSync({
       server: {
-        baseDir: "dist"
+        baseDir: "./"
       },
       host: 'localhost',
       notify: false,
