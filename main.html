@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css?v=e9f5406ccd99af81d814cbf81c4ab601" rel="stylesheet" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -163,22 +163,46 @@
         <!-- begin .header__search-action -->
         <div class="header__search-action"></div>
         <!-- end .header__search-action -->
-        <!-- begin .header__language-action -->
-        <button
-          class="header__language-action language-action js_language-action"
-          title="Язык">
-          <span class="language-action__box">
-            <span class="language-action__flag">
-              <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M0 0h15v4H0z"/><path fill="#1DA2CB" d="M0 4h15v4H0z"/><path fill="#EA252C" d="M0 8h15v4H0z"/><path stroke="#F3F4F5" stroke-width=".5" d="M.25.25h14.5v11.5H.25z"/></svg>
+        <!-- begin .header__language -->
+        <div class="header__language">
+          <!-- begin .header__language-action -->
+          <button
+            class="header__language-action language-action js_language-action"
+            title="Язык">
+            <span class="language-action__box">
+              <span class="language-action__flag">
+                <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M0 0h15v4H0z"/><path fill="#1DA2CB" d="M0 4h15v4H0z"/><path fill="#EA252C" d="M0 8h15v4H0z"/><path stroke="#F3F4F5" stroke-width=".5" d="M.25.25h14.5v11.5H.25z"/></svg>
+              </span>
+              <span class="language-action__icon">
+                <svg width="9" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.815 5.076L8.865.968a.446.446 0 0 0 0-.639C8.82.238 8.685.192 8.55.192a.406.406 0 0 0-.315.137L4.5 4.118.765.329A.406.406 0 0 0 .45.192.406.406 0 0 0 .135.33.417.417 0 0 0 0 .65c0 .137.045.228.135.32l4.05 4.107c.09.091.18.137.315.137s.27-.046.315-.137z" fill="currentColor"/>
+                </svg>
+              </span>
             </span>
-            <span class="language-action__icon">
-              <svg width="9" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4.815 5.076L8.865.968a.446.446 0 0 0 0-.639C8.82.238 8.685.192 8.55.192a.406.406 0 0 0-.315.137L4.5 4.118.765.329A.406.406 0 0 0 .45.192.406.406 0 0 0 .135.33.417.417 0 0 0 0 .65c0 .137.045.228.135.32l4.05 4.107c.09.091.18.137.315.137s.27-.046.315-.137z" fill="currentColor"/>
-              </svg>
-            </span>
-          </span>
-        </button>
-        <!-- end .header__language-action -->
+          </button>
+          <!-- end .header__language-action -->
+          <!-- begin .header__language-list -->
+          <ul class="header__language-list language-list">
+            <li class="language-list__item is-active">
+              <a href="javascript:void(0);" class="language-list__link">
+                <span class="language-list__flag">
+                  <img src="assets/images/language/ru.png" alt="Русский язык">
+                </span>
+                <span class="language-list__name">Русский</span>
+              </a>
+            </li>
+            <li class="language-list__item">
+              <a href="javascript:void(0);" class="language-list__link">
+                <span class="language-list__flag">
+                  <img src="assets/images/language/en-gb.png" alt="English language">
+                </span>
+                <span class="language-list__name">English</span>
+              </a>
+            </li>
+          </ul>
+          <!-- end .header__language-list -->
+        </div>
+        <!-- end .header__language -->
         <!-- begin .header__user-action -->
         <div class="header__user-action"></div>
         <!-- end .header__user-action -->
@@ -483,8 +507,8 @@
 </footer>
 
 
-    <script src="assets/scripts/vendor.js?v=9b45960bd99e1230fbfbabd0184392db"></script>
-    <script src="assets/scripts/app.js?v=e14f4f87f98cf128fc87068aa6f8e21b"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
 
   </body>
 </html>

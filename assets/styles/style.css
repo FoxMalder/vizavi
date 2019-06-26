@@ -1134,12 +1134,22 @@ mark {
   margin-left: auto;
 }
 
+.header__language {
+  position: relative;
+}
+
+.header__language-list {
+  position: absolute;
+  top: 100%;
+}
+
 /* Переключатель языка */
 .language-action {
   border: none;
   background-color: transparent;
   line-height: 1;
-  padding: 23px 23px;
+  padding: 23px 0;
+  border-bottom: 3px solid transparent;
 }
 
 .language-action__box {
@@ -1150,7 +1160,7 @@ mark {
 
 .language-action__icon {
   margin-left: 10px;
-  color: #A9B0B8;
+  color: #4E565D;
 }
 
 .language-action__icon svg {
@@ -1161,8 +1171,59 @@ mark {
   color: #EA252C;
 }
 
+.language-action.is-open {
+  border-bottom-color: #EA252C;
+}
+
 .language-action.is-open .language-action__icon {
   transform: rotate(180deg);
+}
+
+.language-list {
+  background-color: #fff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 140px;
+  width: auto;
+  left: -150%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.language-list__item {
+  width: 100%;
+}
+
+.language-list__item.is-active .language-list__link {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.language-list__link {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-bottom: 0;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-size: 15px;
+  line-height: 15px;
+  color: #6E7A86;
+  padding: 14px 25px;
+}
+
+.language-list__link:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.language-list__flag {
+  margin-right: 10px;
+  align-self: center;
+  display: flex;
+}
+
+.language-list__flag img {
+  vertical-align: bottom;
 }
 
 /* Логотип-ссылка в подвале */
