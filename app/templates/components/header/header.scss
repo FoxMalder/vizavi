@@ -245,6 +245,8 @@ main {
 
 .header-cloud {
   background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
 
   &__wrap {
     padding: 40px 0;

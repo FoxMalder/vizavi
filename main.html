@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css?v=fceb7a474003db6509d4e119ae0ee1b5" rel="stylesheet" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -232,8 +232,44 @@
   <div class="header__cloud header-cloud js_header__cloud">
     <!-- begin .header__wrap -->
     <div class="header__wrap header-cloud__wrap">
+      <!-- begin .header__finder -->
+      <div class="header__finder">
+        <!-- begin .header__finder-item -->
+        <div id="trading" class="header__finder-item"></div>
+        <!-- end .header__finder-item -->
+        <!-- begin .header__finder-item -->
+        <div id="education" class="header__finder-item"></div>
+        <!-- end .header__finder-item -->
+      </div>
+      <!-- end .header__finder -->
+
       <!-- begin .header__user -->
-      <div class="header__user">header__user</div>
+      <div class="header__user">
+        <form action="">
+          <h3>Вход в vizavi</h3>
+          <p>Если вы наш клиент, введите логин и пароль. Если еще нет — зарегистрируйтесь.</p>
+          <!-- begin .flex -->
+          <div class="flex">
+            <!-- begin .form-group -->
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Логин">
+            </div>
+            <!-- end .form-group -->
+            <!-- begin .form-group -->
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Пароль">
+            </div>
+            <!-- end .form-group -->
+            <!-- begin .form-action -->
+            <div class="form-action">
+              <button class="button button-red">Войти</button>
+            </div>
+            <!-- end .form-action -->
+          </div>
+          <!-- end .flex -->
+          <p><a href="">Зарегистрироваться</a></p>
+        </form>
+      </div>
       <!-- end .header__user -->
       <!-- begin .header__search -->
       <div class="header__search">header__search</div>
@@ -431,4 +467,112 @@
     <!-- end .footer__wrap -->
   </div>
   <!-- end .footer__info -->
-  <!-- begin .footer__
+  <!-- begin .footer__payment-options -->
+  <div class="footer__payment-options footer-payment-options">
+    <!-- begin .footer__wrap -->
+    <div class="footer__wrap flex footer-payment-options__wrap">
+      <!-- begin .footer-payment-options__list -->
+      <div class="footer-payment-options__list flex">
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/visa.png"
+            alt="Карты VISA"
+            width="87"
+            height="28"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/mastercard.png"
+            alt="Карты MasterCard"
+            width="53"
+            height="41"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/webmoney.png"
+            alt="WebMoney"
+            width="155"
+            height="36"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/yandexmoney.png"
+            alt="Яндекс.Деньги"
+            width="106"
+            height="36"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/qiwi.png"
+            alt="QIWI"
+            width="103"
+            height="38"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/advcash.png"
+            alt="Advanced Cash"
+            width="118"
+            height="22"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/tobank.png"
+            alt="Банковские переводы"
+            width="103"
+            height="37"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/skrill.png"
+            alt="Skrill"
+            width="77"
+            height="27"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+      </div>
+      <!-- end .footer-payment-options__list -->
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__payment-options -->
+  <!-- begin .footer__copyright -->
+  <div class="footer__copyright footer-copyright">
+    <!-- begin .footer__wrap -->
+    <div class="footer__wrap footer-copyright__wrap">
+      <p>© Vizavi, 2019. Все права защищены.</p>
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__copyright -->
+</footer>
+
+
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
+
+  </body>
+</html>
