@@ -12,8 +12,8 @@
 
 
   if ( $('.js_language-list.is-show') ) {
-    $(document).on('keyup', function(e) {
-      if ( e.keyCode == 27 ) {
+    $(document).on('keyup', function(event) {
+      if ( event.keyCode === 27 ) {
         languageHeader.removeClass('is-open');
         languageList.removeClass('is-show');
       }
