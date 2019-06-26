@@ -1,0 +1,26 @@
+.headline {
+  background-color: #F3F4F5;
+
+  &__wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__content {
+    max-width: 450px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  p {
+    position: relative;
+    padding-left: 20px;
+
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 29px;
+    color: #232D3A;
+  }
+}

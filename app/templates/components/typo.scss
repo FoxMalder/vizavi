@@ -3,10 +3,10 @@
   font-weight: bold;
   font-size: 36px;
   line-height: 47px;
-  text-align: center;
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+  color: #232D3A;
 
   &-red {
     color: #EA252C;
@@ -14,9 +14,11 @@
 }
 
 .intro-box {
+  text-align: center;
 
   .h2 {
     margin-bottom: 30px;
+    text-align: center;
   }
 
   p {
