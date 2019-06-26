@@ -1,6 +1,7 @@
 $footer-bg-color:     #232D3A;
 $footer-border-color: rgba(114, 124, 140, .2);
 
+/* Подвал */
 .footer {
   background-color: #232D3A;
 
@@ -25,6 +26,44 @@ $footer-border-color: rgba(114, 124, 140, .2);
   &__wrap {
     padding: 30px 0;
     justify-content: space-between;
+  }
+}
+
+/* Навигация по подвалу */
+.footer-navigation {
+
+  &__wrap {
+    padding: 30px 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__caption {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #6E7A86;
+  }
+
+  &__menu {
+    position: relative;
+    padding-left: 15px;
+    margin-top: 15px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      background-color: #727C8C;
+      width: 1px;
+      opacity: .2;
+    }
   }
 }
 
@@ -150,6 +189,7 @@ $footer-border-color: rgba(114, 124, 140, .2);
   border-bottom: 0;
 }
 
+/* Ссылка на документ */
 .doc-link {
   text-decoration: none;
   border-bottom: 0;
@@ -169,11 +209,10 @@ $footer-border-color: rgba(114, 124, 140, .2);
     margin-right: 15px;
   }
 
-  &--pdf {
-    .doc-link__icon {
-      background-image: url('../images/svg/pdf.svg');
-      width: 21px;
-      height: 24px;
-    }
+  /* PDF */
+  &--pdf .doc-link__icon {
+    background-image: url('../images/svg/pdf.svg');
+    width: 21px;
+    height: 24px;
   }
 }

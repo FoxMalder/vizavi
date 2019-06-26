@@ -798,6 +798,35 @@ mark {
   background-color: #fff9cd;
 }
 
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+.footer-menu__item {
+  margin-bottom: 15px;
+}
+
+.footer-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-menu__link {
+  color: #FFFFFF;
+  border-bottom-color: transparent;
+}
+
+/* Подвал */
 .footer {
   background-color: #232D3A;
 }
@@ -820,6 +849,41 @@ mark {
 .footer-main__wrap {
   padding: 30px 0;
   justify-content: space-between;
+}
+
+/* Навигация по подвалу */
+.footer-navigation__wrap {
+  padding: 30px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-navigation__caption {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #6E7A86;
+}
+
+.footer-navigation__menu {
+  position: relative;
+  padding-left: 15px;
+  margin-top: 15px;
+}
+
+.footer-navigation__menu:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: #727C8C;
+  width: 1px;
+  opacity: .2;
 }
 
 /* Ссылки на документы */
@@ -933,6 +997,7 @@ mark {
   border-bottom: 0;
 }
 
+/* Ссылка на документ */
 .doc-link {
   text-decoration: none;
   border-bottom: 0;
@@ -945,6 +1010,7 @@ mark {
   font-size: 13px;
   line-height: 13px;
   color: #FFFFFF;
+  /* PDF */
 }
 
 .doc-link__icon {
