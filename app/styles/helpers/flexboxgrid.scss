@@ -7,4 +7,13 @@
     align-items: flex-start;
     align-content: flex-start;
   }
+
+  &-stretch {
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  &-center {
+    justify-content: center;
+  }
 }

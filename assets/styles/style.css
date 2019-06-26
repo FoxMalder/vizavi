@@ -363,6 +363,15 @@ img {
   align-content: flex-start;
 }
 
+.flex-stretch {
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -800,7 +809,7 @@ mark {
 .company-awards {
   width: 100%;
   position: relative;
-  padding-top: 70px;
+  padding-top: 90px;
   min-height: 250px;
   height: auto;
   background-color: #F3F4F5;
@@ -829,7 +838,81 @@ mark {
 }
 
 .company-awards__list {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-family: 'Roboto';
+  text-align: center;
+  height: auto;
+}
+
+.company-awards__item {
+  width: 280px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 30px;
+}
+
+.company-awards__item:last-child {
+  margin-right: 0;
+}
+
+.company-awards__box {
+  flex-direction: column;
+  position: relative;
+  min-height: 71px;
+  position: relative;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.company-awards__box:before, .company-awards__box:after {
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 71px;
+  top: 0;
+}
+
+.company-awards__box:before {
+  background-image: url("../images/svg/left-olive-branch.svg");
+  width: 35px;
+  left: 0;
+}
+
+.company-awards__box:after {
+  background-image: url("../images/svg/right-olive-branch.svg");
+  width: 34px;
+  right: 0;
+}
+
+.company-awards__name {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 23px;
+  color: #4E565D;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.company-awards__name:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: -15px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+  background-color: #EA252C;
+}
+
+.company-awards__type {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #727C8C;
 }
 
 .footer-menu {
