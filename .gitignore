@@ -4,11 +4,9 @@
 .publish
 Thumbs.db
 
-dist
 zip
 
 psd
-sketch
 
 node_modules
 npm-debug.log

@@ -6,7 +6,7 @@
 const env = require('minimist')(process.argv.slice(2));
 
 const src  = 'app/';
-const dist = 'dist/';
+const dist = './';
 
 let config = {
 

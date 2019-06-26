@@ -1,0 +1,10 @@
+<Files ~ ".editorconfig|.gitignore|README.md|CHANGELOG.md|package.json|yarn.lock|sass-lint.yml|ISSUE_TEMPLATE.md">
+deny from all
+</Files>
+
+<Files index.html>
+AuthUserFile /home/b/bande/lightning.4enki.ru/.authfile
+AuthName "Access is denied."
+AuthType Basic
+require valid-user
+</Files>
