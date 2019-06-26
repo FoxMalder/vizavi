@@ -1,13 +1,27 @@
 "use strict";
 
-// подсвечиваем ссылки с одинаковым адресом
-if ($) $(function () {
-  $('a').hover(function () {
-    if ($(this).attr('href') != '' && $(this).attr('href') != '#') {
-      $('a[href="' + $(this).attr('href') + '"]').addClass('hover');
-    }
-  }, function () {
-    $('a').removeClass('hover');
+(function ($) {
+  var languageHeader = $('.js_language-action');
+  var languageList = $('.js_language-list');
+  languageHeader.click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('is-open');
+    languageList.toggleClass('is-show');
   });
-}); // /подсвечиваем ссылки с одинаковым адресом
+
+  if ($('.js_language-list.is-show')) {
+    $(document).on('keyup', function (e) {
+      if (e.keyCode == 27) {
+        languageHeader.removeClass('is-open');
+        languageList.removeClass('is-show');
+      }
+    });
+    $(document).mouseup(function (e) {
+      if (languageList.has(e.target).length === 0) {
+        languageHeader.removeClass('is-open');
+        languageList.removeClass('is-show');
+      }
+    });
+  }
+})(jQuery);
 //# sourceMappingURL=maps/app.js.map
