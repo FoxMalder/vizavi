@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css?v=91e8a2ade0b27aadad77e5ed37879dd7" rel="stylesheet" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -185,7 +185,9 @@
       <!-- begin .header__aside -->
       <div class="header__aside flex">
         <!-- begin .header__search-action -->
-        <div class="header__search-action"></div>
+        <div class="header__search-action">
+
+        </div>
         <!-- end .header__search-action -->
         <!-- begin .header__language -->
         <div class="header__language">
@@ -228,7 +230,14 @@
         </div>
         <!-- end .header__language -->
         <!-- begin .header__user-action -->
-        <div class="header__user-action"></div>
+        <div class="header__user-action">
+          <a href="javascript:void(0);" class="user-action js_user-action">
+            <span class="user-action__icon">
+              <svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 0C3.375 0 0 3.375 0 7.5S3.375 15 7.5 15 15 11.625 15 7.5 11.625 0 7.5 0zm0 2.25c1.275 0 2.25.975 2.25 2.25S8.775 6.75 7.5 6.75 5.25 5.775 5.25 4.5s.975-2.25 2.25-2.25zm0 11.427c-2.426 0-4.099-1.31-5.074-2.736C3.75 8.824 6 8.382 7.5 8.382s3.75.662 5.073 2.56c-.975 1.424-2.647 2.735-5.073 2.735z" fill="currentColor"/></svg>
+            </span>
+            <span class="user-action__name">Войти</span>
+          </a>
+        </div>
         <!-- end .header__user-action -->
       </div>
       <!-- end .header__aside -->
@@ -1073,8 +1082,8 @@
 </footer>
 
 
-    <script src="assets/scripts/vendor.js?v=9b45960bd99e1230fbfbabd0184392db"></script>
-    <script src="assets/scripts/app.js?v=2aac0deb01e2dd66e3ed29a73323b890"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
 
   </body>
 </html>

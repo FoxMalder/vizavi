@@ -1109,8 +1109,16 @@ mark {
   background-color: #fff;
 }
 
+main {
+  margin-top: 60px;
+}
+
 .header {
   width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 
 .header__wrap {
@@ -1234,6 +1242,36 @@ mark {
   visibility: visible;
   opacity: 1;
   z-index: 0;
+}
+
+.user-action {
+  margin-left: 20px;
+  border: none;
+  background-color: transparent;
+  padding: 23px 23px;
+  border-bottom: 3px solid transparent;
+  transition: all .35s ease;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #A9B0B8;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.user-action__icon {
+  margin-right: 8px;
+  color: #A9B0B8;
+  align-self: center;
+}
+
+.user-action__icon svg {
+  transition: all .35s ease;
+}
+
+.user-action:hover .user-action__icon {
+  color: #EA252C;
 }
 
 /* Логотип-ссылка в подвале */
