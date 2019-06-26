@@ -16,11 +16,22 @@
 
   p {
     position: relative;
-    padding-left: 20px;
+    padding-left: 40px;
 
     font-family: 'Roboto';
     font-size: 18px;
     line-height: 29px;
     color: #232D3A;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background-color: #EA252C;
+      transform: rotate(120deg);
+    }
   }
 }
