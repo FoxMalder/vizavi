@@ -137,6 +137,53 @@ main {
   }
 }
 
+.search-action {
+  margin-right: 45px;
+  border: none;
+  background-color: transparent;
+  padding: 23px 0 22px 0;
+  border-bottom: 3px solid transparent;
+  transition: all .35s ease;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  color: #A9B0B8;
+  font-family: 'Roboto';
+  font-size: 14px;
+  line-height: 14px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__icon {
+    margin-right: 8px;
+    color: #A9B0B8;
+    align-self: center;
+    line-height: 14px;
+    display: flex;
+
+    svg {
+      transition: all .35s ease;
+    }
+  }
+
+  &:hover {
+    color: #6E7A86;
+
+    .user-action__icon {
+      color: #6E7A86;
+    }
+  }
+
+  &.is-active {
+    border-bottom-color: #EA252C;
+    color: #6E7A86;
+  }
+}
+
 .user-action {
   margin-left: 45px;
   border: none;
