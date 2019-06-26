@@ -28,6 +28,19 @@ $footer-border-color: rgba(114, 124, 140, .2);
   }
 }
 
+/* Ссылки на документы */
+.footer-docs {
+
+  &__wrap {
+    padding: 30px 20px;
+  }
+
+  &__list {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 /* Предупредждение */
 .footer-disclaimer {
   font-family: 'Roboto';
@@ -135,4 +148,32 @@ $footer-border-color: rgba(114, 124, 140, .2);
 .footer-logo {
   text-decoration: none;
   border-bottom: 0;
+}
+
+.doc-link {
+  text-decoration: none;
+  border-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 13px;
+
+  color: #FFFFFF;
+
+  &__icon {
+    margin-right: 15px;
+  }
+
+  &--pdf {
+    .doc-link__icon {
+      background-image: url('../images/svg/pdf.svg');
+      width: 21px;
+      height: 24px;
+    }
+  }
 }

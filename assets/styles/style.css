@@ -822,6 +822,16 @@ mark {
   justify-content: space-between;
 }
 
+/* Ссылки на документы */
+.footer-docs__wrap {
+  padding: 30px 20px;
+}
+
+.footer-docs__list {
+  justify-content: space-between;
+  width: 100%;
+}
+
 /* Предупредждение */
 .footer-disclaimer {
   font-family: 'Roboto';
@@ -921,6 +931,30 @@ mark {
 .footer-logo {
   text-decoration: none;
   border-bottom: 0;
+}
+
+.doc-link {
+  text-decoration: none;
+  border-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  align-content: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 13px;
+  color: #FFFFFF;
+}
+
+.doc-link__icon {
+  margin-right: 15px;
+}
+
+.doc-link--pdf .doc-link__icon {
+  background-image: url("../images/svg/pdf.svg");
+  width: 21px;
+  height: 24px;
 }
 
 .start {
