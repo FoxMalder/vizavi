@@ -1042,15 +1042,8 @@ mark {
 }
 
 .header-menu__item.is-active .header-menu__link:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  background-color: #EA252C;
-  transform: skew(-20deg);
+  opacity: 1;
+  visibility: visible;
 }
 
 .header-menu__item.is-active .header-menu__link span:before {
@@ -1070,6 +1063,21 @@ mark {
   color: #222B34;
   padding: 23px 50px;
   position: relative;
+  transition: all .35s ease;
+}
+
+.header-menu__link:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #EA252C;
+  transform: skew(-20deg);
+  transition: all .35s ease;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .header-menu__link span {
@@ -1083,8 +1091,22 @@ mark {
   height: 2px;
   top: 5px;
   left: -25px;
-  background: #EA252C;
+  background-color: #EA252C;
   transform: matrix(0.32, -0.89, 1.06, 0.09, 0, 0);
+  transition: all .35s ease;
+}
+
+.header-menu__link:hover {
+  color: #fff;
+}
+
+.header-menu__link:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-menu__link:hover span:before {
+  background-color: #fff;
 }
 
 .header {
@@ -1106,6 +1128,41 @@ mark {
 
 .header__logo {
   margin-right: 45px;
+}
+
+.header__aside {
+  margin-left: auto;
+}
+
+/* Переключатель языка */
+.language-action {
+  border: none;
+  background-color: transparent;
+  line-height: 1;
+  padding: 23px 23px;
+}
+
+.language-action__box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.language-action__icon {
+  margin-left: 10px;
+  color: #A9B0B8;
+}
+
+.language-action__icon svg {
+  transition: all .35s ease;
+}
+
+.language-action:hover .language-action__icon {
+  color: #EA252C;
+}
+
+.language-action.is-open .language-action__icon {
+  transform: rotate(180deg);
 }
 
 /* Логотип-ссылка в подвале */

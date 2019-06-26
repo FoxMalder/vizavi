@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css?v=9c0bccacf7cfb98d4e49ceee5d0467fa" rel="stylesheet" />
+    <link href="assets/styles/style.css?v=e9f5406ccd99af81d814cbf81c4ab601" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -183,7 +183,30 @@
       </div>
       <!-- end .header__base -->
       <!-- begin .header__aside -->
-      <div class="header__aside"></div>
+      <div class="header__aside flex">
+        <!-- begin .header__search-action -->
+        <div class="header__search-action"></div>
+        <!-- end .header__search-action -->
+        <!-- begin .header__language-action -->
+        <button
+          class="header__language-action language-action js_language-action"
+          title="Язык">
+          <span class="language-action__box">
+            <span class="language-action__flag">
+              <svg width="15" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="#fff" d="M0 0h15v4H0z"/><path fill="#1DA2CB" d="M0 4h15v4H0z"/><path fill="#EA252C" d="M0 8h15v4H0z"/><path stroke="#F3F4F5" stroke-width=".5" d="M.25.25h14.5v11.5H.25z"/></svg>
+            </span>
+            <span class="language-action__icon">
+              <svg width="9" height="6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.815 5.076L8.865.968a.446.446 0 0 0 0-.639C8.82.238 8.685.192 8.55.192a.406.406 0 0 0-.315.137L4.5 4.118.765.329A.406.406 0 0 0 .45.192.406.406 0 0 0 .135.33.417.417 0 0 0 0 .65c0 .137.045.228.135.32l4.05 4.107c.09.091.18.137.315.137s.27-.046.315-.137z" fill="currentColor"/>
+              </svg>
+            </span>
+          </span>
+        </button>
+        <!-- end .header__language-action -->
+        <!-- begin .header__user-action -->
+        <div class="header__user-action"></div>
+        <!-- end .header__user-action -->
+      </div>
       <!-- end .header__aside -->
     </div>
     <!-- end .header__wrap -->

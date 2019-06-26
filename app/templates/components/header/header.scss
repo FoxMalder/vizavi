@@ -17,6 +17,47 @@
   &__logo {
     margin-right: 45px;
   }
+
+  &__aside {
+    margin-left: auto;
+  }
+}
+
+/* Переключатель языка */
+.language-action {
+  border: none;
+  background-color: transparent;
+  line-height: 1;
+  padding: 23px 23px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__icon {
+    margin-left: 10px;
+    color: #A9B0B8;
+
+    svg {
+      transition: all .35s ease;
+    }
+  }
+
+  &:hover {
+
+    .language-action__icon {
+      color: #EA252C;
+    }
+  }
+
+  &.is-open {
+
+    .language-action__icon {
+      transform: rotate(180deg);
+    }
+  }
 }
 
 /* Логотип-ссылка в подвале */
