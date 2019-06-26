@@ -4,8 +4,8 @@
   let languageList   = $('.js_language-list');
 
 
-  languageHeader.click(function(e) {
-    e.preventDefault();
+  languageHeader.click(function(event) {
+    event.preventDefault();
     $(this).toggleClass('is-open');
     languageList.toggleClass('is-show');
   });
@@ -19,8 +19,8 @@
       }
     });
 
-    $(document).mouseup(function (e) {
-      if ( languageList.has(e.target).length === 0 ) {
+    $(document).mouseup(function (event) {
+      if ( languageList.has(event.target).length === 0 ) {
         languageHeader.removeClass('is-open');
         languageList.removeClass('is-show');
       }

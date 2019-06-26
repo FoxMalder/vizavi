@@ -37,8 +37,8 @@
       }
     });
 
-    $(document).mouseup(function (e) {
-      if ( menuCloud.has(e.target).length === 0 ) {
+    $(document).mouseup(function (event) {
+      if ( menuCloud.has(event.target).length === 0 ) {
         menuItem
           .closest('.header-menu__item')
           .siblings()
