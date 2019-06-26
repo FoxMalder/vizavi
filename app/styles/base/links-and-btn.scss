@@ -30,10 +30,11 @@ a {
   &.active {
     color: $link-active-color;
   }
-
+  /*
   &[href]:not([class]) {
     color: $link-color;
   }
+  */
 }
 
 // Кнопки

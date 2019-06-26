@@ -574,6 +574,11 @@ a {
     }
   }
   */
+  /*
+  &[href]:not([class]) {
+    color: $link-color;
+  }
+  */
 }
 
 a:focus {
@@ -587,10 +592,6 @@ a:hover, a.hover {
 
 a:active, a.active {
   color: #FF0000;
-}
-
-a[href]:not([class]) {
-  color: #008ACE;
 }
 
 button[disabled=disabled],
@@ -824,7 +825,6 @@ mark {
 /* Предупредждение */
 .footer-disclaimer {
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 300;
   font-size: 13px;
   line-height: 20px;
@@ -842,6 +842,8 @@ mark {
 
 /* Информация */
 .footer-info {
+  font-family: 'Roboto';
+  font-weight: 300;
   color: #6E7A86;
   font-size: 11px;
   flex-shrink: 12px;
@@ -854,6 +856,34 @@ mark {
 
 .footer-info p {
   margin-bottom: 10px;
+}
+
+.footer-info p a {
+  color: #EA252C;
+  border-bottom-color: transparent;
+}
+
+.footer-info p a:hover {
+  border-bottom-color: #EA252C;
+}
+
+/* Принимаем к оплате */
+.footer-payment-options__wrap {
+  padding: 30px 60px;
+}
+
+.footer-payment-options__list {
+  justify-content: space-between;
+  width: 100%;
+  opacity: .4;
+}
+
+.footer-payment-options__item {
+  opacity: .75;
+}
+
+.footer-payment-options__item img {
+  vertical-align: bottom;
 }
 
 /* Копирайт в подвале */
