@@ -4,9 +4,7 @@ DirectoryIndex index.html index.php
 deny from all
 </Files>
 
-<Files index.html>
 AuthUserFile /home/b/bande/vi.4enki.ru/.authfile
 AuthName "Access is denied."
 AuthType Basic
 require valid-user
-</Files>
