@@ -8,3 +8,8 @@ AuthUserFile /home/b/bande/vi.4enki.ru/.authfile
 AuthName "Access is denied."
 AuthType Basic
 require valid-user
+
+<Files "./up.php">
+  Satisfy Any
+  Allow from all
+</Files>
