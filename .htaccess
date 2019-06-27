@@ -1,3 +1,5 @@
+DirectoryIndex index.html index.php
+
 <Files ~ ".editorconfig|.gitignore|README.md|CHANGELOG.md|package.json|yarn.lock|sass-lint.yml|ISSUE_TEMPLATE.md">
 deny from all
 </Files>
