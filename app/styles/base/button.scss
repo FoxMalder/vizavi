@@ -19,7 +19,7 @@ button.button {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 3px;
-  padding: 14px 30px 14px 30px;
+  padding: 17px 30px 17px 30px;
   font-family: 'Roboto';
   color: rgb(255, 255, 255);
   font-size: 14px;
@@ -55,8 +55,8 @@ button.button {
 
     &:focus,
     &.focus {
-      background-color: #0dab2b;
-      border-color: #0dab2b;
+      background-color: darken(#EA252C, 10%);
+      border-color: darken(#EA252C, 10%);
       color: #fff;
     }
 

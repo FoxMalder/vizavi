@@ -3,6 +3,8 @@
 (function ($) {
   var menuItem = $('.js_header-link');
   var menuCloud = $('.js_header__cloud');
+  var menuItemUser = $('.js_user-action');
+  var menuCloudUser = $('.js_header__user');
   menuItem.each(function () {
     $(this).on('click', function (event) {
       var href = $(this).attr('data-href');
@@ -13,6 +15,11 @@
       $(href).siblings().removeClass('is-show');
       event.preventDefault();
     });
+  });
+  menuItemUser.on('click', function () {
+    $(this).toggleClass('is-active');
+    menuCloud.toggleClass('is-show');
+    menuCloudUser.toggleClass('is-show');
   }); // закрытие по ESC и клику в любой области
 
   if ($('.js_language-list.is-show')) {
@@ -20,14 +27,21 @@
       if (event.keyCode === 27) {
         menuItem.closest('.header-menu__item').siblings().removeClass('is-active');
         menuCloud.removeClass('is-show');
+        menuCloudUser.removeClass('is-show');
       }
     });
+    /*
     $(document).mouseup(function (event) {
-      if (menuCloud.has(event.target).length === 0) {
-        menuItem.closest('.header-menu__item').siblings().removeClass('is-active');
+      if ( menuCloud.has(event.target).length === 0 ) {
+        menuItem
+          .closest('.header-menu__item')
+          .siblings()
+          .removeClass('is-active');
         menuCloud.removeClass('is-show');
+        menuCloudUser.removeClass('is-show');
       }
     });
+    */
   }
 })(jQuery);
 

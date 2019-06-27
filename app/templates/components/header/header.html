@@ -115,20 +115,32 @@
       <!-- end .header__finder -->
 
       <!-- begin .header__user -->
-      <div class="header__user">
-        <form action="">
-          <h3>Вход в vizavi</h3>
-          <p>Если вы наш клиент, введите логин и пароль. Если еще нет — зарегистрируйтесь.</p>
+      <div class="header__user header-user js_header__user">
+        <form action="" class="header-user__form">
+          <!-- begin .form-caption -->
+          <div class="form-caption">
+            <h3 class="h3">Вход в vizavi</h3>
+            <p>Если вы наш клиент, введите логин и пароль. Если еще нет — зарегистрируйтесь.</p>
+          </div>
+          <!-- end .form-caption -->
           <!-- begin .flex -->
-          <div class="flex">
+          <div class="flex form-row">
             <!-- begin .form-group -->
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Логин">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Логин"
+              >
             </div>
             <!-- end .form-group -->
             <!-- begin .form-group -->
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Пароль">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Пароль"
+              >
             </div>
             <!-- end .form-group -->
             <!-- begin .form-action -->
@@ -138,7 +150,11 @@
             <!-- end .form-action -->
           </div>
           <!-- end .flex -->
-          <p><a href="">Зарегистрироваться</a></p>
+          <!-- begin .form-more -->
+          <div class="form-more">
+            <p><a href="">Зарегистрироваться</a></p>
+          </div>
+          <!-- end .form-more -->
         </form>
       </div>
       <!-- end .header__user -->

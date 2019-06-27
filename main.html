@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css?v=0e34308d0ff5f2184a49ae94d69a9d19" rel="stylesheet" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -244,20 +244,32 @@
       <!-- end .header__finder -->
 
       <!-- begin .header__user -->
-      <div class="header__user">
-        <form action="">
-          <h3>Вход в vizavi</h3>
-          <p>Если вы наш клиент, введите логин и пароль. Если еще нет — зарегистрируйтесь.</p>
+      <div class="header__user header-user js_header__user">
+        <form action="" class="header-user__form">
+          <!-- begin .form-caption -->
+          <div class="form-caption">
+            <h3 class="h3">Вход в vizavi</h3>
+            <p>Если вы наш клиент, введите логин и пароль. Если еще нет — зарегистрируйтесь.</p>
+          </div>
+          <!-- end .form-caption -->
           <!-- begin .flex -->
-          <div class="flex">
+          <div class="flex form-row">
             <!-- begin .form-group -->
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Логин">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Логин"
+              >
             </div>
             <!-- end .form-group -->
             <!-- begin .form-group -->
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Пароль">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Пароль"
+              >
             </div>
             <!-- end .form-group -->
             <!-- begin .form-action -->
@@ -267,7 +279,11 @@
             <!-- end .form-action -->
           </div>
           <!-- end .flex -->
-          <p><a href="">Зарегистрироваться</a></p>
+          <!-- begin .form-more -->
+          <div class="form-more">
+            <p><a href="">Зарегистрироваться</a></p>
+          </div>
+          <!-- end .form-more -->
         </form>
       </div>
       <!-- end .header__user -->
@@ -628,8 +644,8 @@
 </footer>
 
 
-    <script src="assets/scripts/vendor.js?v=9b45960bd99e1230fbfbabd0184392db"></script>
-    <script src="assets/scripts/app.js?v=8c7075700ffb7ffaed27aead3798e5c2"></script>
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
 
   </body>
 </html>
