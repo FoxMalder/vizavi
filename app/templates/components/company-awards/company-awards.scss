@@ -49,11 +49,10 @@
 
   &__box {
     flex-direction: column;
-    position: relative;
     min-height: 71px;
-    position: relative;
     padding-left: 50px;
     padding-right: 50px;
+    position: relative;
 
     &:before,
     &:after {
