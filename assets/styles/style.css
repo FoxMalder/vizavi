@@ -1939,6 +1939,114 @@ main {
   margin: 0 0 20px 0;
 }
 
+.text-page__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.text-content {
+  font-family: 'Roboto';
+}
+
+.text-content .h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+  text-transform: uppercase;
+  color: #222B34;
+  margin: 0 0 20px 0;
+}
+
+.text-content .h1 span {
+  color: #EA252C;
+}
+
+.text-content p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  color: #222B34;
+}
+
+.text-content .list-box {
+  margin-top: 40px;
+}
+
+.text-content .title-light {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #222B34;
+  margin: 0 0 15px 0;
+}
+
+.text-content .list-mini {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.text-content .doc-link {
+  font-size: 18px;
+  line-height: 29px;
+  color: #7086A2;
+}
+
+.text-content .doc-link .doc-link__icon {
+  min-width: 25px;
+  background-repeat: no-repeat;
+}
+
+.text-content .doc-link--logo .doc-link__icon {
+  background-image: url("../images/svg/mini-logo.svg");
+  width: 25px;
+  height: 25px;
+}
+
+.text-content .doc-link__type {
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.text-content .doc-link__type-name {
+  margin-left: 5px;
+}
+
+.text-content .doc-link__type.doc-link__type-pdf {
+  color: #EA252C;
+}
+
+.text-content .doc-link__type.doc-link__type-pdf .doc-link__type-logo {
+  background-image: url("../images/svg/pdf-logo.svg");
+  width: 22px;
+  height: 22px;
+}
+
+.text-content .doc-link__type.doc-link__type-pdf .doc-link__type-name {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #EA252C;
+}
+
+.text-content .doc-link__size {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #A9B0B8;
+}
+
 .h2 {
   font-family: 'Roboto';
   font-weight: bold;
