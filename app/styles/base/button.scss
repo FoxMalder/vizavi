@@ -130,6 +130,35 @@ button.button {
     }
   }
 
+  &-light {
+    background-color: #ffffff;
+    border-color: #EA252C;
+    color: #EA252C;
+
+    &:hover,
+    &.hover {
+      background-color: #EA252C;
+      border-color: #EA252C;
+      color: #fff;
+    }
+
+    &:focus,
+    &.focus {
+      background-color: darken(#EA252C, 10%);
+      border-color: darken(#EA252C, 10%);
+      color: #fff;
+    }
+
+    &[disabled=disabled],
+    &:disabled,
+    &:disabled,
+    &.disabled {
+      color: rgb(255, 255, 255);
+      background-color: rgb(214, 217, 220);
+      border-color: rgb(214, 217, 220);
+    }
+  }
+
   &-mini {
     font-size: 14px;
     line-height: 14px;
