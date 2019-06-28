@@ -4,7 +4,9 @@
   var menuItem = $('.js_header-link');
   var menuCloud = $('.js_header__cloud');
   var menuItemUser = $('.js_user-action');
-  var menuCloudUser = $('.js_header__user');
+  var menuCloudUser = $('.js_header-user');
+  var menuItemSearch = $('.js_search-action');
+  var menuCloudSearch = $('.js_header-search');
   menuItem.each(function () {
     $(this).on('click', function (event) {
       var href = $(this).attr('data-href');
@@ -18,8 +20,15 @@
   });
   menuItemUser.on('click', function () {
     $(this).toggleClass('is-active');
-    menuCloud.toggleClass('is-show');
-    menuCloudUser.toggleClass('is-show');
+    menuCloud.addClass('is-show');
+    menuCloudUser.closest('.header__cloud-item').removeClass('is-show');
+    menuCloudUser.addClass('is-show');
+  });
+  menuItemSearch.on('click', function () {
+    $(this).toggleClass('is-active');
+    menuCloud.addClass('is-show');
+    menuCloudSearch.closest('.header__cloud-item').removeClass('is-show');
+    menuCloudSearch.addClass('is-show');
   }); // закрытие по ESC и клику в любой области
 
   if ($('.js_language-list.is-show')) {

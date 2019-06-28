@@ -50,7 +50,25 @@ main {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
   }
 
+  /* Панель авторизации/регистрации */
   &__user {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s ease;
+    position: absolute;
+
+    &.is-show {
+      height: auto;
+      opacity: 1;
+      z-index: 10;
+      visibility: visible;
+      position: relative;
+    }
+  }
+
+  /* Панель поиска */
+  &__search {
     height: 0;
     opacity: 0;
     visibility: hidden;
@@ -290,6 +308,36 @@ main {
     .form-more {
       margin-top: 30px;
       text-align: center;
+    }
+  }
+}
+
+.header-search {
+
+  &__form {
+    max-width: 580px;
+    margin: 0 auto;
+
+    .form-group {
+      margin-right: 0;
+    }
+
+    .form-control {
+      margin-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      position: relative;
+
+      &:hover {
+        z-index: 3;
+      }
+    }
+
+    .button {
+      margin-left: -1px;
+      position: relative;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
     }
   }
 }

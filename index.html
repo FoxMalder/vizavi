@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css" rel="stylesheet" />
+    <link href="assets/styles/style.css?v=acb9cab9502f5da00dfae7d3dcc014da" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -266,10 +266,9 @@
         <!-- end .header__finder-item -->
       </div>
       <!-- end .header__finder -->
-
       <!-- begin .header__user -->
-      <div class="header__user header-user js_header__user">
-        <form action="" class="header-user__form">
+      <div class="header__user header__cloud-item header-user js_header-user">
+        <form action="" class="form-box header-user__form">
           <!-- begin .form-caption -->
           <div class="form-caption">
             <h3 class="h3">Вход в vizavi</h3>
@@ -305,14 +304,31 @@
           <!-- end .flex -->
           <!-- begin .form-more -->
           <div class="form-more">
-            <p><a href="">Зарегистрироваться</a></p>
+            <p><a href="javascript:void(0);">Зарегистрироваться</a></p>
           </div>
           <!-- end .form-more -->
         </form>
       </div>
       <!-- end .header__user -->
       <!-- begin .header__search -->
-      <div class="header__search">header__search</div>
+      <div class="header__search header__cloud-item header-search js_header-search">
+        <form action="" class="form-box header-search__form">
+          <!-- begin .flex -->
+          <div class="flex form-row">
+            <!-- begin .form-group -->
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Что хотите найти?"
+              >
+              <button class="button button-red">Найти</button>
+            </div>
+            <!-- end .form-group -->
+          </div>
+          <!-- end .flex -->
+        </form>
+      </div>
       <!-- end .header__search -->
     </div>
     <!-- end .header__wrap -->
@@ -1273,8 +1289,8 @@
 </footer>
 
 
-    <script src="assets/scripts/vendor.js"></script>
-    <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/vendor.js?v=9b45960bd99e1230fbfbabd0184392db"></script>
+    <script src="assets/scripts/app.js?v=8ed11b7e13c04c6f06e482c20f51e41b"></script>
 
   </body>
 </html>

@@ -1355,6 +1355,8 @@ main {
 
 .header {
   position: relative;
+  /* Панель авторизации/регистрации */
+  /* Панель поиска */
 }
 
 .header__wrap {
@@ -1407,9 +1409,25 @@ main {
   opacity: 0;
   visibility: hidden;
   transition: all .35s ease;
+  position: absolute;
 }
 
 .header__user.is-show {
+  height: auto;
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+  position: relative;
+}
+
+.header__search {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .35s ease;
+}
+
+.header__search.is-show {
   height: auto;
   opacity: 1;
   z-index: 10;
@@ -1636,6 +1654,33 @@ main {
 .header-user__form .form-more {
   margin-top: 30px;
   text-align: center;
+}
+
+.header-search__form {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.header-search__form .form-group {
+  margin-right: 0;
+}
+
+.header-search__form .form-control {
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  position: relative;
+}
+
+.header-search__form .form-control:hover {
+  z-index: 3;
+}
+
+.header-search__form .button {
+  margin-left: -1px;
+  position: relative;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .headline {
