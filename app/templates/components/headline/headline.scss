@@ -1,5 +1,26 @@
 .headline {
   background-color: #F3F4F5;
+  background: linear-gradient(
+    105deg,
+    #F3F4F5 0%,
+    #F3F4F5 50%,
+    #EA252C 50.1%,
+    #EA252C 65%,
+    transparent 65.1%,
+    transparent 65%,
+  ),
+  #232D3A
+  url('../images/headline-bg.png') no-repeat right top / contain;
+
+  &:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    // background-image: url('../images/headline-bg.png');
+  }
 
   &__wrap {
     max-width: 1180px;
