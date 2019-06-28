@@ -17,3 +17,12 @@
     justify-content: center;
   }
 }
+
+.col-half {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+}
