@@ -1925,9 +1925,7 @@ main {
 }
 
 .headline__content {
-  max-width: 450px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  max-width: 440px;
 }
 
 .headline__content p {
@@ -1955,6 +1953,7 @@ main {
 }
 
 .headline__actions {
+  margin-top: 30px;
   padding-left: 40px;
 }
 
