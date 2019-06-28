@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css?v=2bac879f2974f720c07d5e5533454027" rel="stylesheet" />
+    <link href="assets/styles/style.css" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -167,16 +167,36 @@
         <nav class="header-menu__box">
           <ul class="header__menu header-menu">
             <li class="header-menu__item">
-              <a href="trading.html" data-href="#trading" class="header-menu__link js_header-link"><span>Трейдинг</span></a>
+              <a
+                href="trading.html"
+                data-href="#trading"
+                class="header-menu__link js_header-link">
+                <span>Трейдинг</span>
+              </a>
             </li>
             <li class="header-menu__item">
-              <a href="education.html" data-href="#education" class="header-menu__link js_header-link"><span>Обучение</span></a>
+              <a
+                href="education.html"
+                data-href="#education"
+                class="header-menu__link js_header-link">
+                <span>Обучение</span>
+              </a>
             </li>
             <li class="header-menu__item">
-              <a href="javascript:void(0);" class="header-menu__link js_header-link"><span>Аналитика</span></a>
+              <a
+                href="javascript:void(0);"
+                data-href="#analytics"
+                class="header-menu__link js_header-link">
+                <span>Аналитика</span>
+              </a>
             </li>
             <li class="header-menu__item">
-              <a href="javascript:void(0);" class="header-menu__link js_header-link"><span>О компании</span></a>
+              <a
+                href="javascript:void(0);"
+                data-href="#about"
+                class="header-menu__link js_header-link">
+                <span>О компании</span>
+              </a>
             </li>
           </ul>
         </nav>
@@ -259,10 +279,111 @@
       <!-- begin .header__finder -->
       <div class="header__finder">
         <!-- begin .header__finder-item -->
-        <div id="trading" class="header__finder-item"></div>
+        <div id="trading" class="header__finder-item">
+          <ul class="finder-menu">
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Торговый счет</a>
+              <ul class="finder-menu">
+                <li class="finder-menu__item">
+                  <a href="javascript:void(0);" class="finder-menu__link">Торговый терминал</a>
+                </li>
+                <li class="finder-menu__item">
+                  <a href="javascript:void(0);" class="finder-menu__link">Условия торговли</a>
+                </li>
+                <li class="finder-menu__item">
+                  <a href="javascript:void(0);" class="finder-menu__link">Калькулятор трейдера</a>
+                </li>
+                <li class="finder-menu__item">
+                  <a href="javascript:void(0);" class="finder-menu__link">Программы лояльности</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="finder-menu">
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Социальный трейдинг</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Торговый терминал</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Условия торговли</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Калькулятор трейдера</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Программы лояльности</a>
+            </li>
+          </ul>
+        </div>
         <!-- end .header__finder-item -->
         <!-- begin .header__finder-item -->
-        <div id="education" class="header__finder-item"></div>
+        <div id="education" class="header__finder-item">
+          <ul class="finder-menu">
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">А тут другие</a>
+              <ul class="finder-menu">
+                <li class="finder-menu__item">
+                  <a href="javascript:void(0);" class="finder-menu__link">Демо-пункты</a>
+                </li>
+                <li class="finder-menu__item">
+                  <a href="javascript:void(0);" class="finder-menu__link">Чтобы проверить</a>
+                </li>
+                <li class="finder-menu__item">
+                  <a href="javascript:void(0);" class="finder-menu__link">Переключение между</a>
+                </li>
+                <li class="finder-menu__item">
+                  <a href="javascript:void(0);" class="finder-menu__link">Родительскими разделами</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="finder-menu">
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">И другие меню</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Тоже как демо</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">С условными пунктами</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Чтобы показать</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Как работает</a>
+            </li>
+          </ul>
+          <ul class="finder-menu">
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">И внутри можно всё</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">А пункты-родители</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Это ссылки и</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">Их можно открыть</a>
+            </li>
+            <li class="finder-menu__item">
+              <a href="javascript:void(0);" class="finder-menu__link">В новой вкладке</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end .header__finder-item -->
+        <!-- begin .header__finder-item -->
+        <div id="analytics" class="header__finder-item">
+          <mark>Меню пункта «Аналитика»</mark>
+        </div>
+        <!-- end .header__finder-item -->
+        <!-- begin .header__finder-item -->
+        <div id="about" class="header__finder-item">
+          <mark>Меню пункта «О компании»</mark>
+        </div>
         <!-- end .header__finder-item -->
       </div>
       <!-- end .header__finder -->
@@ -1030,4 +1151,267 @@
       <div class="footer-main__aside">
         <a href="tel:+442033185824" class="footer-tel flex">
           <span class="footer-tel__ico">
-            <svg width="14" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.133.586H1.867C1.283.586.7 1.174.7 1.761v16.555c0 .704.583 1.174 1.167 1.174H12.25c.583 0 1.167-.47 1.167-1.174V1.761C13.3 1.056 12.833
+            <svg width="14" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.133.586H1.867C1.283.586.7 1.174.7 1.761v16.555c0 .704.583 1.174 1.167 1.174H12.25c.583 0 1.167-.47 1.167-1.174V1.761C13.3 1.056 12.833.586 12.133.586zm0 1.175v11.741H1.867V1.761h10.266zM1.867 18.199v-3.523H12.25V18.2H1.867z" fill="#727C8C"/></svg>
+          </span>
+          <span class="footer-tel__phonenumber">+44 20 3318 5824</span>
+        </a>
+      </div>
+      <!-- end .footer-main__aside -->
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__main -->
+  <!-- begin .footer__navigation -->
+  <div class="footer__navigation footer-navigation footer--bottom-border">
+    <!-- begin .footer__wrap -->
+    <div class="footer__wrap flex flex-start footer-navigation__wrap">
+      <!-- begin .footer-navigation__item -->
+      <div class="footer-navigation__item">
+        <h3 class="footer-navigation__caption">Трейдинг</h3>
+        <ul class="footer-navigation__menu footer-menu">
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Торговый счет</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Социальный трейдинг</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Торговый терминал</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Условия торговли</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Калькулятор трейдера</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Программы лояльности</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end .footer-navigation__item -->
+      <!-- begin .footer-navigation__item -->
+      <div class="footer-navigation__item">
+        <h3 class="footer-navigation__caption">Обучение</h3>
+        <ul class="footer-navigation__menu footer-menu">
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Видеоуроки</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Часто задаваемые вопросы</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end .footer-navigation__item -->
+      <!-- begin .footer-navigation__item -->
+      <div class="footer-navigation__item">
+        <h3 class="footer-navigation__caption">Обучение</h3>
+        <ul class="footer-navigation__menu footer-menu">
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Торговые идеи</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Котировки</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Экономический календарь</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end .footer-navigation__item -->
+      <!-- begin .footer-navigation__item -->
+      <div class="footer-navigation__item">
+        <h3 class="footer-navigation__caption">О компании</h3>
+        <ul class="footer-navigation__menu footer-menu">
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Карточка</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Обратная связь</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Партнерам</a>
+          </li>
+          <li class="footer-menu__item">
+            <a href="javascript:void(0);" class="footer-menu__link">Регламентирующие документы</a>
+          </li>
+        </ul>
+      </div>
+      <!-- end .footer-navigation__item -->
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__navigation -->
+  <!-- begin .footer__docs -->
+  <div class="footer__docs footer-docs footer--bottom-border">
+    <!-- begin .footer__wrap -->
+    <div class="footer__wrap footer-docs__wrap">
+      <!-- begin .footer-docs__list -->
+      <div class="footer-docs__list flex">
+        <a href="javascript:void(0);" class="doc-link doc-link--pdf">
+          <span class="doc-link__icon"></span>
+          <span class="doc-link__name">Соглашение о конфиденциальности</span>
+        </a>
+        <a href="javascript:void(0);" class="doc-link doc-link--pdf">
+          <span class="doc-link__icon"></span>
+          <span class="doc-link__name">Политика возврата платежей</span>
+        </a>
+        <a href="javascript:void(0);" class="doc-link doc-link--pdf">
+          <span class="doc-link__icon"></span>
+          <span class="doc-link__name">Политика возврата платежей</span>
+        </a>
+        <a href="javascript:void(0);" class="doc-link doc-link--pdf">
+          <span class="doc-link__icon"></span>
+          <span class="doc-link__name">Уведомление о рисках</span>
+        </a>
+      </div>
+      <!-- end .footer-docs__list -->
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__docs -->
+  <!-- begin .footer__disclaimer -->
+  <div class="footer__disclaimer footer-disclaimer footer--bottom-border">
+    <!-- begin .footer__wrap -->
+    <div class="footer__wrap footer-disclaimer__wrap">
+      <!-- begin .footer-disclaimer__box -->
+      <div class="footer-disclaimer__box flex flex-start">
+        <!-- begin .footer-disclaimer__icon -->
+        <div class="footer-disclaimer__icon">
+          <svg width="25" height="23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 23H1.765c-.736 0-1.324-.613-1.618-1.38-.294-.767.147-1.38.441-2.147.588-.92 1.03-1.993 1.618-2.913.441-.767.882-1.687 1.47-2.453.589-1.074 1.324-2.3 1.912-3.374.588-1.073 1.03-1.993 1.618-3.066.588-.92 1.03-1.84 1.47-2.914.442-.766.883-1.38 1.324-2.146.294-.46.588-1.074.882-1.687C11.323.307 11.912 0 12.5 0c.735 0 1.177.307 1.47 1.073l1.765 3.22c.588.92 1.03 1.84 1.618 2.914.441.766.882 1.38 1.176 2.146.589.92 1.03 1.994 1.618 2.914.441.766.735 1.38 1.177 2.146.294.614.735 1.227 1.029 1.84.441.767.882 1.534 1.176 2.3.442.767.883 1.38 1.177 2.147.441.92 0 2.147-1.03 2.453-.294 0-.44.154-.735.154C19.56 23 16.03 23 12.5 23zm0-15.64h-1.177c-.44 0-.44 0-.44.46 0 .92.146 1.993.146 2.913 0 1.38.148 2.607.148 3.987 0 .307.146.46.44.46h1.765c.295 0 .295-.153.295-.46.146-1.993.146-3.987.294-5.98V7.667c0-.307-.148-.46-.442-.307H12.5zm1.47 11.193V17.48c0-.307 0-.46-.293-.46H11.47c-.294 0-.442.153-.442.46v2.147c0 .306.148.46.589.46h1.911c.442 0 .589-.154.589-.614-.147-.306-.147-.613-.147-.92z" fill="#EA252C"/></svg>
+        </div>
+        <!-- end .footer-disclaimer__icon -->
+        <!-- begin .footer-disclaimer__message -->
+        <div class="footer-disclaimer__message">
+          <p>Vizavi предупреждает, что торговля на финансовых рынках имеет очень высокий уровень риска и может повлечь потерю всего инвестиционного капитала. Этот вид деятельности подойдет не для всех, и Вы должны убедиться, что понимаете всю степень риска. Этот вид деятельности больше подходит инвесторам, которые знают, что делают и могут позволить себе такую деятельность с вероятностью потери всего капитала. Мы советуем Вам задуматься о том, подходит ли Вам торговля продуктами с кредитным плечом в свете Ваших личных обязательств. Мы рекомендуем Вам обратиться за независимой финансовой консультацией и убедиться перед началом торговли в том, что Вы полностью понимаете все сопряженные с ней риски.</p>
+        </div>
+        <!-- end .footer-disclaimer__message -->
+      </div>
+      <!-- end .footer-disclaimer__box -->
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__disclaimer -->
+  <!-- begin .footer__info -->
+  <div class="footer__info footer-info footer--bottom-border">
+    <!-- begin .footer__wrap -->
+    <div class="footer__wrap footer-info__wrap">
+      <p>VZV IMPEX LTD First Floor, First St. Vincent Bank Ltd Building, James Street, St. Vincent and Grenadines, registered number 24649 IBC 2018, registered by the Financial Services Authority of Saint Vincent and the Grenadines, mailing address: P.O. Box 1547, Kingstown, VC100, St. Vincent and the Grenadines.</p>
+
+      <p>European agent, DEX CONNECTION LTD 3rd Floor, 120 Baker Street, London, England, W1U 6TU, registered number 11384235.</p>
+
+      <p>Веб-сайт <a href="javascript:void(0);">vizavi.com</a> находится под управлением компании VZV IMPEX LTD.</p>
+      <p>Мы не предоставляем финансовые услуги резидентам Австралии, Канады, США и Японии.</p>
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__info -->
+  <!-- begin .footer__payment-options -->
+  <div class="footer__payment-options footer-payment-options">
+    <!-- begin .footer__wrap -->
+    <div class="footer__wrap flex footer-payment-options__wrap">
+      <!-- begin .footer-payment-options__list -->
+      <div class="footer-payment-options__list flex">
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/visa.png"
+            alt="Карты VISA"
+            width="87"
+            height="28"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/mastercard.png"
+            alt="Карты MasterCard"
+            width="53"
+            height="41"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/webmoney.png"
+            alt="WebMoney"
+            width="155"
+            height="36"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/yandexmoney.png"
+            alt="Яндекс.Деньги"
+            width="106"
+            height="36"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/qiwi.png"
+            alt="QIWI"
+            width="103"
+            height="38"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/advcash.png"
+            alt="Advanced Cash"
+            width="118"
+            height="22"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/tobank.png"
+            alt="Банковские переводы"
+            width="103"
+            height="37"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+        <!-- begin .footer-payment-options__item -->
+        <div class="footer-payment-options__item">
+          <img
+            src="assets/images/payment-options/skrill.png"
+            alt="Skrill"
+            width="77"
+            height="27"
+          >
+        </div>
+        <!-- end .footer-payment-options__item -->
+      </div>
+      <!-- end .footer-payment-options__list -->
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__payment-options -->
+  <!-- begin .footer__copyright -->
+  <div class="footer__copyright footer-copyright">
+    <!-- begin .footer__wrap -->
+    <div class="footer__wrap footer-copyright__wrap">
+      <p>© Vizavi, 2019. Все права защищены.</p>
+    </div>
+    <!-- end .footer__wrap -->
+  </div>
+  <!-- end .footer__copyright -->
+</footer>
+
+
+    <script src="assets/scripts/vendor.js"></script>
+    <script src="assets/scripts/app.js"></script>
+
+  </body>
+</html>

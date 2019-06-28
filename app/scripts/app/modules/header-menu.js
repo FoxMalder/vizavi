@@ -22,10 +22,10 @@
         .addClass('is-active');
 
       menuCloud.addClass('is-show');
-      $(href).addClass('is-show');
       $(href)
-        .siblings()
+        .siblings('.header__finder-item')
         .removeClass('is-show');
+      $(href).addClass('is-show');
 
       event.preventDefault();
     });

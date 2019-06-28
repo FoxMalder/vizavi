@@ -13,8 +13,8 @@
       $(this).closest('.header-menu__item').siblings().removeClass('is-active');
       $(this).closest('.header-menu__item').addClass('is-active');
       menuCloud.addClass('is-show');
+      $(href).siblings('.header__finder-item').removeClass('is-show');
       $(href).addClass('is-show');
-      $(href).siblings().removeClass('is-show');
       event.preventDefault();
     });
   });

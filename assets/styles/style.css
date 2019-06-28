@@ -1263,6 +1263,57 @@ mark {
   height: 24px;
 }
 
+.finder-menu {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: 'Roboto';
+}
+
+.finder-menu .finder-menu {
+  margin-top: 15px;
+}
+
+.finder-menu .finder-menu .finder-menu__link {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #6E7A86;
+}
+
+.finder-menu .finder-menu .finder-menu__link:hover {
+  color: #222B34;
+}
+
+.finder-menu__item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.finder-menu__item:last-child {
+  margin-bottom: 0;
+}
+
+.finder-menu__link {
+  width: 100%;
+  display: inline-flex;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #222B34;
+  border-bottom: 0;
+  text-decoration: none;
+}
+
+.finder-menu__link:hover {
+  color: #EA252C;
+}
+
 .header-menu {
   display: flex;
   align-items: stretch;
@@ -1402,6 +1453,31 @@ main {
   right: 0;
   width: 100%;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header__finder-item {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.header__finder-item .finder-menu {
+  min-width: 280px;
+}
+
+.header__finder-item.is-show {
+  height: auto;
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+  position: relative;
+  transition: all .35s ease;
 }
 
 .header__user {
