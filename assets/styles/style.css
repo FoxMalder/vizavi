@@ -2047,6 +2047,10 @@ main {
   color: #A9B0B8;
 }
 
+.text-content .doc-link:hover {
+  color: #EA252C;
+}
+
 .h2 {
   font-family: 'Roboto';
   font-weight: bold;
