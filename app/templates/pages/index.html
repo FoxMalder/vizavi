@@ -10,61 +10,70 @@ sitemap:
    progress:        10
    progress_mobile: 0
    progress_tablet: 0
-   figma:          '123123'
+   figma:          'https://www.figma.com/file/3QgjoQsa6YQpf5LIqL946j/'
  - name:           'Партнерём'
    url:             main.html
    path:            main.html
    progress:        0
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/U6fWMUorlagRMcZkoJD8cQ/'
  - name:           'Инвестору'
    url:             main.html
    path:            main.html
    progress:        0
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/TECfgBfWb3eJQwHIaBK0Qd/'
  - name:           'Торговый терминал'
    url:             main.html
    path:            main.html
    progress:        0
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/lCzkqcJkNXYVtQHGAQtYvt/'
  - name:           'Торговый счет'
    url:             main.html
    path:            main.html
    progress:        0
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/1UxKP08bpgG26THgLJYQPT/'
  - name:           'О компании'
    url:             about.html
    path:            about.html
    progress:        10
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/CrrDcz84AaYmy28ko2EvMO/'
  - name:           'Сохранность средств'
    url:             main.html
    path:            main.html
    progress:        0
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/VvnLCdhYyu0J8CodFI8fob/'
  - name:           'Регламентирующие документы'
    url:             documents.html
    path:            documents.html
    progress:        99
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/SGLFhsX2stAOpCVPOlhZAw/'
  - name:           'Обратная связь'
    url:             feedback.html
    path:            feedback.html
    progress:        0
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/SGLFhsX2stAOpCVPOlhZAw/'
  - name:           'Ошибка 404'
    url:             404.html
    path:            404.html
    progress:        99
    progress_mobile: 0
    progress_tablet: 0
+   figma:          'https://www.figma.com/file/SGLFhsX2stAOpCVPOlhZAw/'
 ---
 
 {% extends "layouts/layout.html" %}
@@ -76,31 +85,27 @@ sitemap:
     .ui-page_wrap { width: 100%; margin: 0; padding: 0 40px; }
     .ui-page_sitemap { background-color: #fff; margin-top: 30px; padding-top: 30px; padding-bottom: 40px; border-top: 1px solid #f7f7f5; border-bottom: 1px solid #f7f7f5; }
     .ui-page_kit { background-color: #fff; padding-top: 30px; padding-bottom: 40px; border-bottom: 1px solid #f7f7f5; }
-    .ui-page .box-headline h2 { margin: 0; }
-    .sitemap-list { list-style-type: none; margin: 0; padding: 0; display: flex;  flex-direction: column; font-family: 'Montserrat'; }
-    .sitemap_item { display: flex; align-items: flex-start; align-content: flex-start; margin-bottom: 5px; font-size: 14px; }
+    .ui-page .box-headline h2 { margin: 0 0 15px 0; }
+    .sitemap-list { list-style-type: none; margin: 0; padding: 0; display: flex;  flex-direction: column; }
+    .sitemap_item { display: flex; align-items: flex-start; align-content: flex-start; margin-bottom: 5px; font-size: 16px; line-height: 1; }
     .sitemap_item:last-child { margin-bottom: 0; }
     .sitemap_item_progress { display: flex; align-items: center; align-content: center; }
     .sitemap_item-col,
-    .sitemap_item-headline { margin-right: 40px; }
-    .sitemap_item-head { font-weight: bold; border-bottom: 2px solid #f7f7f5; padding-bottom: 10px; padding-top: 10px; }
+    .sitemap_item-headline { margin-right: 40px; color: #7086A2; font-weight: 500; }
+    .sitemap_item-head { font-size: 18px; line-height: 18px; font-weight: bold; border-bottom: 1px solid #f7f7f5; padding-bottom: 5px; padding-top: 5px; margin-bottom: 15px; }
     .sitemap_item-col,
     .sitemap_item-headline { min-width: 250px; }
     .sitemap_item-col:first-child,
     .sitemap_item-headline:first-child { min-width: 300px; width: 300px; }
     .sitemap_item-col:last-child,
     .sitemap_item-headline:last-child { margin-right: 0; }
-    .sitemap_item_path { margin-top: 2px; color: #b5b4b0; font-size: 12px; line-height: 12px; overflow: hidden; white-space: nowrap; display: block; text-overflow: ellipsis; }
+    .sitemap_item_path { margin-top: 5px; color: #b5b4b0; font-size: 11px; line-height: 11px; overflow: hidden; white-space: nowrap; display: block; text-overflow: ellipsis; font-style: italic; }
     .sitemap_item_progress_value { color: #b5b4b0; margin-left: 10px; font-size: 14px; line-height: 14px; }
     .sitemap_item_progress_bar progress { width: 190px; vertical-align: middle; }
-    .is-ghost { opacity: .55; }
-    .is-ghost:hover { opacity: 1; }
-    .external-link { border-bottom: 0; position: relative; }
-    .external-link:after {
-      position: absolute;
-      content: '';
-      background-image: url('');
-    }
+    .external-link { border-bottom: 0; position: relative; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; -ms-align-items: center; align-items: center; align-content: center; line-height: 1; }
+    .external-link__icon { color: #7086A2; margin-left: 4px; -ms-align-self: center; align-self: center; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; }
+    .external-link:hover { color: #EA252C; }
+    .external-link:hover .external-link__icon { color: #EA252C; }
   </style>
 {% endblock %}
 
@@ -122,7 +127,7 @@ sitemap:
     <div class="ui-page_wrap">
       <!-- begin .box-headline -->
       <div class="box-headline">
-        <h3>Карта проекта</h3>
+        <h3>Карта прототипа</h3>
       </div>
       <!-- end .box-headline -->
       <!-- begin .ui-page_sitemap_list -->
@@ -155,6 +160,7 @@ sitemap:
               <!-- begin .sitemap_item_name -->
               <div class="sitemap_item_name">
                 <a href="/{{i.url}}" class="tooltip" title="Путь к странице: app/templates/pages/{{i.path}}">{{i.name}}</a>
+                <span class="sitemap_item_path">app/templates/pages/{{i.path}}</span>
               </div>
               <!-- end .sitemap_item_name -->
             </div>
@@ -209,7 +215,17 @@ sitemap:
             <!-- end .sitemap_item-col -->
             <!-- begin .sitemap_item-col -->
             <div class="sitemap_item-col is-ghost">
-              {% if i.figma %}<a href="{{i.figma}}" class="external-link">Figma-макет</a>{% else %}{% endif %}
+              {% if i.figma %}
+                <a href="{{i.figma}}" class="external-link" target="_blank">
+                  <span class="external-link__text">Figma-макет</span>
+                  <span class="external-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
+                      <path d="M21 10h-2V5h-5V3h7z"/>
+                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
+                    </svg>
+                  </span>
+                </a>{% else %}{% endif %}
             </div>
             <!-- end .sitemap_item-col -->
           </li>
