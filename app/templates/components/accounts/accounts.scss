@@ -1,0 +1,89 @@
+.accounts {
+  padding-top: 70px;
+  padding-bottom: 100px;
+
+  &__wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.accounts-type {
+  flex-basis: 290px;
+  min-width: 290px;
+  max-width: 290px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+
+  &__box {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__header {
+    border-bottom: 1px solid #EEEEEE;
+    height: 90px;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+
+    &-icon {
+      width: 90px;
+      height: 100%;
+      background-color: #EA252C;
+      clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      color: #ffffff;
+    }
+
+    &-title {
+      margin-left: 20px;
+      height: 100%;
+      padding-top: 20px;
+
+      &_name {
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        color: #000000;
+      }
+
+      &_description {
+        margin-top: 6px;
+        font-size: 13px;
+        line-height: 13px;
+        color: #727C8C;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  &__action {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    .button {
+      width: 100%;
+    }
+  }
+}
