@@ -10,6 +10,7 @@ sitemap:
    progress:        10
    progress_mobile: 0
    progress_tablet: 0
+   figma:          '123123'
  - name:           'Партнерём'
    url:             main.html
    path:            main.html
@@ -92,6 +93,14 @@ sitemap:
     .sitemap_item_path { margin-top: 2px; color: #b5b4b0; font-size: 12px; line-height: 12px; overflow: hidden; white-space: nowrap; display: block; text-overflow: ellipsis; }
     .sitemap_item_progress_value { color: #b5b4b0; margin-left: 10px; font-size: 14px; line-height: 14px; }
     .sitemap_item_progress_bar progress { width: 190px; vertical-align: middle; }
+    .is-ghost { opacity: .55; }
+    .is-ghost:hover { opacity: 1; }
+    .external-link { border-bottom: 0; position: relative; }
+    .external-link:after {
+      position: absolute;
+      content: '';
+      background-image: url('');
+    }
   </style>
 {% endblock %}
 
@@ -133,6 +142,9 @@ sitemap:
             <!-- end .sitemap_item-headline -->
             <!-- begin .sitemap_item-headline -->
             <div class="sitemap_item-headline">Планшеты</div>
+            <!-- end .sitemap_item-headline -->
+            <!-- begin .sitemap_item-headline -->
+            <div class="sitemap_item-headline">Ссылка на дизайн</div>
             <!-- end .sitemap_item-headline -->
           </li>
           <!-- end .sitemap_item -->
@@ -193,6 +205,11 @@ sitemap:
                 <!-- end .sitemap_item_progress_value -->
               </div>
               <!-- end .sitemap_item_progress -->
+            </div>
+            <!-- end .sitemap_item-col -->
+            <!-- begin .sitemap_item-col -->
+            <div class="sitemap_item-col is-ghost">
+              {% if i.figma %}<a href="{{i.figma}}" class="external-link">Figma-макет</a>{% else %}{% endif %}
             </div>
             <!-- end .sitemap_item-col -->
           </li>
