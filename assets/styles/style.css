@@ -1670,7 +1670,7 @@ mark {
   position: absolute;
   width: 20px;
   height: 2px;
-  top: 5px;
+  top: 6px;
   left: -25px;
   background-color: #EA252C;
   transform: matrix(0.32, -0.89, 1.06, 0.09, 0, 0);
@@ -2053,7 +2053,7 @@ main {
 
 .headline {
   background-color: #F3F4F5;
-  background: linear-gradient(105deg, #F3F4F5 0%, #F3F4F5 50%, #EA252C 50.1%, #EA252C 65%, #232D3A 65.1%, #232D3A 65%);
+  background: linear-gradient(108.2deg, #F3F4F5 0%, #F3F4F5 53%, #EA252C 53.1%, #EA252C 70%, #232D3A 70.1%, #232D3A 70%);
   height: 450px;
   /* О компании */
   /* Инвестору */
