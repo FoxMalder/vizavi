@@ -1898,6 +1898,8 @@ main {
   background-color: #F3F4F5;
   background: linear-gradient(105deg, #F3F4F5 0%, #F3F4F5 50%, #EA252C 50.1%, #EA252C 65%, #232D3A 65.1%, #232D3A 65%);
   height: 450px;
+  /* О компании */
+  /* Инвестору */
 }
 
 .headline:after {
@@ -1922,6 +1924,8 @@ main {
   align-items: flex-start;
   align-content: flex-start;
   justify-content: center;
+  z-index: 1;
+  position: relative;
 }
 
 .headline__content {
@@ -1959,6 +1963,24 @@ main {
 
 .headline--about {
   background: linear-gradient(105deg, #F3F4F5 0%, #F3F4F5 50%, #EA252C 50.1%, #EA252C 65%, transparent 65.1%, transparent 65%), #232D3A url("../images/headline-bg.png") no-repeat right top/contain;
+}
+
+.headline--investor {
+  position: relative;
+  overflow: hidden;
+}
+
+.headline--investor:after {
+  z-index: 0;
+  content: '';
+  top: 0;
+  left: calc(766px / 2);
+  margin-right: -766px;
+  transform: translateX(-766px);
+  width: 766px;
+  height: 450px;
+  background-image: url("../images/headline-investor-bg.png");
+  transform: rotate(-1.75deg);
 }
 
 .start {
