@@ -18,8 +18,8 @@ let config = {
       vendor:        [src + 'scripts/vendor/vendor.js'],
     },
     styles:          [src + 'styles/'],
-    images:          [src + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    imagesblocks:    [src + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    images:          [src + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico|webp)'],
+    imagesblocks:    [src + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico|webp)'],
     resources:       [src + 'resources/**/*']
   },
 
@@ -28,8 +28,8 @@ let config = {
     templates:       [src + 'templates/**/*.html'],
     scripts:         [src + 'scripts/app/**/*.js', src + 'scripts/vendor/**/*.js', src + 'templates/**/*.js'],
     styles:          [src + 'styles/**/*.scss', src + 'templates/**/*.scss'],
-    images:          [src + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
-    imagesblocks:    [src + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico)'],
+    images:          [src + 'images/**/*.+(jpg|jpeg|png|svg|gif|ico|webp)'],
+    imagesblocks:    [src + 'templates/**/*.+(jpg|jpeg|png|svg|gif|ico|webp)'],
     resources:       [src + 'resources/**/*.*']
   },
 
