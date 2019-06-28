@@ -1408,7 +1408,6 @@ main {
   height: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all .35s ease;
   position: absolute;
 }
 
@@ -1418,13 +1417,14 @@ main {
   z-index: 10;
   visibility: visible;
   position: relative;
+  transition: all .35s ease;
 }
 
 .header__search {
   height: 0;
   opacity: 0;
   visibility: hidden;
-  transition: all .35s ease;
+  position: absolute;
 }
 
 .header__search.is-show {
@@ -1432,6 +1432,8 @@ main {
   opacity: 1;
   z-index: 10;
   visibility: visible;
+  position: relative;
+  transition: all .35s ease;
 }
 
 /* Переключатель языка */

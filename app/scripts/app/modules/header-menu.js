@@ -35,7 +35,7 @@
     $(this).toggleClass('is-active');
     menuCloud.addClass('is-show');
     menuCloudUser
-      .closest('.header__cloud-item')
+      .siblings('.header__cloud-item')
       .removeClass('is-show');
     menuCloudUser.addClass('is-show');
   });
@@ -44,13 +44,14 @@
     $(this).toggleClass('is-active');
     menuCloud.addClass('is-show');
     menuCloudSearch
-      .closest('.header__cloud-item')
+      .siblings('.header__cloud-item')
       .removeClass('is-show');
     menuCloudSearch.addClass('is-show');
   });
 
   // закрытие по ESC и клику в любой области
-  if ( $('.js_language-list.is-show') ) {
+  if ( $('.js_header__cloud.is-show') ) {
+
     $(document).on('keyup', function(event) {
       if ( event.keyCode === 27 ) {
         menuItem
