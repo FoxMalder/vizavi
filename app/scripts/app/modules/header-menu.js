@@ -2,6 +2,10 @@
 
   let menuItem        = $('.js_header-link');
   let menuCloud       = $('.js_header__cloud');
+  let menuCloudItem   = $('.header__cloud-item');
+
+  let menuFinder       = $('.js_header-finder');
+  let menuFinderItem   = $('.header__finder-item');
 
   let menuItemUser    = $('.js_user-action');
   let menuCloudUser   = $('.js_header-user');
@@ -11,6 +15,12 @@
 
   menuItem.each(function() {
     $(this).on('click',function(event) {
+
+      if ( $('.js_user-action.is-active') || $('.js_search-action.is-active') ) {
+        menuItemUser.removeClass('is-active');
+        menuItemSearch.removeClass('is-active');
+      }
+
       var href = $(this).attr('data-href');
 
       $(this)
@@ -22,6 +32,8 @@
         .addClass('is-active');
 
       menuCloud.addClass('is-show');
+      menuCloudItem.removeClass('is-show');
+
       $(href)
         .siblings('.header__finder-item')
         .removeClass('is-show');
@@ -33,7 +45,9 @@
 
   menuItemUser.on('click', function() {
     $(this).toggleClass('is-active');
+
     menuCloud.addClass('is-show');
+    menuFinderItem.removeClass('is-show');
     menuCloudUser
       .siblings('.header__cloud-item')
       .removeClass('is-show');
@@ -42,7 +56,9 @@
 
   menuItemSearch.on('click', function() {
     $(this).toggleClass('is-active');
+
     menuCloud.addClass('is-show');
+    menuFinderItem.removeClass('is-show');
     menuCloudSearch
       .siblings('.header__cloud-item')
       .removeClass('is-show');

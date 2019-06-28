@@ -3,16 +3,25 @@
 (function ($) {
   var menuItem = $('.js_header-link');
   var menuCloud = $('.js_header__cloud');
+  var menuCloudItem = $('.header__cloud-item');
+  var menuFinder = $('.js_header-finder');
+  var menuFinderItem = $('.header__finder-item');
   var menuItemUser = $('.js_user-action');
   var menuCloudUser = $('.js_header-user');
   var menuItemSearch = $('.js_search-action');
   var menuCloudSearch = $('.js_header-search');
   menuItem.each(function () {
     $(this).on('click', function (event) {
+      if ($('.js_user-action.is-active') || $('.js_search-action.is-active')) {
+        menuItemUser.removeClass('is-active');
+        menuItemSearch.removeClass('is-active');
+      }
+
       var href = $(this).attr('data-href');
       $(this).closest('.header-menu__item').siblings().removeClass('is-active');
       $(this).closest('.header-menu__item').addClass('is-active');
       menuCloud.addClass('is-show');
+      menuCloudItem.removeClass('is-show');
       $(href).siblings('.header__finder-item').removeClass('is-show');
       $(href).addClass('is-show');
       event.preventDefault();
@@ -21,12 +30,14 @@
   menuItemUser.on('click', function () {
     $(this).toggleClass('is-active');
     menuCloud.addClass('is-show');
+    menuFinderItem.removeClass('is-show');
     menuCloudUser.siblings('.header__cloud-item').removeClass('is-show');
     menuCloudUser.addClass('is-show');
   });
   menuItemSearch.on('click', function () {
     $(this).toggleClass('is-active');
     menuCloud.addClass('is-show');
+    menuFinderItem.removeClass('is-show');
     menuCloudSearch.siblings('.header__cloud-item').removeClass('is-show');
     menuCloudSearch.addClass('is-show');
   }); // закрытие по ESC и клику в любой области
