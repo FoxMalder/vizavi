@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
 
-    <title>Карта прогресса по проекту Vizavi</title>
+    <title>Форма обратной связи Vizavi</title>
     <meta name="description" content="Шаблон проекта быстрого старта"/>
     <meta name="keywords" content="слова, ключевые" />
 
@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css?v=c2f526a70a69336540bfc4acd61c3262" rel="stylesheet" />
+    <link href="assets/styles/style.css?v=fdd5fa158b9ec7eebc062667cfad07c2" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -190,34 +190,6 @@
 
 
     
-  <style>
-    .ui-page { padding-top: 30px; padding-bottom: 30px; }
-    .ui-page_wrap { width: 100%; margin: 0; padding: 0 60px; }
-    .ui-page_sitemap { background-color: #fff; margin-top: 30px; padding-top: 30px; padding-bottom: 40px; border-top: 1px solid #f7f7f5; border-bottom: 1px solid #f7f7f5; }
-    .ui-page_kit { background-color: #fff; padding-top: 30px; padding-bottom: 40px; border-bottom: 1px solid #f7f7f5; }
-    .ui-page .box-headline h2 { margin: 0 0 15px 0; }
-    .sitemap-list { list-style-type: none; margin: 0; padding: 0; display: flex;  flex-direction: column; }
-    .sitemap_item { display: flex; align-items: flex-start; align-content: flex-start; margin-bottom: 5px; font-size: 16px; line-height: 1; }
-    .sitemap_item:last-child { margin-bottom: 0; }
-    .sitemap_item_progress { display: flex; align-items: center; align-content: center; }
-    .sitemap_item-col,
-    .sitemap_item-headline { margin-right: 40px; color: #7086A2; font-weight: 500; }
-    .sitemap_item-head { font-size: 18px; line-height: 18px; font-weight: bold; border-bottom: 1px solid #f7f7f5; padding-bottom: 5px; padding-top: 5px; margin-bottom: 15px; }
-    .sitemap_item-col,
-    .sitemap_item-headline { min-width: 200px; }
-    .sitemap_item-col:first-child,
-    .sitemap_item-headline:first-child { min-width: 250px; width: 250px; }
-    .sitemap_item-col:last-child,
-    .sitemap_item-headline:last-child { margin-right: 0; }
-    .sitemap_item_path { margin-top: 5px; color: #b5b4b0; font-size: 11px; line-height: 11px; overflow: hidden; white-space: nowrap; display: block; text-overflow: ellipsis; font-style: italic; }
-    .sitemap_item_progress_value { color: #b5b4b0; margin-left: 10px; font-size: 14px; line-height: 14px; }
-    .sitemap_item_progress_bar progress { width: 160px; vertical-align: middle; }
-    .external-link { border-bottom: 0; position: relative; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; -ms-align-items: center; align-items: center; align-content: center; line-height: 1; }
-    .external-link__icon { color: #7086A2; margin-left: 4px; -ms-align-self: center; align-self: center; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; }
-    .external-link:hover { color: #EA252C; }
-    .external-link:hover .external-link__icon { color: #EA252C; }
-  </style>
-
 
     <main>
       <!-- в случае тестирования разбейте стекло комментариев
@@ -527,838 +499,100 @@
 </header>
 
       
-<!-- begin .ui-page -->
-<div class="ui-page">
-  <!-- begin .ui-page_wrap -->
-  <div class="ui-page_wrap">
-    <!-- begin .box-headline -->
-    <div class="box-headline">
-      <h1>Проект Vizavi</h1>
-    </div>
-    <!-- end .box-headline -->
+  <!-- begin .contact-form -->
+<div class="contact-form">
+  <!-- begin .contact-form__wrap -->
+  <div class="contact-form__wrap">
+    <form action="" class="form-box contact-form__form">
+      <!-- begin .form-caption -->
+      <div class="form-caption">
+        <h1 class="h2">Обратная <span>связь</span></h1>
+        <p>Напишите нам по любому вопросу! Мы ответим вам в течении 24 часов.</p>
+      </div>
+      <!-- end .form-caption -->
+      <!-- begin .contact-form__form-wrap -->
+      <div class="contact-form__form-wrap">
+        <!-- begin .flex -->
+        <div class="flex form-row">
+          <!-- begin .form-group -->
+          <div class="form-group">
+            <textarea
+              name="message"
+              id="message"
+              rows="8"
+              cols="80"
+              class="form-control"
+              placeholder="Ваше сообщение"></textarea>
+          </div>
+          <!-- end .form-group -->
+        </div>
+        <!-- end .flex -->
+        <!-- begin .flex -->
+        <div class="flex form-row">
+          <!-- begin .form-group -->
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ваше имя"
+            >
+          </div>
+          <!-- end .form-group -->
+          <!-- begin .form-group -->
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Ваш возраст"
+            >
+          </div>
+          <!-- end .form-group -->
+        </div>
+        <!-- end .flex -->
+        <!-- begin .flex -->
+        <div class="flex form-row">
+          <!-- begin .form-group -->
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email"
+            >
+          </div>
+          <!-- end .form-group -->
+          <!-- begin .form-group -->
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Телефон"
+            >
+          </div>
+          <!-- end .form-group -->
+        </div>
+        <!-- end .flex -->
+        <!-- begin .contact-form__form-footer -->
+        <div class="contact-form__form-footer">
+          <!-- begin .form-more -->
+          <div class="form-more">
+            <p><a href="javascript:void(0);">Зарегистрироваться</a></p>
+          </div>
+          <!-- end .form-more -->
+          <!-- begin .form-action -->
+          <div class="form-action">
+            <button class="button button-red">Отправить</button>
+          </div>
+          <!-- end .form-action -->
+        </div>
+        <!-- end .contact-form__form-footer -->
+      </div>
+      <!-- end .contact-form__form-wrap -->
+    </form>
   </div>
-  <!-- end .ui-page_wrap -->
-  <!-- begin .ui-page_sitemap -->
-  <section class="ui-page_sitemap">
-    <!-- begin .ui-page_wrap -->
-    <div class="ui-page_wrap">
-      <!-- begin .box-headline -->
-      <div class="box-headline">
-        <h3>Карта прототипа</h3>
-      </div>
-      <!-- end .box-headline -->
-      <!-- begin .ui-page_sitemap_list -->
-      <div class="ui-page_sitemap_list">
-        <!-- begin .sitemap-list -->
-        <ul class="sitemap-list">
-          <!-- begin .sitemap_item -->
-          <li class="sitemap_item sitemap_item-head">
-            <!-- begin .sitemap_item-headline -->
-            <div class="sitemap_item-headline">Страница</div>
-            <!-- end .sitemap_item-headline -->
-            <!-- begin .sitemap_item-headline -->
-            <div class="sitemap_item-headline">Десектоп</div>
-            <!-- end .sitemap_item-headline -->
-            <!-- begin .sitemap_item-headline -->
-            <div class="sitemap_item-headline">Мобилы</div>
-            <!-- end .sitemap_item-headline -->
-            <!-- begin .sitemap_item-headline -->
-            <div class="sitemap_item-headline">Планшеты</div>
-            <!-- end .sitemap_item-headline -->
-            <!-- begin .sitemap_item-headline -->
-            <div class="sitemap_item-headline">Ссылка на дизайн</div>
-            <!-- end .sitemap_item-headline -->
-          </li>
-          <!-- end .sitemap_item -->
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/main.html" class="tooltip" title="Путь к странице: app/templates/pages/main.html">Главная страница</a>
-                <span class="sitemap_item_path">app/templates/pages/main.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="10"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">10%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/3QgjoQsa6YQpf5LIqL946j/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/main.html" class="tooltip" title="Путь к странице: app/templates/pages/main.html">Партнерём</a>
-                <span class="sitemap_item_path">app/templates/pages/main.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/U6fWMUorlagRMcZkoJD8cQ/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/investor.html" class="tooltip" title="Путь к странице: app/templates/pages/investor.html">Инвестору</a>
-                <span class="sitemap_item_path">app/templates/pages/investor.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="5"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">5%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/TECfgBfWb3eJQwHIaBK0Qd/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/trading-terminal.html" class="tooltip" title="Путь к странице: app/templates/pages/trading-terminal.html">Торговый терминал</a>
-                <span class="sitemap_item_path">app/templates/pages/trading-terminal.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="5"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">5%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/lCzkqcJkNXYVtQHGAQtYvt/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/trading-account.html" class="tooltip" title="Путь к странице: app/templates/pages/trading-account.html">Торговый счет</a>
-                <span class="sitemap_item_path">app/templates/pages/trading-account.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="45"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">45%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/1UxKP08bpgG26THgLJYQPT/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/about.html" class="tooltip" title="Путь к странице: app/templates/pages/about.html">О компании</a>
-                <span class="sitemap_item_path">app/templates/pages/about.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="10"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">10%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/CrrDcz84AaYmy28ko2EvMO/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/main.html" class="tooltip" title="Путь к странице: app/templates/pages/main.html">Сохранность средств</a>
-                <span class="sitemap_item_path">app/templates/pages/main.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/VvnLCdhYyu0J8CodFI8fob/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/documents.html" class="tooltip" title="Путь к странице: app/templates/pages/documents.html">Регламентирующие документы</a>
-                <span class="sitemap_item_path">app/templates/pages/documents.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="99"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">99%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/SGLFhsX2stAOpCVPOlhZAw/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/contact-form.html" class="tooltip" title="Путь к странице: app/templates/pages/contact-form.html">Обратная связь</a>
-                <span class="sitemap_item_path">app/templates/pages/contact-form.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/SGLFhsX2stAOpCVPOlhZAw/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-          <li class="sitemap_item">
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_name -->
-              <div class="sitemap_item_name">
-                <a href="/404.html" class="tooltip" title="Путь к странице: app/templates/pages/404.html">Ошибка 404</a>
-                <span class="sitemap_item_path">app/templates/pages/404.html</span>
-              </div>
-              <!-- end .sitemap_item_name -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="99"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">99%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col">
-              <!-- begin .sitemap_item_progress -->
-              <div class="sitemap_item_progress">
-                <!-- begin .sitemap_item_progress_bar -->
-                <div class="sitemap_item_progress_bar">
-                  <progress max="100" value="0"></progress>
-                </div>
-                <!-- end .sitemap_item_progress_bar -->
-                <!-- begin .sitemap_item_progress_value -->
-                <div class="sitemap_item_progress_value">0%</div>
-                <!-- end .sitemap_item_progress_value -->
-              </div>
-              <!-- end .sitemap_item_progress -->
-            </div>
-            <!-- end .sitemap_item-col -->
-            <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
-              
-                <a href="https://www.figma.com/file/SGLFhsX2stAOpCVPOlhZAw/" class="external-link" target="_blank">
-                  <span class="external-link__text">Figma-макет</span>
-                  <span class="external-link__icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
-                      <path d="M21 10h-2V5h-5V3h7z"/>
-                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
-                    </svg>
-                  </span>
-                </a>
-            </div>
-            <!-- end .sitemap_item-col -->
-          </li>
-          
-        </ul>
-        <!-- end .sitemap-list -->
-      </div>
-      <!-- end .ui-page_sitemap_list -->
-    </div>
-    <!-- end .ui-page_wrap -->
-  </section>
-  <!-- end .ui-page_sitemap -->
-  <!-- begin .ui-page_kit -->
-  <section class="ui-page_kit">
-    <!-- begin .ui-page_wrap -->
-    <div class="ui-page_wrap">
-      <!-- begin .box-headline -->
-      <div class="box-headline">
-        <h3>Базовые UI-элементы</h3>
-      </div>
-      <!-- end .box-headline -->
-      <!-- begin .ui-page_sitemap_list -->
-      <div class="ui-page_kit_list">
-
-      </div>
-      <!-- end .ui-page_sitemap_list -->
-    </div>
-    <!-- end .ui-page_wrap -->
-  </section>
-  <!-- end .ui-page_kit -->
+  <!-- end .contact-form__wrap -->
 </div>
-<!-- end .ui-page -->
+<!-- end .contact-form -->
+
 
     </main>
 
