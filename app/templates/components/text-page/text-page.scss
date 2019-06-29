@@ -97,6 +97,23 @@
           color: #EA252C;
         }
       }
+
+      &.doc-link__type-xls {
+        color: #107C10;
+
+        .doc-link__type-logo {
+          background-image: url('../images/svg/xls-logo.svg');
+          width: 20px;
+          height: 20px;
+        }
+
+        .doc-link__type-name {
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 15px;
+          color: #107C10;
+        }
+      }
     }
 
     &__size {

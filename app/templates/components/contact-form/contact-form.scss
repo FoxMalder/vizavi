@@ -85,5 +85,18 @@
         }
       }
     }
+
+    .form-action {
+      margin-top: 20px;
+    }
+
+    .button {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+
+  textarea.form-control::-webkit-resizer {
+    background: red;
   }
 }

@@ -1380,6 +1380,19 @@ mark {
   margin-right: 0;
 }
 
+.contact-form__form .form-action {
+  margin-top: 20px;
+}
+
+.contact-form__form .button {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.contact-form textarea.form-control::-webkit-resizer {
+  background: red;
+}
+
 .double-background {
   width: 100%;
   height: 320px;
@@ -2489,6 +2502,23 @@ main {
   font-size: 13px;
   line-height: 15px;
   color: #EA252C;
+}
+
+.text-content .doc-link__type.doc-link__type-xls {
+  color: #107C10;
+}
+
+.text-content .doc-link__type.doc-link__type-xls .doc-link__type-logo {
+  background-image: url("../images/svg/xls-logo.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.text-content .doc-link__type.doc-link__type-xls .doc-link__type-name {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #107C10;
 }
 
 .text-content .doc-link__size {
