@@ -2255,6 +2255,21 @@ main {
   margin-bottom: 18px;
 }
 
+.headline-actions__icons {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.headline-actions__icons .icon-circle {
+  margin-right: 30px;
+}
+
+.headline-actions__icons .icon-circle:last-child {
+  margin-right: 0;
+}
+
 .headline-actions__buttons {
   display: flex;
   align-items: stretch;
@@ -2267,6 +2282,17 @@ main {
 
 .headline-actions .button:last-child {
   margin-right: 0;
+}
+
+.icon-circle {
+  background-color: #7086A2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  height: 38px;
+  width: 38px;
 }
 
 .start {
