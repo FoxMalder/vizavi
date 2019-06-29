@@ -2420,6 +2420,16 @@ main {
   color: #EA252C;
 }
 
+.trading-account__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.trading-account .single-line {
+  display: block;
+}
+
 .h2 {
   font-family: 'Roboto';
   font-weight: bold;
