@@ -1043,6 +1043,11 @@ mark {
   margin: 0 auto;
 }
 
+.accounts__list {
+  align-items: stretch;
+  align-content: stretch;
+}
+
 .accounts__item {
   margin-right: 10px;
 }
@@ -1057,6 +1062,10 @@ mark {
   max-width: 290px;
   background: #FFFFFF;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  font-family: 'Roboto';
+  z-index: 2;
+  position: relative;
 }
 
 .accounts-type__box {
@@ -1110,7 +1119,65 @@ mark {
   padding-right: 10px;
 }
 
+.accounts-type__info {
+  padding: 10px 20px 0 20px;
+}
+
+.accounts-type__info-row {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.accounts-type__name, .accounts-type__value {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.accounts-type__name {
+  font-size: 13px;
+  line-height: 16px;
+  color: #727C8C;
+  padding-right: 5px;
+}
+
+.accounts-type__value {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222B34;
+}
+
+.accounts-type__value strong {
+  color: #EA252C;
+  display: inline-block;
+}
+
+.accounts-type__value--icons {
+  color: #727C8C;
+  align-self: center;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.accounts-type__value--icons svg {
+  margin-right: 15px;
+}
+
+.accounts-type__value--icons svg:last-child {
+  margin-right: 0;
+}
+
 .accounts-type__action {
+  margin-top: auto;
   padding: 20px 20px 20px 20px;
   display: flex;
   align-items: center;
@@ -2136,7 +2203,6 @@ main {
   right: auto;
   left: calc(766px / 2);
   margin-right: -766px;
-  transform: translateX(-766px);
   width: 766px;
   height: 450px;
   background-image: url("../images/headline-investor-bg.png");
