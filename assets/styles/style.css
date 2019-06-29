@@ -1300,7 +1300,7 @@ mark {
 .double-background {
   width: 100%;
   height: 320px;
-  background: linear-gradient(105deg, #EA252C 50%, transparent 50.1%), linear-gradient(0deg, #F3F4F5 100%, transparent 50.1%);
+  background: linear-gradient(108.2deg, #EA252C 50%, transparent 50.1%), linear-gradient(0deg, #F3F4F5 100%, transparent 50.1%);
 }
 
 .double-background__wrap {
@@ -2124,8 +2124,8 @@ main {
   height: 450px;
   /* О компании */
   /* Инвестору */
-  /*  */
-  /*  */
+  /* Торговый терминал */
+  /* Торговый счет */
 }
 
 .headline:after {
@@ -2226,6 +2226,10 @@ main {
   overflow: hidden;
 }
 
+.headline--trading-account .headline__actions {
+  margin-top: 25px;
+}
+
 .headline--trading-account:after {
   z-index: 0;
   content: '';
@@ -2291,8 +2295,9 @@ main {
   align-items: center;
   align-content: center;
   justify-content: center;
-  height: 38px;
-  width: 38px;
+  height: 40px;
+  width: 40px;
+  color: #ffffff;
 }
 
 .start {

@@ -104,7 +104,7 @@
     }
   }
 
-  /*  */
+  /* Торговый терминал */
   &--trading-terminal {
 
     .headline__content {
@@ -120,10 +120,14 @@
     }
   }
 
-  /*  */
+  /* Торговый счет */
   &--trading-account {
     position: relative;
     overflow: hidden;
+
+    .headline__actions {
+      margin-top: 25px;
+    }
 
     &:after {
       z-index: 0;
@@ -192,6 +196,7 @@
   align-items: center;
   align-content: center;
   justify-content: center;
-  height: 38px;
-  width: 38px;
+  height: 40px;
+  width: 40px;
+  color: #ffffff;
 }
