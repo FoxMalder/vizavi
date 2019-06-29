@@ -75,6 +75,10 @@
       margin-bottom: 20px;
     }
 
+    .form-more {
+      align-self: flex-start;
+    }
+
     .form-row {
 
       .form-group {
@@ -113,9 +117,5 @@
       padding-left: 60px;
       padding-right: 60px;
     }
-  }
-
-  textarea.form-control::-webkit-resizer {
-    background: red;
   }
 }

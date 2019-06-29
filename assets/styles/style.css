@@ -809,6 +809,84 @@ textarea.form-control {
   border-bottom-color: #EA252C;
 }
 
+.check {
+  padding-left: 28px;
+  font-family: 'Roboto';
+  position: relative;
+}
+
+.check__box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 0;
+  margin-left: 0;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #DADADA;
+  box-shadow: 0 0 0 1px #DADADA;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition: all .25s ease;
+}
+
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  /* Checked */
+  /* Focused */
+}
+
+.check__input:checked + .check__box {
+  background-color: #EA252C;
+  border-color: #EA252C;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.96.841a.727.727 0 0 0-.8 0c-.16.16-.4.32-.56.56-.4.4-.72.8-1.12 1.2-.24.24-.48.56-.72.8-.64.64-1.2 1.36-1.84 2l-.8.88c-.16.16-.32.32-.48.56l-.16.16-1.12-1.12-1.2-1.2c-.32-.32-.64-.56-1.12-.32-.32.16-.48.32-.48.64-.08.32.08.64.32.96.56.56 1.12 1.12 1.68 1.6l1.2 1.2c.16.16.32.32.56.4.08.08.24.08.32.08.24 0 .48-.16.72-.4.24-.24.48-.56.72-.8s.48-.56.72-.8c.32-.4.64-.72.96-1.12.4-.48.8-.88 1.2-1.36.72-.88 1.52-1.68 2.24-2.48.16-.16.32-.4.32-.8a1.07 1.07 0 0 0-.56-.64z' fill='%23ffffff'/%3E%3C/svg%3E");
+  box-shadow: 0 0 0 1px #EA252C;
+}
+
+.check__input:focus + .check__box {
+  box-shadow: 0 0 0 1px #EA252C;
+}
+
+.check__input:disabled + .check__box {
+  box-shadow: 0 0 0 0.1em #A9B0B8;
+}
+
+.check__input:checked:disabled + .check__box {
+  background-color: #A9B0B8;
+}
+
+.check__name {
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.01em;
+  color: #7481AA;
+}
+
+.check__name a {
+  color: #EA252C;
+  border-bottom-color: transparent;
+}
+
+.check__name a:hover {
+  border-bottom-color: #EA252C;
+}
+
+.check:hover {
+  cursor: pointer;
+}
+
+.check:hover .check__box {
+  border-color: #EA252C;
+  box-shadow: 0 0 0 1px #EA252C;
+}
+
 a {
   transition: .3s ease;
   text-decoration: none;
@@ -1372,6 +1450,10 @@ mark {
   margin-bottom: 20px;
 }
 
+.contact-form__form .form-more {
+  align-self: flex-start;
+}
+
 .contact-form__form .form-row .form-group {
   margin-bottom: 20px;
 }
@@ -1406,10 +1488,6 @@ mark {
 .contact-form__form .button {
   padding-left: 60px;
   padding-right: 60px;
-}
-
-.contact-form textarea.form-control::-webkit-resizer {
-  background: red;
 }
 
 .double-background {
