@@ -90,6 +90,25 @@
       margin-top: 20px;
     }
 
+    .form-group--textarea {
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        position: absolute;
+        content: '';
+        right: 1px;
+        bottom: 1px;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url('../images/svg/resize-icon.svg');
+        width: 20px;
+        height: 20px;
+        pointer-events: none;
+      }
+    }
+
     .button {
       padding-left: 60px;
       padding-right: 60px;
