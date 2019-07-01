@@ -119,3 +119,129 @@
     }
   }
 }
+
+.contact-thanks {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 90px;
+
+  &__wrap {
+    position: relative;
+    max-width: 800px;
+    min-height: 600px;
+    margin: 0 auto;
+    z-index: 1;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      z-index: 0;
+    }
+
+    &:before {
+      width: 800px;
+      height: 520px;
+      background-color: #7086A2;
+      top: 50px;
+      left: -40px;
+      transform: skewY(-3deg);
+      transition: all .35s ease;
+      z-index: 2;
+    }
+
+    &:after {
+      width: 800px;
+      height: 520px;
+      background-color: #F3F4F5;
+      left: 40px;
+      top: -50px;
+      transform: skewY(-3deg);
+      transition: all .35s ease;
+      z-index: 1;
+    }
+  }
+
+  &__box {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    z-index: 3;
+    overflow: hidden;
+    font-family: 'Roboto';
+    padding: 90px 70px;
+    text-align: center;
+
+    .h1 {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 34px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #7086A2;
+      margin: 0 0 20px 0;
+
+      span {
+        font-weight: bold;
+        font-size: 46px;
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #EA252C;
+        display: block;
+        margin-bottom: 30px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 29px;
+      text-align: center;
+      color: #222B34;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      z-index: 0;
+    }
+
+    &:before {
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 100px 150px 0 0;
+      border-color: #EA252C transparent transparent transparent;
+    }
+
+    &:after {
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 100px 150px;
+      border-color: transparent transparent #EA252C transparent;
+    }
+  }
+
+  &__actions {
+    margin-top: 40px;
+
+    .button {
+      color: #222B34;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}
