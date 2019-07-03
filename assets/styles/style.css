@@ -2562,6 +2562,32 @@ main {
   background-image: url("../images/headline-trading-account-bg.png");
 }
 
+.headline--partners {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(108.2deg, #F3F4F5 0%, #F3F4F5 56%, #EA252C 56.1%, #EA252C 70%, #232D3A 70.1%, #232D3A 70%);
+}
+
+.headline--partners .headline__content {
+  max-width: 510px;
+}
+
+.headline--partners .headline__content p strong {
+  display: block;
+}
+
+.headline--partners:after {
+  z-index: 0;
+  content: '';
+  top: auto;
+  bottom: 0;
+  left: 880px;
+  right: auto;
+  width: 554px;
+  height: 436px;
+  background-image: url("../images/headline-partners-bg.png");
+}
+
 .headline-actions {
   display: flex;
   align-items: flex-start;
