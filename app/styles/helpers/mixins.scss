@@ -10,7 +10,7 @@
       -ms-text-size-adjust: $value;
 }
 
-@mixin cf() {
+@mixin cf {
   *zoom: 1;
 
   &:before,

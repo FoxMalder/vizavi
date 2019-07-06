@@ -1617,7 +1617,7 @@ mark {
 .double-background {
   width: 100%;
   height: 320px;
-  background: linear-gradient(108.2deg, #EA252C 50%, transparent 50.1%), linear-gradient(0deg, #F3F4F5 100%, transparent 50.1%);
+  background: linear-gradient(105deg, #EA252C 50%, transparent 50.1%), linear-gradient(0deg, #F3F4F5 100%, transparent 50.1%);
 }
 
 .double-background__wrap {
@@ -1935,6 +1935,147 @@ mark {
   background-image: url("../images/svg/pdf.svg");
   width: 21px;
   height: 24px;
+}
+
+.growth-plan {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: auto;
+  clear: both;
+}
+
+.growth-plan__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.growth-plan .intro-box {
+  margin-bottom: 30px;
+}
+
+.plan-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  clear: both;
+  height: auto;
+  font-family: 'Roboto';
+}
+
+.plan-list__item {
+  overflow: hidden;
+  /* Все четные слева */
+  /* Все нечетные справа */
+}
+
+.plan-list__item:nth-child(even) .plan-list__box {
+  padding-right: 20px;
+  float: left;
+  text-align: right;
+}
+
+.plan-list__item:nth-child(even) .plan-list__box:before {
+  right: -8px;
+}
+
+.plan-list__item:nth-child(even) .plan-list__box:after {
+  right: -2px;
+}
+
+.plan-list__item:nth-child(even) .plan-list__box .plan-list__content {
+  flex-direction: row-reverse;
+  float: right;
+}
+
+.plan-list__item:nth-child(even) .plan-list__box .plan-list__year {
+  margin-right: 0;
+  margin-left: 26px;
+}
+
+.plan-list__item:nth-child(odd) .plan-list__box {
+  padding-left: 20px;
+  float: right;
+  text-align: left;
+}
+
+.plan-list__item:nth-child(odd) .plan-list__box:before {
+  left: -8px;
+}
+
+.plan-list__item:nth-child(odd) .plan-list__box:after {
+  left: -1px;
+}
+
+.plan-list__item:nth-child(odd) .plan-list__box .plan-list__content {
+  padding-right: 30px;
+}
+
+.plan-list__item--super-light {
+  opacity: .35;
+}
+
+.plan-list__item--light {
+  opacity: .6;
+}
+
+.plan-list__box {
+  width: 50%;
+  position: relative;
+  min-height: 60px;
+}
+
+.plan-list__box:before, .plan-list__box:after {
+  position: absolute;
+  content: '';
+}
+
+.plan-list__box:before {
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #E0E4EB;
+  background-color: #EA252C;
+  border-radius: 50%;
+  top: 5px;
+  z-index: 0;
+}
+
+.plan-list__box:after {
+  height: 100%;
+  width: 3px;
+  background-color: #E5E5E5;
+  top: 0;
+  z-index: -1;
+}
+
+.plan-list__content {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: stretch;
+  max-width: 570px;
+}
+
+.plan-list__content strong {
+  font-weight: bold;
+}
+
+.plan-list__year {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #7086A2;
+  margin-right: 26px;
+}
+
+.plan-list__description {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  color: #000000;
 }
 
 .finder-menu {
@@ -2437,7 +2578,7 @@ main {
 
 .headline {
   background-color: #F3F4F5;
-  background: linear-gradient(108.2deg, #F3F4F5 0%, #F3F4F5 53%, #EA252C 53.1%, #EA252C 70%, #232D3A 70.1%, #232D3A 70%);
+  background: linear-gradient(105deg, #F3F4F5 0%, #F3F4F5 53%, #EA252C 53.1%, #EA252C 70%, #232D3A 70.1%, #232D3A 70%);
   height: 450px;
   /* О компании */
   /* Инвестору */
@@ -2940,7 +3081,7 @@ main {
   color: #232D3A;
 }
 
-.h2-red {
+.h2 > span, .h2-red {
   color: #EA252C;
 }
 
