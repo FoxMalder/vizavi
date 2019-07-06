@@ -19,13 +19,43 @@
   padding-bottom: 50px;
   position: relative;
 
+  &__action,
+  &__list {
+    position: relative;
+    z-index: 1;
+
+    &:before {
+      position: absolute;
+      content: '';
+      z-index: -1;
+    }
+  }
+
   &__action {
     background-color: #F3F4F5;
+
+    &:before {
+      background-color: #F3F4F5;
+      width: 100%;
+      height: 100%;
+      transform: skewY(-5deg);
+      bottom: -24px;
+    }
   }
 
   &__list {
     background-color: #222B34;
     padding: 50px;
+    z-index: auto;
+
+    &:before {
+      background-color: #F3F4F5;
+      width: 100%;
+      height: 100%;
+      transform: skewY(-5deg);
+      top: -28px;
+      left: 0;
+    }
   }
 
   &__body {

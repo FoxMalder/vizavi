@@ -2799,13 +2799,42 @@ main {
   position: relative;
 }
 
+.trading-account-info__action, .trading-account-info__list {
+  position: relative;
+  z-index: 1;
+}
+
+.trading-account-info__action:before, .trading-account-info__list:before {
+  position: absolute;
+  content: '';
+  z-index: -1;
+}
+
 .trading-account-info__action {
   background-color: #F3F4F5;
+}
+
+.trading-account-info__action:before {
+  background-color: #F3F4F5;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-5deg);
+  bottom: -24px;
 }
 
 .trading-account-info__list {
   background-color: #222B34;
   padding: 50px;
+  z-index: auto;
+}
+
+.trading-account-info__list:before {
+  background-color: #F3F4F5;
+  width: 100%;
+  height: 100%;
+  transform: skewY(-5deg);
+  top: -28px;
+  left: 0;
 }
 
 .trading-account-info__body {
