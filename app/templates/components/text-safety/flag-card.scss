@@ -1,3 +1,5 @@
+$flag-card-deg:        50px;
+
 .flag-cards {
   display: flex;
   align-items: stretch;
@@ -5,6 +7,7 @@
   flex-wrap: wrap;
   margin-left: -20px;
   margin-right: -20px;
+  width: calc(100% + 40px);
 }
 
 .flag-card {
@@ -15,10 +18,63 @@
   max-width: 32%;
   min-width: 32%;
   margin-right: 20px;
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: -26px;
+  min-height: 500px;
 
   &:nth-child(3n+3) {
     margin-right: 0;
+  }
+
+  &:nth-child(1),
+  &:nth-child(3) {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - #{$flag-card-deg}),
+      0% 100%
+    );
+  }
+
+  &:nth-child(4),
+  &:nth-child(6) {
+    clip-path: polygon(
+      0 calc(0% + #{$flag-card-deg}),
+      100% 0,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  &:nth-child(2) {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      0% calc(100% - #{$flag-card-deg})
+    );
+  }
+
+  &:nth-child(5) {
+    clip-path: polygon(
+      0 0,
+      100% calc(0% + #{$flag-card-deg}),
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+
+    .flag-card__box {
+      padding-top: 60px;
+    }
+
+    .flag-card__headline {
+      min-height: 90px;
+    }
   }
 
   &.bg-dark {
@@ -49,6 +105,7 @@
 
   &__box {
     padding: 40px 40px;
+    box-sizing: border-box;
   }
 
   &__icon {
@@ -103,9 +160,6 @@
       line-height: 24px;
       color: #232D3A;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
   }
 }

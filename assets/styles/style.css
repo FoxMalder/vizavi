@@ -2811,6 +2811,28 @@ main {
   max-width: 400px;
 }
 
+.headline--safety .headline__wrap {
+  z-index: 2;
+}
+
+.headline--safety .headline-flag {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.headline--safety .headline-flag:after {
+  content: '';
+  position: absolute;
+  background-color: #EA252C;
+  width: 90px;
+  height: 44px;
+  transform: skewY(-9.1deg);
+  bottom: -22px;
+  left: 0;
+  z-index: -2;
+}
+
 .headline-actions {
   display: flex;
   align-items: flex-start;
@@ -3269,6 +3291,7 @@ main {
   flex-wrap: wrap;
   margin-left: -20px;
   margin-right: -20px;
+  width: calc(100% + 40px);
 }
 
 .flag-card {
@@ -3279,11 +3302,37 @@ main {
   max-width: 32%;
   min-width: 32%;
   margin-right: 20px;
-  margin-bottom: 20px;
+  position: relative;
+  margin-bottom: -26px;
+  min-height: 500px;
 }
 
 .flag-card:nth-child(3n+3) {
   margin-right: 0;
+}
+
+.flag-card:nth-child(1), .flag-card:nth-child(3) {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 50px), 0% 100%);
+}
+
+.flag-card:nth-child(4), .flag-card:nth-child(6) {
+  clip-path: polygon(0 calc(0% + 50px), 100% 0, 100% 100%, 0% 100%);
+}
+
+.flag-card:nth-child(2) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% calc(100% - 50px));
+}
+
+.flag-card:nth-child(5) {
+  clip-path: polygon(0 0, 100% calc(0% + 50px), 100% 100%, 0% 100%);
+}
+
+.flag-card:nth-child(4) .flag-card__box, .flag-card:nth-child(5) .flag-card__box, .flag-card:nth-child(6) .flag-card__box {
+  padding-top: 60px;
+}
+
+.flag-card:nth-child(4) .flag-card__headline, .flag-card:nth-child(5) .flag-card__headline, .flag-card:nth-child(6) .flag-card__headline {
+  min-height: 90px;
 }
 
 .flag-card.bg-dark {
@@ -3314,6 +3363,7 @@ main {
 
 .flag-card__box {
   padding: 40px 40px;
+  box-sizing: border-box;
 }
 
 .flag-card__icon {
@@ -3367,26 +3417,12 @@ main {
   color: #232D3A;
 }
 
-.flag-card__body p:last-child {
-  margin-bottom: 0;
-}
-
 .text-safety__wrap {
   max-width: 1180px;
   margin: 0 auto;
   padding-top: 100px;
   padding-bottom: 100px;
   position: relative;
-}
-
-.text-safety__wrap:before {
-  position: absolute;
-  content: '';
-  background-color: #EA252C;
-  width: 90px;
-  height: 40px;
-  top: 0;
-  left: 0;
 }
 
 .text-safety__notchoose {

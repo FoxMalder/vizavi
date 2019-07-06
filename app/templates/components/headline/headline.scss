@@ -184,6 +184,28 @@
     .headline__content {
       max-width: 400px;
     }
+
+    .headline__wrap {
+      z-index: 2;
+    }
+
+    .headline-flag {
+      max-width: 1180px;
+      margin: 0 auto;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        background-color: #EA252C;
+        width: 90px;
+        height: 44px;
+        transform: skewY(-9.1deg);
+        bottom: -22px;
+        left: 0;
+        z-index: -2;
+      }
+    }
   }
 }
 
