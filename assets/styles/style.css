@@ -1306,6 +1306,10 @@ mark {
   margin-bottom: 0;
 }
 
+.business-model__info p strong {
+  font-weight: bold;
+}
+
 .blockquote {
   position: relative;
   font-family: 'Roboto';
