@@ -2662,6 +2662,7 @@ main {
   /* Торговый терминал */
   /* Торговый счет */
   /* Партнёрам */
+  /* Сохранность средств */
 }
 
 .headline:after {
@@ -2804,6 +2805,10 @@ main {
   width: 554px;
   height: 436px;
   background-image: url("../images/headline-partners-bg.png");
+}
+
+.headline--safety .headline__content {
+  max-width: 400px;
 }
 
 .headline-actions {
@@ -3257,6 +3262,62 @@ main {
   color: #EA252C;
 }
 
+.text-safety__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.text-safety__wrap:before {
+  position: absolute;
+  content: '';
+  background-color: #EA252C;
+  width: 90px;
+  height: 40px;
+  top: 0;
+  left: 0;
+}
+
+.text-safety__notchoose {
+  justify-content: space-between;
+}
+
+.text-safety__notchoose-text {
+  flex-basis: 680px;
+  min-width: 680px;
+  margin-right: 50px;
+}
+
+.text-safety__notchoose-pic:after {
+  position: absolute;
+  content: '';
+  background-color: #F3F4F5;
+  clip-path: polygon(0 calc(0% + 30px), 100% 0, 100% 100%, 0% 100%);
+  width: 350px;
+  height: 320px;
+  right: -60px;
+  bottom: 24px;
+  z-index: -1;
+}
+
+.text-safety__notchoose-img {
+  background-color: #232D3A;
+  clip-path: polygon(0 calc(0% + 30px), 100% 0, 100% 100%, 0% 100%);
+  width: 350px;
+  height: 320px;
+  position: relative;
+  z-index: 0;
+}
+
+.text-safety__notchoose-img img {
+  width: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+  position: relative;
+}
+
 .trading-account__wrap {
   max-width: 1180px;
   margin: 0 auto;
@@ -3454,6 +3515,30 @@ main {
 .intro-box.text-left .h2,
 .intro-box.text-left p {
   text-align: left;
+}
+
+.intro-box.p-decor .h2 {
+  margin-bottom: 40px;
+}
+
+.intro-box.p-decor .h2 span {
+  display: block;
+}
+
+.intro-box.p-decor p {
+  position: relative;
+  padding-left: 40px;
+}
+
+.intro-box.p-decor p:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #EA252C;
+  transform: rotate(120deg);
 }
 
 /*# sourceMappingURL=maps/style.css.map */

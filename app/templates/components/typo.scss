@@ -48,4 +48,31 @@
       text-align: left;
     }
   }
+
+  &.p-decor {
+
+    .h2 {
+      margin-bottom: 40px;
+
+      span {
+        display: block;
+      }
+    }
+
+    p {
+      position: relative;
+      padding-left: 40px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background-color: #EA252C;
+        transform: rotate(120deg);
+      }
+    }
+  }
 }
