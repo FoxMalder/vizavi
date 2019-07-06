@@ -3262,6 +3262,56 @@ main {
   color: #EA252C;
 }
 
+.flag-card {
+  background-color: #F3F4F5;
+}
+
+.flag-card.bg-dark {
+  background-color: #232D3A;
+}
+
+.flag-card.bg-red {
+  background-color: #EA252C;
+}
+
+.flag-card__box {
+  padding: 40px 40px;
+}
+
+.flag-card__icon {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.flag-card__icon-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.flag-card__headline {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.flag-card__headline:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  bottom: -15px;
+  left: 0;
+  background-color: #EA252C;
+}
+
 .text-safety__wrap {
   max-width: 1180px;
   margin: 0 auto;
@@ -3290,6 +3340,10 @@ main {
   margin-right: 50px;
 }
 
+.text-safety__notchoose-pic {
+  position: relative;
+}
+
 .text-safety__notchoose-pic:after {
   position: absolute;
   content: '';
@@ -3298,7 +3352,7 @@ main {
   width: 350px;
   height: 320px;
   right: -60px;
-  bottom: 24px;
+  bottom: -24px;
   z-index: -1;
 }
 

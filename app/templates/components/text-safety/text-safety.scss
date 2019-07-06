@@ -30,7 +30,7 @@ $text-safety-deg:  30px;
     }
 
     &-pic {
-
+      position: relative;
 
       &:after {
         position: absolute;
@@ -45,7 +45,7 @@ $text-safety-deg:  30px;
         width: 350px;
         height: 320px;
         right: -60px;
-        bottom: 24px;
+        bottom: -24px;
         z-index: -1;
       }
     }
@@ -70,5 +70,9 @@ $text-safety-deg:  30px;
         position: relative;
       }
     }
+  }
+
+  &__cards {
+
   }
 }
