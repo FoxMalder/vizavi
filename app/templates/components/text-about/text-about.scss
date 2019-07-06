@@ -1,0 +1,45 @@
+.text-about {
+  padding-top: 70px;
+
+  &__wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .caption-row {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    font-family: 'Roboto';
+
+    &__title {
+      width: 340px;
+      text-align: right;
+      margin-right: 50px;
+
+      .h2 {
+        color: #6E7A86;
+        font-size: 36px;
+        line-height: 47px;
+        margin: 0;
+      }
+    }
+
+    &__text {
+      flex: 1;
+      padding-right: 20px;
+
+      p {
+        font-size: 18px;
+        line-height: 29px;
+        color: #222B34;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

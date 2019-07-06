@@ -1,0 +1,60 @@
+$icon-card-deg:   8deg;
+
+.icon-cards {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 40px  ;
+}
+
+.icon-card {
+  width: 50%;
+  flex-basis: 50%;
+  flex: 1 50%;
+  margin-bottom: 80px;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__icon {
+    margin-right: 40px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100px;
+      height: 100px;
+      display: block;
+      background-color: #E0E4EB;
+      transform: skewY(-#{$icon-card-deg});
+      top: 50px;
+      left: 15px;
+      z-index: -1;
+    }
+
+    &-ico {
+      width: 100px;
+      min-width: 100px;
+      height: 100px;
+      background-color: #EA252C;
+      transform: skewY(-#{$icon-card-deg});
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
+      svg {
+        transform: skewY(#{$icon-card-deg});
+      }
+    }
+  }
+
+  &__content {
+    padding-right: 50px;
+  }
+}
