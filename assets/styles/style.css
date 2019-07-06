@@ -1293,7 +1293,6 @@ mark {
 
 .business-model__info {
   flex: 1 1;
-  width: 500px;
   font-weight: 300;
   font-size: 18px;
   line-height: 29px;
@@ -1332,6 +1331,8 @@ mark {
 
 .blockquote p {
   margin-bottom: 0;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 
 .blockquote footer {
@@ -3049,14 +3050,6 @@ main {
   font-weight: bold;
 }
 
-.start {
-  padding: 20px 40px;
-}
-
-.start h1 {
-  margin: 0 0 20px 0;
-}
-
 .text-about {
   padding-top: 70px;
 }
@@ -3064,6 +3057,38 @@ main {
 .text-about__wrap {
   max-width: 1180px;
   margin: 0 auto;
+}
+
+.text-about__quote {
+  margin-top: 100px;
+  background: linear-gradient(100deg, #F3F4F5 450px, transparent 451px), linear-gradient(0deg, #EA252C 100%, transparent 50.1%);
+  height: 300px;
+}
+
+.text-about__quote-photo {
+  width: 450px;
+  flex-basis: 450px;
+  min-width: 450px;
+  position: relative;
+  height: 100%;
+  padding: 30px;
+}
+
+.text-about__quote-photo img {
+  vertical-align: middle;
+  position: absolute;
+  bottom: 30px;
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 60px) 100%, 0% 100%);
+}
+
+.text-about__quote-text {
+  flex: 1 1;
+  padding: 50px 50px 50px 90px;
+}
+
+.text-about__quote .blockquote p {
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .text-about .caption-row {
