@@ -6,7 +6,7 @@ $text-safety-deg:  30px;
     max-width: 1180px;
     margin: 0 auto;
     padding-top: 100px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     position: relative;
 
     &:before {
@@ -22,6 +22,7 @@ $text-safety-deg:  30px;
 
   &__notchoose {
     justify-content: space-between;
+    padding-bottom: 100px;
 
     &-text {
       flex-basis: 680px;
@@ -73,6 +74,6 @@ $text-safety-deg:  30px;
   }
 
   &__cards {
-
+    padding-bottom: 40px;
   }
 }

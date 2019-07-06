@@ -3262,8 +3262,28 @@ main {
   color: #EA252C;
 }
 
+.flag-cards {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
 .flag-card {
   background-color: #F3F4F5;
+  font-family: 'Roboto';
+  flex: 1 1 32%;
+  flex-basis: 32%;
+  max-width: 32%;
+  min-width: 32%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.flag-card:nth-child(3n+3) {
+  margin-right: 0;
 }
 
 .flag-card.bg-dark {
@@ -3272,6 +3292,24 @@ main {
 
 .flag-card.bg-red {
   background-color: #EA252C;
+}
+
+.flag-card.bg-red .flag-card__headline:after {
+  background-color: #ffffff;
+}
+
+.flag-card.bg-dark, .flag-card.bg-red {
+  color: #ffffff;
+}
+
+.flag-card.bg-dark .flag-card__icon-box, .flag-card.bg-red .flag-card__icon-box {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.flag-card.bg-dark .flag-card__headline h3.h4,
+.flag-card.bg-dark .flag-card__body p, .flag-card.bg-red .flag-card__headline h3.h4,
+.flag-card.bg-red .flag-card__body p {
+  color: #ffffff;
 }
 
 .flag-card__box {
@@ -3300,6 +3338,8 @@ main {
 .flag-card__headline {
   margin-bottom: 40px;
   position: relative;
+  font-size: 18px;
+  line-height: 29px;
 }
 
 .flag-card__headline:after {
@@ -3312,11 +3352,30 @@ main {
   background-color: #EA252C;
 }
 
+.flag-card__headline h3.h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 29px;
+  color: #000;
+}
+
+.flag-card__body p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #232D3A;
+}
+
+.flag-card__body p:last-child {
+  margin-bottom: 0;
+}
+
 .text-safety__wrap {
   max-width: 1180px;
   margin: 0 auto;
   padding-top: 100px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   position: relative;
 }
 
@@ -3332,6 +3391,7 @@ main {
 
 .text-safety__notchoose {
   justify-content: space-between;
+  padding-bottom: 100px;
 }
 
 .text-safety__notchoose-text {
@@ -3370,6 +3430,10 @@ main {
   vertical-align: middle;
   object-fit: cover;
   position: relative;
+}
+
+.text-safety__cards {
+  padding-bottom: 40px;
 }
 
 .trading-account__wrap {
