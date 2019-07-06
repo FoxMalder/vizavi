@@ -1,14 +1,47 @@
 $footer-bg-color:     #232D3A;
 $footer-border-color: rgba(114, 124, 140, .2);
 
+.header,
+.company-awards {
+  display: none;
+  visibility: hidden;
+}
+
 /* Подвал */
 .footer {
   background-color: #232D3A;
+
+  @media #{$xs} {
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: auto;
+      min-height: 90px;
+      background-image: url('data:image/svg+xml,%3Csvg preserveAspectRatio="xMidYMid" width="320" height="63" viewBox="0 0 320 63" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M320 0v62.069H0z" fill="%23232D3A" fill-rule="nonzero"/%3E%3C/svg%3E');
+      background-repeat: no-repeat;
+      background-size: cover;
+      left: 0;
+      top: -88px;
+    }
+  }
 
   &__wrap {
     height: 100%;
     max-width: 1180px;
     margin: 0 auto;
+
+    @media #{$xs} {
+      max-width: 100%;
+    }
+    @media #{$sm} {
+      max-width: 100%;
+    }
+    @media #{$md} {
+      max-width: 100%;
+    }
   }
 
   &--bottom-border {
@@ -26,6 +59,11 @@ $footer-border-color: rgba(114, 124, 140, .2);
   &__wrap {
     padding: 30px 0;
     justify-content: space-between;
+
+    @media #{$xs} {
+      padding: 30px 30px;
+      flex-direction: column;
+    }
   }
 }
 
@@ -36,6 +74,13 @@ $footer-border-color: rgba(114, 124, 140, .2);
     padding: 30px 0;
     width: 100%;
     justify-content: space-between;
+
+    @media #{$xs} {
+      padding: 30px 30px;
+      flex-direction: column;
+      align-items: flex-start;
+      align-content: flex-start;
+    }
   }
 
   &__caption {
@@ -77,6 +122,12 @@ $footer-border-color: rgba(114, 124, 140, .2);
   &__list {
     justify-content: space-between;
     width: 100%;
+
+    @media #{$xs} {
+      align-items: flex-start;
+      align-content: flex-start;
+      flex-direction: column;
+    }
   }
 }
 
@@ -91,11 +142,19 @@ $footer-border-color: rgba(114, 124, 140, .2);
 
   &__wrap {
     padding: 30px 0;
+
+    @media #{$xs} {
+      padding: 30px 30px;
+    }
   }
 
   &__icon {
     margin-right: 40px;
     margin-top: 5px;
+
+    @media #{$xs} {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -154,6 +213,10 @@ $footer-border-color: rgba(114, 124, 140, .2);
   text-align: center;
   color: #fff;
   height: 50px;
+
+  @media #{$xs} {
+    height: 70px;
+  }
 
   &__wrap {
     height: 100%;
