@@ -5,14 +5,15 @@ $icon-card-deg:   8deg;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  margin: 0 40px  ;
+  margin: 0 40px ;
+  padding-bottom: 60px;
 }
 
 .icon-card {
   width: 50%;
   flex-basis: 50%;
   flex: 1 50%;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 
   &__box {
     display: flex;
@@ -56,5 +57,19 @@ $icon-card-deg:   8deg;
 
   &__content {
     padding-right: 50px;
+
+    p {
+      font-size: 18px;
+      line-height: 25px;
+      color: #222B34;
+
+      strong {
+        font-weight: bold;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
