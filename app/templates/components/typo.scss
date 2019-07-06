@@ -35,4 +35,13 @@
       margin-bottom: 0;
     }
   }
+
+  &.text-left {
+    text-align: left;
+
+    .h2,
+    p {
+      text-align: left;
+    }
+  }
 }
