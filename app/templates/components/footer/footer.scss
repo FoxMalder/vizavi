@@ -1,10 +1,13 @@
 $footer-bg-color:     #232D3A;
 $footer-border-color: rgba(114, 124, 140, .2);
 
-.header,
-.company-awards {
-  display: none;
-  visibility: hidden;
+
+@media #{$xs} {
+  .header,
+  .company-awards {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 /* Подвал */
