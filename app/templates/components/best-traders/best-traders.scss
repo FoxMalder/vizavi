@@ -1,3 +1,5 @@
+$best-traders-cards-deg:   20px;
+
 .best-traders {
   padding-top: 60px;
   padding-bottom: 90px;
@@ -14,6 +16,33 @@
     .number-card {
       height: 270px;
 
+      &:nth-child(1) .number-card__box {
+        clip-path: polygon(
+          0 0,
+          100% 0%,
+          calc(100% - #{$best-traders-cards-deg}) 100%,
+          0% 100%
+        );
+      }
+
+      &:nth-child(2) .number-card__box {
+        clip-path: polygon(
+          calc(0% + #{$best-traders-cards-deg}) 0,
+          100% 0%,
+          calc(100% - #{$best-traders-cards-deg}) 100%,
+          0% 100%
+        );
+      }
+
+      &:nth-child(3) .number-card__box {
+        clip-path: polygon(
+          calc(0% + #{$best-traders-cards-deg}) 0,
+          100% 0%,
+          100% 100%,
+          0% 100%
+        );
+      }
+
       &__number {
         left: 40px;
         font-size: 200px;
@@ -26,7 +55,7 @@
         align-content: flex-start;
         flex-direction: column;
         padding-left: 80px;
-        padding-right: 10px;
+        padding-right: 0;
       }
     }
   }
