@@ -855,7 +855,7 @@ textarea.form-control {
 }
 
 .check__input:disabled + .check__box {
-  box-shadow: 0 0 0 0.1em #A9B0B8;
+  box-shadow: 0 0 0 .1em #A9B0B8;
 }
 
 .check__input:checked:disabled + .check__box {
@@ -865,7 +865,7 @@ textarea.form-control {
 .check__name {
   font-size: 12px;
   line-height: 17px;
-  letter-spacing: 0.01em;
+  letter-spacing: .01em;
   color: #7481AA;
 }
 
@@ -1210,10 +1210,7 @@ mark {
 }
 
 .accounts-type__name, .accounts-type__value {
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
-  -ms-flex-preferred-size: 0;
   flex-basis: 0;
   max-width: 100%;
 }
@@ -1323,7 +1320,6 @@ mark {
 
 .advantage-card:before {
   background-color: #97A8BC;
-  height: 140px;
   top: -50px;
   height: 290px;
   clip-path: polygon(0 calc(0% + 30px), 100% 0, 100% 100%, 0% 100%);
@@ -1793,7 +1789,7 @@ mark {
   font-size: 46px;
   line-height: 46px;
   text-align: center;
-  letter-spacing: 0.02em;
+  letter-spacing: .02em;
   text-transform: uppercase;
   color: #EA252C;
   display: block;
@@ -3377,6 +3373,11 @@ main {
       \-------\
       6---5---4
     */
+}
+
+.terminal-cards__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .text-about {

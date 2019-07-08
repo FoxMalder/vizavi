@@ -7,10 +7,11 @@
   }
 
   &__quote {
+    // sass-lint:disable-block indentation
     margin-top: 100px;
     background:
-      linear-gradient( 100deg, #F3F4F5 450px, transparent 451px),
-      linear-gradient( 0deg, #EA252C 100%, transparent 50.1%);
+      (linear-gradient( 100deg, #F3F4F5 450px, transparent 451px)),
+      (linear-gradient( 0deg, #EA252C 100%, transparent 50.1%));
     height: 300px;
 
     &-photo {

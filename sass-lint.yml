@@ -6,6 +6,7 @@ files:
     - app/styles/helpers/normalize.scss
     - app/styles/helpers/mixins.scss
     - app/styles/helpers/flexboxgrid.scss
+    - app/styles/fonts.scss
 
 options:
   merge-default-rules: false
