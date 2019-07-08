@@ -3385,6 +3385,25 @@ main {
   margin-bottom: 0;
 }
 
+.text-investor {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.text-investor__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.text-investor .intro-box {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.text-investor .intro-box h2 span {
+  display: block;
+}
+
 .text-page__wrap {
   max-width: 1180px;
   margin: 0 auto;

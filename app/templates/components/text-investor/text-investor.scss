@@ -1,0 +1,18 @@
+.text-investor {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &__wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .intro-box {
+    padding-left: 100px;
+    padding-right: 100px;
+
+    h2 span {
+      display: block;
+    }
+  }
+}
