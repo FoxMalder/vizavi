@@ -3338,7 +3338,7 @@ main {
 .partners-info__remuneration-box {
   background-color: #EA252C;
   padding: 40px 70px;
-  clip-path: polygon(0 0, 100% 0, 98% 85%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 98% 70%, 0% 100%);
 }
 
 .partners-info__remuneration-box p {
@@ -3352,6 +3352,40 @@ main {
   font-weight: bold;
   font-size: 22px;
   display: block;
+}
+
+.partners-steps {
+  position: relative;
+  min-height: 800px;
+  height: 800px;
+  position: relative;
+  padding-top: 52px;
+  padding-bottom: 114px;
+}
+
+.partners-steps__bg {
+  background-color: #F3F4F5;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 63px);
+  left: 0;
+  top: 0;
+  transform: skewY(-5deg);
+  z-index: 0;
+}
+
+.partners-steps__wrap {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .terminal-cards {
