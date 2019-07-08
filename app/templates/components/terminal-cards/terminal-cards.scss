@@ -4,9 +4,21 @@ $terminal-cards-deg:      20px;
 
 .terminal-cards {
   position: relative;
-  top: -$terminal-cards-height;
+  // top: -$terminal-cards-height;
   min-height: 600px;
   height: 600px;
+  position: relative;
+
+  &:before {
+    position: absolute;
+    content: '';
+    height: 300px;
+    width: 100%;
+    background-color: #F3F4F5;
+    left: 0;
+    top: -1px;
+    z-index: 0;
+  }
 
   &__bg {
     background-color: #7086A2;

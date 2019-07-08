@@ -3356,9 +3356,20 @@ main {
 
 .terminal-cards {
   position: relative;
-  top: -50px;
   min-height: 600px;
   height: 600px;
+  position: relative;
+}
+
+.terminal-cards:before {
+  position: absolute;
+  content: '';
+  height: 300px;
+  width: 100%;
+  background-color: #F3F4F5;
+  left: 0;
+  top: -1px;
+  z-index: 0;
 }
 
 .terminal-cards__bg {
