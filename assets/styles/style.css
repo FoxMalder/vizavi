@@ -3286,6 +3286,78 @@ main {
   margin-bottom: 30px;
 }
 
+.partners-info {
+  padding-top: 80px;
+  padding-bottom: 150px;
+  font-family: 'Roboto';
+}
+
+.partners-info__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.partners-info__info {
+  position: relative;
+}
+
+.partners-info__cloud {
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+}
+
+.partners-info__cloud-box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  padding: 60px 60px;
+  background-color: #fff;
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 30px) 100%, 0 100%);
+}
+
+.partners-info__cloud-icon {
+  margin-right: 45px;
+}
+
+.partners-info__cloud-content {
+  font-size: 18px;
+  line-height: 160%;
+  color: #222B34;
+}
+
+.partners-info__cloud-content p {
+  margin-bottom: 0;
+}
+
+.partners-info__cloud-content p strong {
+  font-weight: bold;
+}
+
+.partners-info__remuneration {
+  position: absolute;
+  right: -60px;
+  bottom: -70px;
+  width: auto;
+}
+
+.partners-info__remuneration-box {
+  background-color: #EA252C;
+  padding: 40px 70px;
+  clip-path: polygon(0 0, 100% 0, 98% 85%, 0% 100%);
+}
+
+.partners-info__remuneration-box p {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.partners-info__remuneration-box p strong {
+  font-weight: bold;
+  font-size: 22px;
+  display: block;
+}
+
 .terminal-cards {
   position: relative;
   top: -50px;

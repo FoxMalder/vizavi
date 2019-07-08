@@ -1,16 +1,18 @@
 <!-- begin .company-awards -->
-<div class="company-awards">
+<div class="company-awards {% if aboutcompany %}{% else %}company-awards--home{% endif %}">
   <!-- begin .company-awards__bg -->
   <div class="company-awards__bg"></div>
   <!-- end .company-awards__bg -->
   <!-- begin .company-awards__wrap -->
   <div class="company-awards__wrap">
     <!-- begin .intro-box -->
+    {% if aboutcompany %}
     <div class="intro-box">
       <h2 class="h2"><span>Награды</span> компании</h2>
       <p>Vizavi помогает трейдерам по всему миру реализовать свой потенциал. Разработка и внедрение новых сервисов, а также внимательное отношение к каждому клиенту были отмечены различными финансовыми наградами.</p>
     </div>
     <!-- end .intro-box -->
+    {% endif %}
     <!-- begin .company-awards__list -->
     <div class="company-awards__list flex flex-stretch flex-center">
       <!-- begin .company-awards__item -->
