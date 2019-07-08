@@ -3175,7 +3175,7 @@ main {
 }
 
 .number-card:nth-child(1) .number-card__box:before {
-  width: 60px;
+  width: 70px;
   left: -10px;
 }
 
@@ -3357,7 +3357,8 @@ main {
 .terminal-cards {
   position: relative;
   top: -50px;
-  min-height: 500px;
+  min-height: 600px;
+  height: 600px;
 }
 
 .terminal-cards__bg {
@@ -3376,8 +3377,107 @@ main {
 }
 
 .terminal-cards__wrap {
+  height: 100%;
   max-width: 1180px;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.terminal-cards__cards {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.terminal-card {
+  font-family: 'Roboto';
+  height: 270px;
+  position: relative;
+  flex: 1 1;
+}
+
+.terminal-card:nth-child(1) {
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+}
+
+.terminal-card:nth-child(1) .terminal-card__box {
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+}
+
+.terminal-card:nth-child(1) .terminal-card__box:before {
+  width: 70px;
+  left: -10px;
+}
+
+.terminal-card:nth-child(2) {
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+}
+
+.terminal-card:nth-child(2) .terminal-card__box {
+  clip-path: polygon(calc(0% + 20px) 0, 100% 0%, calc(100% - 20px) 100%, 0% 100%);
+  box-shadow: none;
+}
+
+.terminal-card:nth-child(3) {
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+}
+
+.terminal-card:nth-child(3) .terminal-card__box {
+  clip-path: polygon(calc(0% + 20px) 0, 100% 0%, 100% 100%, 0% 100%);
+  box-shadow: none;
+}
+
+.terminal-card__box {
+  padding: 20px 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  height: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.terminal-card__box:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 30px;
+  background-color: #EA252C;
+  transform: skewX(-14deg);
+}
+
+.terminal-card__icon {
+  min-height: 100px;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.terminal-card__icon img {
+  vertical-align: bottom;
+}
+
+.terminal-card__info {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #222B34;
 }
 
 .text-about {
