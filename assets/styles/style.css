@@ -1267,6 +1267,116 @@ mark {
   width: 100%;
 }
 
+.advantage-terminal {
+  background-color: #F3F4F5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.advantage-terminal__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.advantage-terminal .intro-box {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.advantage-terminal .intro-box p span {
+  display: block;
+}
+
+.advantage-terminal__cards {
+  padding-top: 70px;
+}
+
+.advantage-cards {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px);
+}
+
+.advantage-card {
+  font-family: 'Roboto';
+  flex: 1 1 32%;
+  max-width: 300px;
+  min-width: 300px;
+  min-height: 340px;
+  margin-right: 40px;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.advantage-card:before, .advantage-card:after {
+  position: absolute;
+  content: '';
+  z-index: 0;
+  width: 300px;
+  left: -15px;
+}
+
+.advantage-card:before {
+  background-color: #97A8BC;
+  height: 140px;
+  top: -50px;
+  height: 290px;
+  clip-path: polygon(0 calc(0% + 30px), 100% 0, 100% 100%, 0% 100%);
+}
+
+.advantage-card:after {
+  background-color: #EA252C;
+  bottom: -30px;
+  height: 140px;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0% 100%);
+}
+
+.advantage-card:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.advantage-card:last-child .advantage-card__box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantage-card__box {
+  background-color: #ffffff;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), 0% 100%);
+  height: 100%;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.advantage-card__icon {
+  min-height: 65px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.advantage-card__name {
+  min-height: 80px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #222B34;
+}
+
 .business-model {
   padding-bottom: 80px;
   font-family: 'Roboto';
