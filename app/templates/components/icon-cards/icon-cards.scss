@@ -7,6 +7,24 @@ $icon-card-deg:   8deg;
   flex-wrap: wrap;
   margin: 0 40px ;
   padding-bottom: 60px;
+
+  &--numbers {
+
+    .icon-card {
+      margin-bottom: 50px;
+
+      &__content {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding-right: 15px;
+      }
+
+      &__icon:before {
+        top: 30px;
+      }
+    }
+  }
 }
 
 .icon-card {
@@ -70,6 +88,29 @@ $icon-card-deg:   8deg;
       &:last-child {
         margin-bottom: 0;
       }
+    }
+
+    &-number {
+      font-weight: 900;
+      font-size: 96px;
+      line-height: 135px;
+      color: #7086A2;
+      margin-right: 15px;
+    }
+
+    &-title {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      color: #222B34;
+    }
+
+    &-info {
+      font-weight: 100;
+      margin-top: 10px;
+      font-size: 16px;
+      line-height: 19px;
+      color: #6E7A86;
     }
   }
 }
