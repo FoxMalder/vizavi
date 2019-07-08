@@ -3364,7 +3364,7 @@ main {
 .terminal-cards:before {
   position: absolute;
   content: '';
-  height: 300px;
+  height: 100px;
   width: 100%;
   background-color: #F3F4F5;
   left: 0;

@@ -4,7 +4,6 @@ $terminal-cards-deg:      20px;
 
 .terminal-cards {
   position: relative;
-  // top: -$terminal-cards-height;
   min-height: 600px;
   height: 600px;
   position: relative;
@@ -12,7 +11,7 @@ $terminal-cards-deg:      20px;
   &:before {
     position: absolute;
     content: '';
-    height: 300px;
+    height: $terminal-cards-height * 2;
     width: 100%;
     background-color: #F3F4F5;
     left: 0;
