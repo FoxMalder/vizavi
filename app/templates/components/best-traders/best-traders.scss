@@ -1,0 +1,33 @@
+.best-traders {
+  padding-top: 60px;
+  padding-bottom: 90px;
+
+  &__wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  &__cards {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .number-card {
+      height: 270px;
+
+      &__number {
+        left: 40px;
+        font-size: 200px;
+        line-height: 200px;
+      }
+
+      &__content {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-direction: column;
+        padding-left: 80px;
+        padding-right: 10px;
+      }
+    }
+  }
+}

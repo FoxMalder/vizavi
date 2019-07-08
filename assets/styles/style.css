@@ -1377,6 +1377,40 @@ mark {
   color: #222B34;
 }
 
+.best-traders {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+
+.best-traders__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.best-traders__cards {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.best-traders__cards .number-card {
+  height: 270px;
+}
+
+.best-traders__cards .number-card__number {
+  left: 40px;
+  font-size: 200px;
+  line-height: 200px;
+}
+
+.best-traders__cards .number-card__content {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  padding-left: 80px;
+  padding-right: 10px;
+}
+
 .business-model {
   padding-bottom: 80px;
   font-family: 'Roboto';
@@ -3111,20 +3145,6 @@ main {
   color: #6E7A86;
 }
 
-.our-value {
-  padding-bottom: 60px;
-}
-
-.our-value__wrap {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.our-value__cards {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .number-cards {
   display: flex;
   align-items: stretch;
@@ -3223,6 +3243,35 @@ main {
 
 .number-card__content p strong {
   font-weight: bold;
+}
+
+.number-card__content-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #222B34;
+}
+
+.number-card__content-info {
+  font-weight: 100;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #6E7A86;
+}
+
+.our-value {
+  padding-bottom: 60px;
+}
+
+.our-value__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.our-value__cards {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .terminal-cards {
