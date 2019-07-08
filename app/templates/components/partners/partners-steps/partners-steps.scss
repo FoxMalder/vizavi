@@ -1,18 +1,22 @@
-$partners-steps-deg:       -5deg;
+$partners-steps-height:      800px;   // высота блока
+$partners-steps-deg:        -5deg;    // угол поворота фона
+$partners-steps-bg-height:   63px;    // компенсация поворта
+$partners-steps-pt:          52px;    // отступ сверху
+$partners-steps-pb:          114px;   // отступ снизу
+
 
 .partners-steps {
   position: relative;
-  min-height: 800px;
-  height: 800px;
-  position: relative;
-  padding-top: 52px;
-  padding-bottom: 114px;
+  min-height: $partners-steps-height;
+  height: $partners-steps-height;
+  padding-top: $partners-steps-pt;
+  padding-bottom: $partners-steps-pb;
 
   &__bg {
     background-color: #F3F4F5;
     position: absolute;
     width: 100%;
-    height: calc(100% - 63px);
+    height: calc(100% - #{$partners-steps-bg-height});
     left: 0;
     top: 0;
     transform: skewY(#{$partners-steps-deg});

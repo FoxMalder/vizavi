@@ -3358,7 +3358,6 @@ main {
   position: relative;
   min-height: 800px;
   height: 800px;
-  position: relative;
   padding-top: 52px;
   padding-bottom: 114px;
 }
@@ -3391,7 +3390,6 @@ main {
   position: relative;
   min-height: 600px;
   height: 600px;
-  position: relative;
 }
 
 .terminal-cards:before {
