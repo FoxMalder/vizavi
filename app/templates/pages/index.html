@@ -91,7 +91,8 @@ sitemap:
     этот набор скриптов нужен для того,
     чтобы подсветить синтаксис в блоках с примерами кода
 -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css">
+<link rel="stylesheet" href="https://unpkg.com/flexboxgrid2/flexboxgrid2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <!--  -->
@@ -99,7 +100,23 @@ sitemap:
     .ui-page { padding-top: 30px; padding-bottom: 30px; }
     .ui-page_wrap { width: 100%; margin: 0; padding: 0 60px; }
     .ui-page_sitemap { background-color: #fff; margin-top: 30px; padding-top: 30px; padding-bottom: 40px; border-top: 1px solid #f7f7f5; border-bottom: 1px solid #f7f7f5; }
-    .ui-page_kit { background-color: #fff; padding-top: 30px; padding-bottom: 40px; border-bottom: 1px solid #f7f7f5; }
+    .ui-page_kit, .ui-page_wtf { background-color: #fff; padding-top: 30px; padding-bottom: 40px; border-bottom: 1px solid #f7f7f5; }
+    .ui-page_wtf h4 {
+      margin-top: 20px;
+    }
+    .ui-page p {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .ui-page_wtf ul {
+      padding-left: 40px;
+    }
+
+    .ui-page code {
+      font-size: 14px;
+      line-height: 18px;
+    }
     .ui-page .box-headline h2 { margin: 0 0 15px 0; }
     .sitemap-list { list-style-type: none; margin: 0; padding: 0; display: flex;  flex-direction: column; }
     .sitemap_item { display: flex; align-items: flex-start; align-content: flex-start; margin-bottom: 5px; font-size: 16px; line-height: 1; }
@@ -119,8 +136,45 @@ sitemap:
     .sitemap_item_progress_bar progress { width: 160px; vertical-align: middle; }
     .external-link { border-bottom: 0; position: relative; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; -ms-align-items: center; align-items: center; align-content: center; line-height: 1; }
     .external-link__icon { color: #7086A2; margin-left: 4px; -ms-align-self: center; align-self: center; display: -webkit-flex; display: -moz-flex; display: -ms-flex; display: -o-flex; display: flex; }
+    .ui-demo-element {
+      margin-bottom: 10px;
+    }
     .external-link:hover { color: #EA252C; }
     .external-link:hover .external-link__icon { color: #EA252C; }
+
+
+    ul:not([class]) {
+      margin: 0 0 20px 0;
+      padding: 0;
+      list-style: none;
+    }
+    ul:not([class]) li {
+      position: relative;
+      font-family: Arial;
+      font-weight: 400;
+      padding-left: 30px;
+    }
+    ul:not([class]) li:before {
+      content: '\2014\a0\a0';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      color: #262d30;
+      opacity: 0.8;
+    }
+    ul:not([class]) li ul {
+      list-style: none;
+    }
+    ul.list-short {
+      list-style-type: none;
+      margin-bottom: 1em;
+      padding-left: 0;
+    }
+    ul.list-short li {
+      margin: 0.1em 0 0.1em 0em;
+      color: #445365;
+    }
+
   </style>
 {% endblock %}
 
@@ -253,19 +307,49 @@ sitemap:
     <!-- end .ui-page_wrap -->
   </section>
   <!-- end .ui-page_sitemap -->
+  <!-- begin .ui-page_wtf -->
+  <div class="ui-page_wtf">
+    <!-- begin .ui-page_wrap -->
+    <div class="ui-page_wrap">
+      <!-- begin .box-headline -->
+      <div class="box-headline">
+        <h2>Как всё устроено и почему</h2>
+        <p>Исходный код статичной версии лежит на GitHub: <a href="https://github.com/4enki/vizavi" target="_blank">github.com/4enki/vizavi</a> <em>(закрытый репозиторий)</em>. Готовые к употреблению шаблоны расположены в корне проекта, точка входа в проект — файл <code>index.html</code>.</p>
+        <p>Кодовая база вёрстки построена на основе собстенного <a href="https://github.com/4enki/spt" target="_blank"><code>gulp</code>-сборщика SPT</a>. Базовая документация по структуре, шаблонам и использованию — описана в файле <a href="https://github.com/4enki/spt/blob/master/README.md" target="_blank"><code>spt/README.md</code></a> в корне проекта. Базовый набор слов и технологий: Nunjucks, SCSS, PostCSS, jQuery.</p>
+        <h4>Отдельной про элементы со скошенными углами</h4>
+        <p>Для части декоративных элементов со скошенными углами применён <code>transform: skew(-20deg);</code>, а для другой части элементов — <code>clip-path</code>. Чтобы не мучать других людей, которые будут заниматься проектом, оставляю ссылки, которые помогали мне:</p>
+        <ul>
+          <li><a href="https://bennettfeely.com/clippy/" target="_blank">clippy</a> — клёвый онлайн-инструмент для разметки точек для <code>clip-path</code></li>
+          <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/clip-path" target="_blank">clip-path на MDN</a></li>
+          <li><a href="https://caniuse.com/#search=clip-path" target="_blank">clip-path на сайте Can I use</a></li>
+          <li><a href="https://developer.mozilla.org/ru/docs/Web/CSS/transform-function/skew" target="_blank">transform: skew на MDN</a></li>
+          <li><a href="http://ds-overdesign.com/transform/skew.html">transform: skew Generator</a></li>
+          <li><a href="http://ds-overdesign.com/transform/matrix.html">transform: matrix Generator</a></li>
+        </ul>
+        <h3>SVG-графика через <code>use</code></h3>
+        <p>Превью можно посмотреть через сервис <a href="https://svgsymbolviewer.io/" target="_blank">svgsymbolviewer.io</a>, загрузиз файл <code>app/templates/layouts/svg.symbols.html</code>.</p>
+        <h3>Контакты и выходные данные</h3>
+        <p>Ссылка на демо: <a href="http://vi.4enki.ru/">http://vi.4enki.ru/</a>. Базовая авторизация: <code>tst</code>/<code>super54</code>. Демо ссылка будет работать до 10-го августа 2019 года.</p>
+        <p>Адрес эл.почты: <a href="mailto:yaglazov@gmail.com">yaglazov@gmail.com</a>, остальные способы связи есть на <a href="https://4enki.ru">4enki.ru</a>. Проект сдан в середине июля 2019 года.</p>
+      </div>
+      <!-- end .box-headline -->
+    </div>
+    <!-- end .ui-page_wrap -->
+  </div>
+  <!-- end .ui-page_wtf -->
   <!-- begin .ui-page_kit -->
   <section class="ui-page_kit">
     <!-- begin .ui-page_wrap -->
     <div class="ui-page_wrap">
       <!-- begin .box-headline -->
       <div class="box-headline">
-        <h3>Базовые UI-элементы</h3>
+        <h2>Базовые UI-элементы</h2>
       </div>
       <!-- end .box-headline -->
       <!-- begin .ui-page_sitemap_list -->
       <div class="ui-page_kit_list">
 
-        <h4>Кнопки</h4>
+        <h3>Кнопки</h3>
         <p>Кнопки включаются через класс <code>.button</code>, который может быть применёнк любому элементу, но лучше всего использовать <code>&lt;a&gt;</code> или <code>&lt;button&gt;</code>. В кнопку можно превратить ссылку, обычную кнопку и инпут (ну и на самом деле вообще всё). У кнопок существуют разные модификации.</p>
 
         <div class="row">
@@ -275,33 +359,107 @@ sitemap:
                 <button type="button" class="button button-red">Вот-вот запустим</button>
               </div>
               <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="button button-red"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div>
-            </div>
-          </div><!-- end .col-xs-3 -->
-          <div class="col-xs-3">
+            </div><!-- end .ui-demo -->
+          </div><!-- end .col-3 -->
+          <div class="col-lg-3">
             <div class="ui-demo">
               <div class="ui-demo-element">
                 <button type="button" class="button button-shadow">Вот-вот запустим</button>
               </div>
               <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="button button-shadow"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div>
-            </div>
-          </div><!-- end .col-xs-3 -->
+            </div><!-- end .ui-demo -->
+          </div><!-- end .col-3 -->
           <div class="col-xs-3">
             <div class="ui-demo">
               <div class="ui-demo-element">
                 <button type="button" class="button button-dark">Вот-вот запустим</button>
               </div>
               <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="button button-dark"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div>
-            </div>
-          </div><!-- end .col-xs-3 -->
+            </div><!-- end .ui-demo -->
+          </div><!-- end .col-3 -->
           <div class="col-xs-3">
             <div class="ui-demo">
               <div class="ui-demo-element">
                 <button type="button" class="button button-light">Вот-вот запустим</button>
               </div>
               <div class="ui-demo-code"><pre><code class="html">&lt;button type="button" class="button button-light"&gt;Вот-вот запустим&lt;/button&gt;</code></pre></div>
+            </div><!-- end .ui-demo -->
+          </div><!-- end .col-3 -->
+        </div><!-- end .row -->
+
+        <h3>Поля и элементы форм</h3>
+        <p>Отдельные элементы форм кладутся в блок-родитель с классом <code>.form-group</code>. Внутри формы работает стандратная сетка. Страндартный класс для поля любого типа — <code>.form-control</code>. Для полей ошибок используется класс <code>.has-error</code> у родительского элемента <code>.form-group</code>.</p>
+
+        <div class="row">
+          <div class="col-xs-3">
+            <div class="ui-demo">
+              <div class="ui-demo-element">
+                <!-- begin .form-group -->
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Логин"
+                  >
+                </div>
+                <!-- end .form-group -->
+              </div>
+              <div class="ui-demo-code"><pre><code class="html">&lt;!-- begin .form-group --&gt;<br />&nbsp; &lt;div class="form-group"&gt;<br />&nbsp; &nbsp; &lt;input<br />&nbsp; &nbsp; &nbsp; type="text"<br />&nbsp; &nbsp; &nbsp; class="form-control"<br />&nbsp; &nbsp; &nbsp; placeholder="Логин"<br /> &nbsp; &nbsp; &gt;<br /> &nbsp; &lt;/div&gt;<br /> &lt;!-- end .form-group --&gt;</code></pre></div>
+            </div><!-- end .ui-demo -->
+          </div><!-- end .col-3 -->
+        </div><!-- end .row -->
+
+        <h2>Типографика и текстовые элементы</h2>
+        <h3>Базовые классы для текста</h3>
+        <div class="row">
+
+            <div class="col-xs-3">
+
+              <h4>Текст справа</h4>
+
+                <div class="ui-demo">
+                  <div class="ui-demo-element"><p class="text-right">Немного текста для примера</p></div><!-- /.ui-demo-element -->
+                  <div class="ui-demo-code"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-right"</span>&gt;</span>Немного текста для примера<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></div><!-- /.ui-demo-code -->
+                </div><!-- /.ui-demo -->
+
             </div>
-          </div><!-- end .col-xs-3 -->
-        </div>
+
+            <div class="col-xs-3">
+
+              <h4>Текст по центру</h4>
+
+                <div class="ui-demo">
+                  <div class="ui-demo-element"><p class="text-center">Немного текста для примера</p></div><!-- /.ui-demo-element -->
+                  <div class="ui-demo-code"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span>Немного текста для примера<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></div><!-- /.ui-demo-code -->
+                </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <h4>Текст слева</h4>
+
+                <div class="ui-demo">
+                  <div class="ui-demo-element"><p class="text-left">Немного текста для примера</p></div><!-- /.ui-demo-element -->
+                  <div class="ui-demo-code"><pre><code class="html hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-left"</span>&gt;</span>Немного текста для примера<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></div><!-- /.ui-demo-code -->
+                </div><!-- /.ui-demo -->
+
+            </div>
+
+            <div class="col-xs-3">
+
+              <h4>Цвета текста</h4>
+
+              <p>
+                <span class="text-green">Класс для цвета <code>.text-green</code></span><br>
+                <span class="text-gray">Класс для цвета <code>.text-gray</code></span><br>
+                <span class="text-red">Класс для цвета <code>.text-red</code></span><br>
+                <span class="text-blue">Класс для цвета <code>.text-blue</code></span>
+              </p>
+
+            </div>
+
+          </div>
       </div>
       <!-- end .ui-page_sitemap_list -->
     </div>
