@@ -3082,6 +3082,27 @@ main {
   top: 30px;
 }
 
+.icon-cards--three .icon-card {
+  flex: 1 1 32%;
+  flex-basis: 32%;
+  max-width: 32%;
+  min-width: 32%;
+}
+
+.icon-cards--dark .icon-card {
+  margin-bottom: 80px;
+}
+
+.icon-cards--dark .icon-card__content {
+  position: relative;
+  top: 20px;
+}
+
+.icon-cards--dark .icon-card__icon:before {
+  top: 30px;
+  background-color: #7086A2;
+}
+
 .icon-card {
   width: 50%;
   flex-basis: 50%;
