@@ -5,7 +5,7 @@ $partners-start-deg:      20px;
 .partners-start {
   position: relative;
   min-height: 600px;
-  height: 600px;
+  height: auto;
 
   &:before {
     position: absolute;
@@ -53,5 +53,9 @@ $partners-start-deg:      20px;
     justify-content: center;
     z-index: 1;
     position: relative;
+  }
+
+  .intro-box {
+    padding-top: 100px;
   }
 }

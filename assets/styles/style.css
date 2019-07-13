@@ -3423,7 +3423,7 @@ main {
 .partners-start {
   position: relative;
   min-height: 600px;
-  height: 600px;
+  height: auto;
 }
 
 .partners-start:before {
@@ -3465,6 +3465,10 @@ main {
   justify-content: center;
   z-index: 1;
   position: relative;
+}
+
+.partners-start .intro-box {
+  padding-top: 100px;
 }
 
 .partners-steps {
