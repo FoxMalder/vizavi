@@ -51,12 +51,12 @@
   &__remuneration {
     position: absolute;
     right: -60px;
-    bottom: -70px;
+    bottom: -100px;
     width: auto;
 
     &-box {
       background-color: #EA252C;
-      padding: 40px 70px;
+      padding: 40px 70px 70px 70px;
       clip-path: polygon(
         0 0,
         100% 0,
