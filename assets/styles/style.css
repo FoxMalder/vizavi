@@ -3403,6 +3403,87 @@ main {
   justify-content: center;
 }
 
+.terminal-apps {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 0;
+  font-family: 'Roboto';
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.terminal-apps__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.terminal-apps__headline {
+  max-width: 560px;
+}
+
+.terminal-apps__headline .h2 {
+  font-size: 26px;
+  line-height: 34px;
+  color: #6E7A86;
+  margin: 0;
+}
+
+.terminal-apps__actions {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.terminal-apps__actions .button {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 40px;
+  min-height: 40px;
+  min-width: 130px;
+}
+
+.terminal-apps__actions .button:last-child {
+  margin-bottom: 0;
+}
+
+.terminal-apps__mobile, .terminal-apps__desktop {
+  position: relative;
+}
+
+.terminal-apps__mobile--picture, .terminal-apps__desktop--picture {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: relative;
+}
+
+.terminal-apps__mobile--picture {
+  background-image: url("../images/mobile.png");
+  width: 609px;
+  height: 399px;
+  top: -104px;
+  left: 0;
+}
+
+.terminal-apps__desktop {
+  position: relative;
+  top: -60px;
+}
+
+.terminal-apps__desktop .terminal-apps__headline {
+  max-width: 375px;
+}
+
+.terminal-apps__desktop--picture {
+  background-image: url("../images/desktop.png");
+  width: 787px;
+  height: 450px;
+  top: 0;
+  left: -190px;
+}
+
 .terminal-cards {
   position: relative;
   min-height: 600px;
