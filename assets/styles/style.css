@@ -3143,10 +3143,13 @@ main {
   height: 600px;
 }
 
-.headline--main:after {
+.headline--main:before, .headline--main:after {
   position: absolute;
   z-index: 0;
   content: '';
+}
+
+.headline--main:after {
   right: auto;
   top: 50%;
   left: 50%;
@@ -3155,6 +3158,16 @@ main {
   width: 425px;
   height: 534px;
   background-image: url("../images/svg/bitcoin.svg");
+}
+
+.headline--main:before {
+  right: auto;
+  top: auto;
+  bottom: 16px;
+  left: calc(50% + 190px);
+  width: 166px;
+  height: 170px;
+  background-image: url("../images/svg/bitcoin-decor.svg");
 }
 
 .headline--main .headline__content {
@@ -3256,6 +3269,51 @@ main {
   justify-content: center;
   height: 40px;
   width: 40px;
+  color: #ffffff;
+}
+
+.headline-features {
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  margin-top: auto;
+}
+
+.headline-features svg {
+  width: 30px;
+  height: 30px;
+}
+
+.headline-feature {
+  font-family: 'Roboto';
+}
+
+.headline-feature__box {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.headline-feature__description {
+  margin-left: 20px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  max-width: 150px;
+}
+
+.headline-feature__title {
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: bold;
+  color: #EA252C;
+}
+
+.headline-feature__info {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 18px;
   color: #ffffff;
 }
 
