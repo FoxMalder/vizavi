@@ -3201,7 +3201,11 @@ main {
 .headline--main .headline__picture {
   position: absolute;
   right: -50px;
-  top: 0;
+  top: 20px;
+}
+
+.headline--main .headline__picture img {
+  vertical-align: middle;
 }
 
 .headline--main .headline-flag {
@@ -3459,6 +3463,10 @@ main {
   font-size: 16px;
   line-height: 19px;
   color: #6E7A86;
+}
+
+.main-world {
+  min-height: 539.01px;
 }
 
 .number-cards {

@@ -282,7 +282,11 @@
     .headline__picture {
       position: absolute;
       right: -50px;
-      top: 0;
+      top: 20px;
+
+      img {
+        vertical-align: middle;
+      }
     }
 
     .headline-flag {
