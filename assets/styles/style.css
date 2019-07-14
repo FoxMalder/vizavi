@@ -3198,6 +3198,12 @@ main {
   z-index: 2;
 }
 
+.headline--main .headline__picture {
+  position: absolute;
+  right: -50px;
+  top: 0;
+}
+
 .headline--main .headline-flag {
   max-width: 1180px;
   margin: 0 auto;
