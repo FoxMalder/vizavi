@@ -1,4 +1,14 @@
 .main-world {
+  position: relative;
+  height: 400px;
 
-  min-height: 539.01px;
+  &__wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .intro-box {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
 }

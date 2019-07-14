@@ -3465,8 +3465,70 @@ main {
   color: #6E7A86;
 }
 
+.main-features {
+  position: relative;
+  min-height: 600px;
+  height: auto;
+}
+
+.main-features:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: -400px;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  background-image: url("../images/main/bg-world.png");
+  z-index: -1;
+}
+
+.main-features__bg {
+  background-color: #EA252C;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  clip-path: polygon(0 calc(0% + 110px), 50% calc(0% + 110px), 100% 0, 100% calc(100% - 125px), 50% calc(100% - 125px), 0 100%);
+  /*
+      1---2---3
+      \-------\
+      6---5---4
+    */
+}
+
+.main-features__wrap {
+  height: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+}
+
 .main-world {
-  min-height: 539.01px;
+  position: relative;
+  height: 400px;
+}
+
+.main-world__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.main-world .intro-box {
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .number-cards {
