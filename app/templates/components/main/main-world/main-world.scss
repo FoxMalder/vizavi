@@ -1,6 +1,8 @@
+$main-world-height: 400px;
+
 .main-world {
   position: relative;
-  height: 400px;
+  height: $main-world-height;
 
   &__wrap {
     max-width: 1180px;
@@ -11,4 +13,10 @@
     padding-top: 100px;
     padding-bottom: 40px;
   }
+}
+
+.main-features:before {
+  top: -$main-world-height;
+  background-image: url('../images/main/bg-world.png');
+  z-index: -2;
 }
