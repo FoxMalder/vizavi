@@ -3279,13 +3279,17 @@ main {
   margin-top: auto;
 }
 
-.headline-features svg {
-  width: 30px;
-  height: 30px;
-}
-
 .headline-feature {
   font-family: 'Roboto';
+  margin-right: 30px;
+}
+
+.headline-feature:first-child .headline-feature__description {
+  max-width: 100px;
+}
+
+.headline-feature:last-child {
+  margin-right: 0;
 }
 
 .headline-feature__box {
@@ -3300,7 +3304,7 @@ main {
   align-items: flex-start;
   align-content: flex-start;
   flex-direction: column;
-  max-width: 150px;
+  max-width: 140px;
 }
 
 .headline-feature__title {

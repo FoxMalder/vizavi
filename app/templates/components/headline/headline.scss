@@ -360,15 +360,22 @@
   align-items: center;
   align-content: flex-start;
   margin-top: auto;
-
-  svg {
-    width: 30px;
-    height: 30px;
-  }
 }
 
 .headline-feature {
   font-family: 'Roboto';
+  margin-right: 30px;
+
+  &:first-child {
+
+    .headline-feature__description {
+      max-width: 100px;
+    }
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 
   &__box {
     display: flex;
@@ -382,7 +389,7 @@
     align-items: flex-start;
     align-content: flex-start;
     flex-direction: column;
-    max-width: 150px;
+    max-width: 140px;
   }
 
   &__title {
