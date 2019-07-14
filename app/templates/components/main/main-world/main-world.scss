@@ -12,6 +12,15 @@ $main-world-height: 400px;
   .intro-box {
     padding-top: 100px;
     padding-bottom: 40px;
+    text-align: left;
+
+    .h2 {
+      text-align: left;
+
+      span {
+        display: block;
+      }
+    }
   }
 }
 

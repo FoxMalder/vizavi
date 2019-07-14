@@ -3538,6 +3538,15 @@ main {
 .main-world .intro-box {
   padding-top: 100px;
   padding-bottom: 40px;
+  text-align: left;
+}
+
+.main-world .intro-box .h2 {
+  text-align: left;
+}
+
+.main-world .intro-box .h2 span {
+  display: block;
 }
 
 .main-features:before {
