@@ -2160,6 +2160,12 @@ mark {
   justify-content: center;
 }
 
+.footer-copyright p {
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 0;
+}
+
 /* Телефонный номер с иконкой */
 .footer-tel {
   text-decoration: none;

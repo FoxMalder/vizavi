@@ -228,6 +228,12 @@ $footer-border-color: rgba(114, 124, 140, .2);
     align-content: center;
     justify-content: center;
   }
+
+  p {
+    font-size: 11px;
+    line-height: 11px;
+    margin-bottom: 0;
+  }
 }
 
 /* Телефонный номер с иконкой */
