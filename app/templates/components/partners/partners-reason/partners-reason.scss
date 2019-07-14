@@ -1,8 +1,10 @@
 .partners-reason {
   padding-top: 50px;
+  padding-bottom: 120px;
 
   &__wrap {
-
+    max-width: 1180px;
+    margin: 0 auto;
   }
 
   .intro-box {
@@ -10,5 +12,10 @@
     .h2 span {
       display: block;
     }
+  }
+
+  &__list {
+    clear: both;
+    overflow: auto;
   }
 }

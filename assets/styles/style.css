@@ -3558,10 +3558,21 @@ main {
 
 .partners-reason {
   padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.partners-reason__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .partners-reason .intro-box .h2 span {
   display: block;
+}
+
+.partners-reason__list {
+  clear: both;
+  overflow: auto;
 }
 
 .partners-start {
