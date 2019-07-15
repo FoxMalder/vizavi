@@ -3590,6 +3590,7 @@ main {
   align-content: flex-start;
   flex-direction: column;
   position: relative;
+  padding: 0;
 }
 
 .number-cards--width-header .number-card__box:before {
@@ -3598,13 +3599,10 @@ main {
 
 .number-cards--width-header .number-card__header {
   height: 90px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   align-content: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
 }
 
 .number-cards--width-header .number-card__header-icon {
@@ -3640,8 +3638,20 @@ main {
 }
 
 .number-cards--width-header .number-card__body {
+  padding: 20px 25px;
   position: relative;
-  margin-top: 90px;
+  height: 100%;
+}
+
+.number-cards--width-header .number-card__number {
+  left: 25px;
+}
+
+.number-cards--width-header .number-card__content {
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #222B34;
 }
 
 .number-card {
@@ -3993,6 +4003,14 @@ main {
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+.partners-steps .intro-box .h2 {
+  margin-bottom: 0;
+}
+
+.partners-steps__cards {
+  padding-top: 50px;
 }
 
 .terminal-apps {

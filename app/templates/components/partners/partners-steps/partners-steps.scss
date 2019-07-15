@@ -35,4 +35,15 @@ $partners-steps-pb:          114px;   // отступ снизу
     align-content: center;
     justify-content: center;
   }
+
+  .intro-box {
+
+    .h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cards {
+    padding-top: 50px;
+  }
 }
