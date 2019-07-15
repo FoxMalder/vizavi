@@ -3480,12 +3480,15 @@ main {
   display: flex;
   align-items: center;
   align-content: center;
-  padding-top: 50px;
+}
+
+.traders-list__item {
+  padding: 40px 0 0 0;
 }
 
 .trader-card {
-  margin-right: 20px;
   width: 250px;
+  margin-right: 20px;
   font-family: 'Roboto';
 }
 

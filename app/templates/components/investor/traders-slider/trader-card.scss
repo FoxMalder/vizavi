@@ -2,13 +2,17 @@
   display: flex;
   align-items: center;
   align-content: center;
-  padding-top: 50px;
+  // padding-top: 50px;
   // justify-content: center;
+
+  &__item {
+    padding: 40px 0 0 0;
+  }
 }
 
 .trader-card {
-  margin-right: 20px;
   width: 250px;
+  margin-right: 20px;
   font-family: 'Roboto';
 
   &__box {
