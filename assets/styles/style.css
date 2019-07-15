@@ -3481,10 +3481,12 @@ main {
   align-items: center;
   align-content: center;
   padding-top: 50px;
+  justify-content: center;
 }
 
 .trader-card {
   margin-right: 20px;
+  width: 250px;
   font-family: 'Roboto';
 }
 
@@ -3509,7 +3511,10 @@ main {
   transform: translateX(-50%);
   width: 80px;
   height: 80px;
-  background-color: green;
+}
+
+.trader-card__avatar img {
+  vertical-align: bottom;
 }
 
 .trader-card__header {
@@ -3536,6 +3541,15 @@ main {
   top: 3px;
   left: -14px;
   background-color: #EA252C;
+}
+
+.trader-card__graph {
+  position: relative;
+}
+
+.trader-card__graph-box {
+  width: 250px;
+  height: 90px;
 }
 
 .trader-card__body {

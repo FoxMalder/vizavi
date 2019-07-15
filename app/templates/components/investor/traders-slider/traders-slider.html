@@ -7,7 +7,6 @@
       <h2 class="h2"><span>5 лучших</span> трейдеров</h2>
     </div>
     <!-- end .intro-box -->
-
     <!-- begin .traders-slider__list -->
     <div class="traders-slider__list traders-list">
       {% for i in range(0, 4) %}
@@ -17,7 +16,7 @@
         <div class="trader-card__box">
           <!-- begin .trader-card__avatar -->
           <div class="trader-card__avatar">
-            <img src=""
+            <img src="assets/images/svg/user-avatar.svg"
               alt="Трейдер Gurumaster"
               width=""
               height="">
@@ -31,7 +30,11 @@
           </div>
           <!-- end .trader-card__header -->
           <!-- begin .trader-card__graph -->
-          <div class="trader-card__graph"></div>
+          <div class="trader-card__graph">
+            <!-- begin .trader-card__graph-box -->
+            <div class="trader-card__graph-box graph-container" id="graph-container_{{i+1}}"></div>
+            <!-- end .trader-card__graph-box -->
+          </div>
           <!-- end .trader-card__graph -->
           <!-- begin .trader-card__body -->
           <div class="trader-card__body">
