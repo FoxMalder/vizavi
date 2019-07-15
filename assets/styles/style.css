@@ -3481,7 +3481,6 @@ main {
   align-items: center;
   align-content: center;
   padding-top: 50px;
-  justify-content: center;
 }
 
 .trader-card {
@@ -3632,14 +3631,22 @@ main {
 .traders-slider__left, .traders-slider__right {
   position: absolute;
   bottom: 220px;
+  padding: 15px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all .3s ease;
+}
+
+.traders-slider__left:hover, .traders-slider__right:hover {
+  color: #EA252C;
 }
 
 .traders-slider__left {
-  left: -50px;
+  left: -65px;
 }
 
 .traders-slider__right {
-  right: -50px;
+  right: -65px;
 }
 
 .main-features {

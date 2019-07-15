@@ -1,24 +1,19 @@
 $(document).ready(function(){
 
-  let owl = $('.services_list');
+  var owl    = $('.owl-carousel');
+  var oLeft  = $('.js_slider-left');
+  var oRight = $('.js_slider-right');
 
   owl.owlCarousel({
-    items: 1,
-    center: true,
-    loop: true,
-    nav: false,
-    autoplayTimeout: 1000,
-    URLhashListener: true,
-    autoplayHoverPause: true,
-    startPosition: '#Trackers',
-    dotsContainer: '#services_menu'
+    loop:true,
+    items:4
   });
 
-  $('.services_nav-left').click(function(){
+  oLeft.click(function(){
     owl.trigger('prev.owl.carousel');
   });
 
-  $('.services_nav-right').click(function(){
+  oRight.click(function(){
     owl.trigger('next.owl.carousel');
   });
 
