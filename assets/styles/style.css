@@ -4336,8 +4336,11 @@ main {
 
 .text-content {
   font-family: 'Roboto';
+  font-size: 18px;
+  line-height: 29px;
 }
 
+.text-content h1,
 .text-content .h1 {
   font-weight: bold;
   font-size: 36px;
@@ -4347,7 +4350,26 @@ main {
   margin: 0 0 20px 0;
 }
 
+.text-content h1 span,
 .text-content .h1 span {
+  color: #EA252C;
+}
+
+.text-content h2,
+.text-content .h2 {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 47px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #232D3A;
+}
+
+.text-content h2 > span, .text-content h2-red,
+.text-content .h2 > span,
+.text-content .h2-red {
   color: #EA252C;
 }
 
@@ -4357,6 +4379,156 @@ main {
   font-size: 18px;
   line-height: 29px;
   color: #222B34;
+}
+
+.text-content p.lead {
+  font-size: 22px;
+  line-height: 1.5;
+  color: #737e8c;
+}
+
+.text-content ol:not([class]) {
+  counter-reset: listcounter;
+  margin: 0 0 20px 0;
+  padding: 0;
+  line-height: 29px;
+}
+
+.text-content ol:not([class]) li {
+  list-style: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.text-content ol:not([class]) li:before {
+  counter-increment: listcounter;
+  content: counter(listcounter) ". ";
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 18px;
+}
+
+.text-content ul:not([class]) {
+  margin: 0 0 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.text-content ul:not([class]) li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.text-content ul:not([class]) li:before {
+  content: '\2014\a0\a0';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  color: #262d30;
+  opacity: .8;
+}
+
+.text-content ul:not([class]) li ul {
+  list-style: none;
+}
+
+.text-content ul.list-short {
+  list-style-type: none;
+  margin-bottom: 1em;
+  padding-left: 0;
+}
+
+.text-content ul.list-short li {
+  margin: .1em 0 .1em 0em;
+  color: #445365;
+}
+
+.text-content .text-comment {
+  font-style: italic;
+}
+
+.text-content .text-comment p {
+  font-style: italic;
+}
+
+.text-content .important {
+  border-top: 5px solid #A9B0B8;
+  position: relative;
+  padding: 15px 10px 0px 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.text-content .important h2,
+.text-content .important h3,
+.text-content .important h4 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+.text-content .important p {
+  margin-top: 1px;
+}
+
+.text-content .important__icon {
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  width: 29px;
+  height: 40px;
+}
+
+.text-content .important--red {
+  border-top-color: #F24B51;
+}
+
+.text-content .important--red h2,
+.text-content .important--red h3,
+.text-content .important--red h4 {
+  color: #F24B51;
+}
+
+.text-content mark,
+.text-content .mark {
+  padding: 4px 8px;
+  background-color: #fff9cd;
+}
+
+.text-content mark-pink,
+.text-content .mark-pink {
+  background-color: #fff5f7;
+}
+
+.text-content mark-green,
+.text-content .mark-green {
+  background-color: #e4f5e7;
+}
+
+.text-content mark-blue,
+.text-content .mark-blue {
+  background-color: #d9ecff;
+}
+
+.text-content blockquote {
+  display: block;
+  background: #fff;
+  padding: 10px 10px 10px 20px;
+  margin: 0 0 20px;
+  position: relative;
+  font-style: italic;
+  border-left: 5px solid #EA252C;
+}
+
+.text-content blockquote footer {
+  color: #A9B0B8;
+  font-style: normal;
+  font-size: 14px;
 }
 
 .text-content .list-box {

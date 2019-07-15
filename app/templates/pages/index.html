@@ -14,7 +14,7 @@ sitemap:
  - name:           'Партнерём'
    url:             partners.html
    path:            partners.html
-   progress:        85
+   progress:        98
    progress_mobile: 0
    progress_tablet: 0
    figma:          'https://www.figma.com/file/U6fWMUorlagRMcZkoJD8cQ/'
@@ -81,6 +81,9 @@ sitemap:
    progress_mobile: 0
    progress_tablet: 0
    figma:          'https://www.figma.com/file/SGLFhsX2stAOpCVPOlhZAw/'
+ - name:           'Типовая текстовая страница'
+   url:             guideline.html
+   path:            guideline.html
 ---
 
 {% extends "layouts/layout.html" %}
@@ -239,6 +242,7 @@ sitemap:
             <!-- end .sitemap_item-col -->
             <!-- begin .sitemap_item-col -->
             <div class="sitemap_item-col">
+              {% if i.progress >= 0 %}
               <!-- begin .sitemap_item_progress -->
               <div class="sitemap_item_progress">
                 <!-- begin .sitemap_item_progress_bar -->
@@ -251,10 +255,12 @@ sitemap:
                 <!-- end .sitemap_item_progress_value -->
               </div>
               <!-- end .sitemap_item_progress -->
+              {% else %}{% endif %}
             </div>
             <!-- end .sitemap_item-col -->
             <!-- begin .sitemap_item-col -->
             <div class="sitemap_item-col">
+              {% if i.progress_mobile >= 0 %}
               <!-- begin .sitemap_item_progress -->
               <div class="sitemap_item_progress">
                 <!-- begin .sitemap_item_progress_bar -->
@@ -267,10 +273,12 @@ sitemap:
                 <!-- end .sitemap_item_progress_value -->
               </div>
               <!-- end .sitemap_item_progress -->
+              {% else %}{% endif %}
             </div>
             <!-- end .sitemap_item-col -->
             <!-- begin .sitemap_item-col -->
             <div class="sitemap_item-col">
+              {% if i.progress_tablet >= 0 %}
               <!-- begin .sitemap_item_progress -->
               <div class="sitemap_item_progress">
                 <!-- begin .sitemap_item_progress_bar -->
@@ -283,6 +291,7 @@ sitemap:
                 <!-- end .sitemap_item_progress_value -->
               </div>
               <!-- end .sitemap_item_progress -->
+              {% else %}{% endif %}
             </div>
             <!-- end .sitemap_item-col -->
             <!-- begin .sitemap_item-col -->
