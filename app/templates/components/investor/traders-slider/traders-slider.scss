@@ -1,11 +1,42 @@
 .traders-slider {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    background-color: #222B34;
+    width: 100%;
+    height: 350px;
+    left: 0;
+    bottom: 70px;
+    z-index: -1;
+  }
 
   &__wrap {
     max-width: 1180px;
     margin: 0 auto;
+    z-index: 0;
+    position: relative;
   }
 
   &__list {
     margin-top: 25px;
+    max-width: 1060px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__left,
+  &__right {
+    position: absolute;
+    bottom: 220px;
+  }
+
+  &__left {
+    left: -50px;
+  }
+
+  &__right {
+    right: -50px;
   }
 }
