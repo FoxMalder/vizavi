@@ -1,10 +1,114 @@
 $number-card-deg:        30px;
 $number-card-deg-before: -14deg;
 
+$number-card-deg-icon:    25px;
+
 .number-cards {
   display: flex;
   align-items: stretch;
   align-content: stretch;
+
+  // есть заголовочная строка с иконкой
+  &--width-header {
+
+    .number-card {
+      height: 270px;
+
+      &:nth-child(1) .number-card__box {
+        clip-path: polygon(
+          0 0,
+          100% 0%,
+          calc(100% - #{$number-card-deg-icon}) 100%,
+          0% 100%
+        );
+
+        .number-card__header-icon {
+          width: 100px;
+
+          svg {
+            left: -2px;
+          }
+        }
+      }
+
+      &:nth-child(2) .number-card__box {
+        clip-path: polygon(
+          calc(0% + #{$number-card-deg-icon}) 0,
+          100% 0%,
+          calc(100% - #{$number-card-deg-icon}) 100%,
+          0% 100%
+        );
+      }
+
+      &:nth-child(3) .number-card__box {
+        clip-path: polygon(
+          calc(0% + #{$number-card-deg-icon}) 0,
+          100% 0%,
+          100% 100%,
+          0% 100%
+        );
+      }
+
+      &__box {
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-direction: column;
+        position: relative;
+
+        &:before {
+          content: none;
+        }
+      }
+
+      &__header {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+
+        &-icon {
+          width: 120px;
+          height: 90px;
+          background-color: #EA252C;
+          clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+          display: flex;
+          align-items: center;
+          align-content: center;
+          justify-content: center;
+          color: #ffffff;
+          flex-shrink: 0;
+
+          svg {
+            position: relative;
+            left: 6px;
+          }
+        }
+
+        &-title {
+          height: 100%;
+          display: flex;
+          align-self: flex-end;
+          align-items: flex-end;
+          margin-left: 20px;
+          height: 100%;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 25px;
+          padding-right: 10px;
+          color: #000000;
+        }
+      }
+
+      &__body {
+        position: relative;
+        margin-top: 90px;
+      }
+    }
+  }
 }
 
 .number-card {

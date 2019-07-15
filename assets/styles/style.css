@@ -3561,6 +3561,89 @@ main {
   align-content: stretch;
 }
 
+.number-cards--width-header .number-card {
+  height: 270px;
+}
+
+.number-cards--width-header .number-card:nth-child(1) .number-card__box {
+  clip-path: polygon(0 0, 100% 0%, calc(100% - 25px) 100%, 0% 100%);
+}
+
+.number-cards--width-header .number-card:nth-child(1) .number-card__box .number-card__header-icon {
+  width: 100px;
+}
+
+.number-cards--width-header .number-card:nth-child(1) .number-card__box .number-card__header-icon svg {
+  left: -2px;
+}
+
+.number-cards--width-header .number-card:nth-child(2) .number-card__box {
+  clip-path: polygon(calc(0% + 25px) 0, 100% 0%, calc(100% - 25px) 100%, 0% 100%);
+}
+
+.number-cards--width-header .number-card:nth-child(3) .number-card__box {
+  clip-path: polygon(calc(0% + 25px) 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.number-cards--width-header .number-card__box {
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  position: relative;
+}
+
+.number-cards--width-header .number-card__box:before {
+  content: none;
+}
+
+.number-cards--width-header .number-card__header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.number-cards--width-header .number-card__header-icon {
+  width: 120px;
+  height: 90px;
+  background-color: #EA252C;
+  clip-path: polygon(0 0, 100% 0%, 90% 100%, 0% 100%);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.number-cards--width-header .number-card__header-icon svg {
+  position: relative;
+  left: 6px;
+}
+
+.number-cards--width-header .number-card__header-title {
+  height: 100%;
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-end;
+  margin-left: 20px;
+  height: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  padding-right: 10px;
+  color: #000000;
+}
+
+.number-cards--width-header .number-card__body {
+  position: relative;
+  margin-top: 90px;
+}
+
 .number-card {
   font-family: 'Roboto';
   height: 210px;
