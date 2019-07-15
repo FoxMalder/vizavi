@@ -3388,6 +3388,21 @@ main {
   background-color: #7086A2;
 }
 
+.icon-cards--light .icon-card {
+  margin-bottom: 85px;
+}
+
+.icon-cards--light .icon-card__content {
+  position: relative;
+  top: 20px;
+  font-weight: 100;
+}
+
+.icon-cards--light .icon-card__icon:before {
+  top: 30px;
+  background-color: #E0E4EB;
+}
+
 .icon-card {
   width: 50%;
   flex-basis: 50%;
@@ -3474,6 +3489,15 @@ main {
   font-size: 16px;
   line-height: 19px;
   color: #6E7A86;
+}
+
+.copy-transaction__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.copy-transaction__cards {
+  padding-top: 50px;
 }
 
 .traders-list {

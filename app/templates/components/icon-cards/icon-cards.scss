@@ -52,6 +52,24 @@ $icon-card-deg:   8deg;
       }
     }
   }
+
+  &--light {
+
+    .icon-card {
+      margin-bottom: 85px;
+
+      &__content {
+        position: relative;
+        top: 20px;
+        font-weight: 100;
+      }
+
+      &__icon:before {
+        top: 30px;
+        background-color: #E0E4EB;
+      }
+    }
+  }
 }
 
 .icon-card {
