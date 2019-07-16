@@ -64,9 +64,13 @@ $icon-card-deg:   8deg;
         font-weight: 100;
       }
 
-      &__icon:before {
-        top: 30px;
-        background-color: #E0E4EB;
+      &__icon {
+        color: #ffffff;
+
+        &:before {
+          top: 30px;
+          background-color: #E0E4EB;
+        }
       }
     }
   }
@@ -111,6 +115,7 @@ $icon-card-deg:   8deg;
       align-items: center;
       align-content: center;
       justify-content: center;
+      color: #ffffff;
 
       svg {
         transform: skewY(#{$icon-card-deg});

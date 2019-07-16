@@ -3398,6 +3398,10 @@ main {
   font-weight: 100;
 }
 
+.icon-cards--light .icon-card__icon {
+  color: #ffffff;
+}
+
 .icon-cards--light .icon-card__icon:before {
   top: 30px;
   background-color: #E0E4EB;
@@ -3444,6 +3448,7 @@ main {
   align-items: center;
   align-content: center;
   justify-content: center;
+  color: #ffffff;
 }
 
 .icon-card__icon-ico svg {
@@ -4716,7 +4721,7 @@ main {
   background-color: #d9ecff;
 }
 
-.text-content blockquote {
+.text-content .quote {
   display: block;
   background: #fff;
   padding: 10px 10px 10px 20px;
@@ -4726,7 +4731,7 @@ main {
   border-left: 5px solid #EA252C;
 }
 
-.text-content blockquote footer {
+.text-content .quote footer {
   color: #A9B0B8;
   font-style: normal;
   font-size: 14px;
@@ -4898,6 +4903,7 @@ main {
 
 .flag-card.bg-dark .flag-card__icon-box, .flag-card.bg-red .flag-card__icon-box {
   background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
 }
 
 .flag-card.bg-dark .flag-card__headline h3.h4,
@@ -4928,6 +4934,7 @@ main {
   align-items: center;
   align-content: center;
   justify-content: center;
+  color: #EA252C;
 }
 
 .flag-card__headline {

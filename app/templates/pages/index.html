@@ -11,6 +11,7 @@ sitemap:
    progress_mobile: 0
    progress_tablet: 0
    figma:          'https://www.figma.com/file/3QgjoQsa6YQpf5LIqL946j/'
+   newfigma:       'https://www.figma.com/file/uKuI2p4cEZmNXHC4emX5hj/'
  - name:           'Партнерём'
    url:             partners.html
    path:            partners.html
@@ -148,7 +149,6 @@ sitemap:
     .external-link:hover { color: #EA252C; }
     .external-link:hover .external-link__icon { color: #EA252C; }
 
-
     ul:not([class]) {
       margin: 0 0 20px 0;
       padding: 0;
@@ -179,6 +179,16 @@ sitemap:
     ul.list-short li {
       margin: 0.1em 0 0.1em 0em;
       color: #445365;
+    }
+
+    .sitemap_item-col--flex {
+      display: flex;
+      align-items: center;
+      align-content: center;
+    }
+
+    .sitemap_item-col--flex a {
+      margin-right: 15px;
     }
 
   </style>
@@ -295,10 +305,21 @@ sitemap:
             </div>
             <!-- end .sitemap_item-col -->
             <!-- begin .sitemap_item-col -->
-            <div class="sitemap_item-col is-ghost">
+            <div class="sitemap_item-col sitemap_item-col--flex is-ghost">
               {% if i.figma %}
                 <a href="{{i.figma}}" class="external-link" target="_blank">
                   <span class="external-link__text">Figma-макет</span>
+                  <span class="external-link__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
+                      <path d="M21 10h-2V5h-5V3h7z"/>
+                      <path d="M8.277 14.308l11.031-11.03 1.414 1.414-11.03 11.03z"/>
+                    </svg>
+                  </span>
+                </a>{% else %}{% endif %}
+              {% if i.newfigma %}
+                <a href="{{i.newfigma}}" class="external-link" target="_blank">
+                  <span class="external-link__text">Новый Figma-макет</span>
                   <span class="external-link__icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
                       <path d="M19 21H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h7v2H5v14h14v-7h2v7c0 1.1-.9 2-2 2z"/>
