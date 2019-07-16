@@ -3505,6 +3505,42 @@ main {
   padding-top: 50px;
 }
 
+.new-method {
+  padding-bottom: 80px;
+  font-family: 'Roboto';
+}
+
+.new-method__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.new-method__bg {
+  background: linear-gradient(105deg, #F3F4F5 680px, transparent 681px), linear-gradient(0deg, #222B34 100%, transparent 50.1%);
+  height: 370px;
+}
+
+.new-method__item {
+  padding: 0 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.new-method__info .intro-box .h2 {
+  font-size: 26px;
+  line-height: 34px;
+  color: #222B34;
+}
+
+.new-method__list {
+  width: 500px;
+  flex-basis: 500px;
+  min-width: 500px;
+}
+
 .traders-list {
   display: flex;
   align-items: center;
