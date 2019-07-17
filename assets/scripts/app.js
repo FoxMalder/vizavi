@@ -174,7 +174,7 @@ $(document).ready(function () {
   var owlLeft2 = owl2.parents('.text-investor__cards').find('.js_slider-left');
   var owlRight2 = owl2.parents('.text-investor__cards').find('.js_slider-right');
   owl2.owlCarousel({
-    loop: true,
+    loop: false,
     margin: 30,
     items: 4
   });

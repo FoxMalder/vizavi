@@ -5,8 +5,8 @@ $(document).ready(function(){
   var owlRight     = owl.parents('.traders-slider__list').find('.js_slider-right');
 
   owl.owlCarousel({
-    loop:true,
-    items:4
+    loop:  true,
+    items: 4
   });
   owlLeft.click(function(){
     owl.trigger('prev.owl.carousel');
@@ -20,9 +20,9 @@ $(document).ready(function(){
   var owlRight2     = owl2.parents('.text-investor__cards').find('.js_slider-right');
 
   owl2.owlCarousel({
-    loop:true,
-    margin:30,
-    items:4
+    loop:   false,
+    margin: 30,
+    items:  4
   });
   owlLeft2.click(function(){
     owl2.trigger('prev.owl.carousel');
