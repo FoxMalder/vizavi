@@ -1,6 +1,6 @@
 .text-investor {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 
   &__wrap {
     max-width: 1180px;
@@ -10,9 +10,37 @@
   .intro-box {
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 60px;
 
     h2 span {
       display: block;
     }
+  }
+
+  &__cards {
+    position: relative;
+  }
+
+  &__left,
+  &__right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px;
+    cursor: pointer;
+    color: #97A8BC;
+    transition: all .3s ease;
+
+    &:hover {
+      color: #EA252C;
+    }
+  }
+
+  &__left {
+    left: -65px;
+  }
+
+  &__right {
+    right: -65px;
   }
 }

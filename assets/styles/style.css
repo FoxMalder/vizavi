@@ -1305,30 +1305,6 @@ mark {
   width: 100%;
 }
 
-.advantage-terminal {
-  background-color: #F3F4F5;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.advantage-terminal__wrap {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.advantage-terminal .intro-box {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.advantage-terminal .intro-box p span {
-  display: block;
-}
-
-.advantage-terminal__cards {
-  padding-top: 70px;
-}
-
 .advantage-cards {
   display: flex;
   align-items: stretch;
@@ -1338,6 +1314,69 @@ mark {
   margin-left: -20px;
   margin-right: -20px;
   width: calc(100% + 40px);
+}
+
+.advantage-cards--list {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  flex-wrap: nowrap;
+}
+
+.advantage-cards--list .advantage-cards__item {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  margin-left: 9px;
+}
+
+.advantage-cards--list .advantage-card {
+  width: 250px;
+  flex: auto;
+  max-width: 250px;
+  min-width: 250px;
+  margin-right: 0;
+  height: 340px;
+  margin-bottom: 0;
+}
+
+.advantage-cards--list .advantage-card:nth-child(3n+3) {
+  margin-right: 0;
+}
+
+.advantage-cards--list .advantage-card:last-child {
+  padding: inherit;
+}
+
+.advantage-cards--list .advantage-card:before, .advantage-cards--list .advantage-card:after {
+  width: 250px;
+  left: -10px;
+}
+
+.advantage-cards--list .advantage-card__box {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px 19px;
+}
+
+.advantage-cards--list .advantage-card__icon {
+  margin-bottom: 0;
+}
+
+.advantage-cards--list .advantage-card__name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  color: #4E565D;
+}
+
+.advantage-cards--list .advantage-card__body {
+  text-align: center;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6E7A86;
 }
 
 .advantage-card {
@@ -1412,6 +1451,30 @@ mark {
   line-height: 22px;
   text-align: center;
   color: #222B34;
+}
+
+.advantage-terminal {
+  background-color: #F3F4F5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.advantage-terminal__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.advantage-terminal .intro-box {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.advantage-terminal .intro-box p span {
+  display: block;
+}
+
+.advantage-terminal__cards {
+  padding-top: 70px;
 }
 
 .best-traders {
@@ -4552,7 +4615,7 @@ main {
 
 .text-investor {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 60px;
 }
 
 .text-investor__wrap {
@@ -4563,10 +4626,37 @@ main {
 .text-investor .intro-box {
   padding-left: 100px;
   padding-right: 100px;
+  padding-bottom: 60px;
 }
 
 .text-investor .intro-box h2 span {
   display: block;
+}
+
+.text-investor__cards {
+  position: relative;
+}
+
+.text-investor__left, .text-investor__right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 15px;
+  cursor: pointer;
+  color: #97A8BC;
+  transition: all .3s ease;
+}
+
+.text-investor__left:hover, .text-investor__right:hover {
+  color: #EA252C;
+}
+
+.text-investor__left {
+  left: -65px;
+}
+
+.text-investor__right {
+  right: -65px;
 }
 
 .text-page__wrap {
