@@ -74,26 +74,26 @@ $cut-bubble-deg:   5deg;
     padding: 30px 50px 70px 50px;
     transform: skewY(#{$cut-bubble-deg});
 
-  .h2 {
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 34px;
-    text-align: right;
-    text-transform: uppercase;
-    color: #222B34;
+    .h2 {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 34px;
+      text-align: right;
+      text-transform: uppercase;
+      color: #222B34;
 
-    span {
-      display: block;
+      span {
+        display: block;
+        color: #222B34;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 29px;
+      text-align: right;
       color: #222B34;
     }
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 29px;
-    text-align: right;
-    color: #222B34;
-  }
   }
 
   &__actions {
