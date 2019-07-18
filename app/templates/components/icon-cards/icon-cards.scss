@@ -53,6 +53,17 @@ $icon-card-deg:   8deg;
     }
   }
 
+  &--black {
+
+    .icon-card {
+
+      &__icon:before {
+        top: 30px;
+        background-color: #222B34;
+      }
+    }
+  }
+
   &--light {
     padding-bottom: 0;
 

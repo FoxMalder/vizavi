@@ -3624,6 +3624,11 @@ main {
   background-color: #7086A2;
 }
 
+.icon-cards--black .icon-card__icon:before {
+  top: 30px;
+  background-color: #222B34;
+}
+
 .icon-cards--light {
   padding-bottom: 0;
 }
@@ -4142,6 +4147,11 @@ main {
 
 .popular-terminal-actions__buttons .button:last-child {
   margin-right: 0;
+}
+
+.security-of-means__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
 }
 
 .start-trading {
