@@ -1316,6 +1316,77 @@ mark {
   width: calc(100% + 40px);
 }
 
+.advantage-cards--shadow {
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.advantage-cards--shadow .advantage-card {
+  width: 255px;
+  flex: auto;
+  max-width: 255px;
+  min-width: 255px;
+  height: 340px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+}
+
+.advantage-cards--shadow .advantage-card:nth-child(3n+3) {
+  margin-right: 0;
+  margin-right: 30px;
+}
+
+.advantage-cards--shadow .advantage-card:before, .advantage-cards--shadow .advantage-card:after {
+  width: 250px;
+  left: -10px;
+}
+
+.advantage-cards--shadow .advantage-card__shadow {
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.advantage-cards--shadow .advantage-card__box {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 60px 20px;
+  justify-content: flex-start;
+}
+
+.advantage-cards--shadow .advantage-card__icon {
+  margin-bottom: 0;
+  min-height: 70px;
+  margin-bottom: 15px;
+}
+
+.advantage-cards--shadow .advantage-card__name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 26px;
+  color: #4E565D;
+  min-height: auto;
+  margin-bottom: 20px;
+}
+
+.advantage-cards--shadow .advantage-card__body {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+  color: #222B34;
+}
+
+.advantage-cards--shadow .advantage-card__body.new-line strong {
+  display: block;
+}
+
 .advantage-cards--list {
   align-items: center;
   align-content: center;
@@ -3965,6 +4036,16 @@ main {
   z-index: -2;
 }
 
+.start-trading__wrap {
+  min-width: 1180px;
+  margin: 0 auto;
+}
+
+.start-trading__cards {
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
 .number-cards {
   display: flex;
   align-items: stretch;
@@ -5496,6 +5577,31 @@ main {
   height: 2px;
   background-color: #EA252C;
   transform: rotate(120deg);
+}
+
+.intro-box.slash .h2 {
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.intro-box.slash .h2:after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  left: 49.5%;
+  margin-right: -49.5%;
+  transform: translateX(-49.5%);
+  width: 40px;
+  height: 2px;
+  background-color: #EA252C;
+  transform: rotate(120deg);
+}
+
+.intro-box.slash p {
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 34px;
+  color: #6E7A86;
 }
 
 /**

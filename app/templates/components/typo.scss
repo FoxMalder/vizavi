@@ -75,4 +75,32 @@
       }
     }
   }
+
+  &.slash {
+
+    .h2 {
+      margin-bottom: 60px;
+        position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -30px;
+        left: 49.5%;
+        margin-right: -49.5%;
+        transform: translateX(-49.5%);
+        width: 40px;
+        height: 2px;
+        background-color: #EA252C;
+        transform: rotate(120deg);
+      }
+    }
+
+    p {
+      font-size: 26px;
+      font-weight: normal;
+      line-height: 34px;
+      color: #6E7A86;
+    }
+  }
 }
