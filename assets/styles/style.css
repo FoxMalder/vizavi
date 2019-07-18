@@ -4144,6 +4144,10 @@ main {
   margin-right: 0;
 }
 
+.start-trading {
+  padding-top: 100px;
+}
+
 .start-trading__wrap {
   min-width: 1180px;
   margin: 0 auto;
