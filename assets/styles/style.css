@@ -4036,6 +4036,114 @@ main {
   z-index: -2;
 }
 
+.popular-terminal {
+  background-color: #232D3A;
+  font-family: 'Roboto';
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.popular-terminal__wrap {
+  max-width: 1180px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.popular-terminal__info {
+  min-width: 650px;
+  width: 650px;
+}
+
+.popular-terminal__screen {
+  align-self: flex-start;
+  width: 780px;
+  min-width: 780px;
+}
+
+.popular-terminal__screen .metatrader-picture {
+  position: relative;
+}
+
+.popular-terminal__screen img {
+  vertical-align: bottom;
+}
+
+.popular-terminal__headline .h2 {
+  margin: 0;
+  color: #A9B0B8;
+}
+
+.popular-terminal__headline .h2 span {
+  color: #ffffff;
+}
+
+.popular-terminal__headline .h2 span.h2-break {
+  display: block;
+  color: #A9B0B8;
+}
+
+.popular-terminal__body {
+  margin-top: 45px;
+  padding-right: 40px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  position: relative;
+}
+
+.popular-terminal__body:before {
+  position: absolute;
+  content: '';
+  background: linear-gradient(174.54deg, #EA252C 5.8%, rgba(234, 37, 44, 0.86) 48.88%, rgba(234, 37, 44, 0) 88.43%);
+  width: 145px;
+  height: 92px;
+  left: -18px;
+  top: -22px;
+  z-index: 0;
+  transform: skewY(-4deg);
+}
+
+.popular-terminal__body p {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.popular-terminal__actions {
+  margin-top: 30px;
+}
+
+.popular-terminal-actions {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.popular-terminal-actions__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.popular-terminal-actions__buttons {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.popular-terminal-actions__buttons .button {
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.popular-terminal-actions__buttons .button:last-child {
+  margin-right: 0;
+}
+
 .start-trading__wrap {
   min-width: 1180px;
   margin: 0 auto;
