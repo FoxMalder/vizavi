@@ -2117,6 +2117,35 @@ mark {
   margin-top: 30px;
 }
 
+.cut-bubble-message--main:before {
+  top: -40px;
+  left: -60px;
+  width: 480px;
+  height: 400px;
+  clip-path: polygon(0 10%, 100% 0, 90% 90%, 0% 100%);
+}
+
+.cut-bubble-message--main:after {
+  right: 60px;
+  bottom: -60px;
+  background-color: #222B34;
+  width: 480px;
+  height: 400px;
+  clip-path: polygon(10% 10%, 100% 0, 100% 90%, 0% 100%);
+}
+
+.cut-bubble-message--main .cut-bubble-message__box {
+  max-width: 480px;
+}
+
+.cut-bubble-message--main .cut-bubble-message__content {
+  padding: 60px 50px 50px 25px;
+}
+
+.cut-bubble-message--main .cut-bubble-message__content p strong {
+  display: block;
+}
+
 .double-background {
   width: 100%;
   height: 320px;
