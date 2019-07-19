@@ -4,9 +4,8 @@ $main-features-deg:      20px;
 
 .main-features {
   position: relative;
-  min-height: 600px;
-  height: auto;
-  z-index: -3;
+  height: 550px;
+
 
   &:before {
     position: absolute;
@@ -55,5 +54,9 @@ $main-features-deg:      20px;
     justify-content: center;
     z-index: 1;
     position: relative;
+  }
+
+  &__cards {
+    padding-bottom: 40px;
   }
 }

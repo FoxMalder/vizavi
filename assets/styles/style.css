@@ -3666,6 +3666,48 @@ main {
   background-color: #E0E4EB;
 }
 
+.icon-cards--white {
+  margin: 0;
+  padding-bottom: 0;
+}
+
+.icon-cards--white .icon-card {
+  flex-basis: 25%;
+  max-width: 25%;
+  flex-wrap: nowrap;
+  margin-bottom: 0;
+}
+
+.icon-cards--white .icon-card__content {
+  position: relative;
+  top: 20px;
+  font-weight: 100;
+  padding-right: 10px;
+}
+
+.icon-cards--white .icon-card__content p {
+  color: #ffffff;
+}
+
+.icon-cards--white .icon-card__content p strong {
+  display: block;
+}
+
+.icon-cards--white .icon-card__icon {
+  margin-right: 30px;
+}
+
+.icon-cards--white .icon-card__icon-ico {
+  background-color: #ffffff;
+  color: #7086A2;
+}
+
+.icon-cards--white .icon-card__icon:before {
+  left: 10px;
+  top: 50px;
+  background-color: #222B34;
+}
+
 .icon-card {
   width: 50%;
   flex-basis: 50%;
@@ -3978,9 +4020,7 @@ main {
 
 .main-features {
   position: relative;
-  min-height: 600px;
-  height: auto;
-  z-index: -3;
+  height: 550px;
 }
 
 .main-features:before {
@@ -4023,6 +4063,10 @@ main {
   justify-content: center;
   z-index: 1;
   position: relative;
+}
+
+.main-features__cards {
+  padding-bottom: 40px;
 }
 
 .main-world {

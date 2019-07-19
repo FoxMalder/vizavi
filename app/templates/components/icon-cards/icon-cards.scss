@@ -97,6 +97,48 @@ $icon-card-deg:   8deg;
       }
     }
   }
+
+  &--white {
+    margin: 0;
+    padding-bottom: 0;
+
+    .icon-card {
+      flex-basis: 25%;
+      max-width: 25%;
+      flex-wrap: nowrap;
+      margin-bottom: 0;
+
+      &__content {
+        position: relative;
+        top: 20px;
+        font-weight: 100;
+        padding-right: 10px;
+
+        p {
+          color: #ffffff;
+
+          strong {
+            display: block;
+          }
+        }
+      }
+
+      &__icon {
+        margin-right: 30px;
+
+        &-ico {
+          background-color: #ffffff;
+          color: #7086A2;
+        }
+
+        &:before {
+          left: 10px;
+          top: 50px;
+          background-color: #222B34;
+        }
+      }
+    }
+  }
 }
 
 .icon-card {
