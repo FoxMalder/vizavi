@@ -3674,6 +3674,7 @@ main {
 .icon-cards--white .icon-card {
   flex-basis: 25%;
   max-width: 25%;
+  flex: 1 1 25%;
   flex-wrap: nowrap;
   margin-bottom: 0;
 }
@@ -4076,7 +4077,7 @@ main {
 
 .main-world {
   position: relative;
-  height: 400px;
+  height: 420px;
 }
 
 .main-world__wrap {
@@ -4085,8 +4086,8 @@ main {
 }
 
 .main-world .intro-box {
-  padding-top: 100px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   text-align: left;
 }
 
@@ -4098,10 +4099,70 @@ main {
   display: block;
 }
 
+.main-world__content-box {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  padding-left: 200px;
+  position: relative;
+}
+
+.main-world__title {
+  position: absolute;
+  left: -47px;
+  min-width: 200px;
+  max-width: 200px;
+  text-align: right;
+}
+
+.main-world__title:after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: -40px;
+  width: 40px;
+  height: 2px;
+  background-color: #EA252C;
+  transform: rotate(120deg);
+}
+
+.main-world__title .h2 {
+  font-size: 26px;
+  line-height: 34px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.main-world__body {
+  padding-top: 65px;
+  position: relative;
+}
+
+.main-world__body.body-mission {
+  padding-right: 60px;
+}
+
+.main-world__body p {
+  margin-bottom: 0;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 23px;
+  color: #222B34;
+}
+
+.main-world__body p strong {
+  font-weight: bold;
+}
+
 .main-features:before {
-  top: -400px;
+  top: -430px;
   background-image: url("../images/main/bg-world.png");
-  z-index: -2;
+  z-index: -3;
+  background-size: contain;
+  height: 540px;
 }
 
 .popular-terminal {
