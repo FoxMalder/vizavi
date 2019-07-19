@@ -57,7 +57,12 @@
     &:before {
       position: absolute;
       content: '';
-      background: linear-gradient(174.54deg, #EA252C 5.8%, rgba(234, 37, 44, 0.86) 48.88%, rgba(234, 37, 44, 0) 88.43%);
+      background: linear-gradient(
+        174.54deg,
+        #EA252C 5.8%,
+        rgba(234, 37, 44, .86) 48.88%,
+        rgba(234, 37, 44, 0) 88.43%
+      );
       width: 145px;
       height: 92px;
       left: -18px;

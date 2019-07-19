@@ -24,10 +24,10 @@ $number-card-deg-icon:    25px;
 
         .number-card__header-icon {
           width: 100px;
+        }
 
-          svg {
-            left: -2px;
-          }
+        .number-card__header-icon svg {
+          left: -2px;
         }
       }
 
@@ -92,7 +92,6 @@ $number-card-deg-icon:    25px;
           align-self: flex-end;
           align-items: flex-end;
           margin-left: 20px;
-          height: 100%;
           font-weight: bold;
           font-size: 18px;
           line-height: 25px;

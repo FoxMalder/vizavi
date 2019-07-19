@@ -1337,7 +1337,6 @@ mark {
 }
 
 .advantage-cards--shadow .advantage-card:nth-child(3n+3) {
-  margin-right: 0;
   margin-right: 30px;
 }
 
@@ -1360,7 +1359,6 @@ mark {
 }
 
 .advantage-cards--shadow .advantage-card__icon {
-  margin-bottom: 0;
   min-height: 70px;
   margin-bottom: 15px;
 }
@@ -1440,7 +1438,6 @@ mark {
 }
 
 .advantage-cards--list .advantage-card__icon {
-  margin-bottom: 0;
   min-height: 70px;
   margin-bottom: 15px;
 }
@@ -4292,7 +4289,6 @@ main {
   align-self: flex-end;
   align-items: flex-end;
   margin-left: 20px;
-  height: 100%;
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -5760,13 +5756,12 @@ main {
   content: '';
   position: absolute;
   bottom: -30px;
-  left: 49.5%;
-  margin-right: -49.5%;
-  transform: translateX(-49.5%);
+  left: 50%;
+  margin-right: -50%;
   width: 40px;
   height: 2px;
   background-color: #EA252C;
-  transform: rotate(120deg);
+  transform: translateX(-50%) rotate(120deg);
 }
 
 .intro-box.slash p {
