@@ -3678,9 +3678,14 @@ main {
   margin-bottom: 0;
 }
 
+.icon-cards--white .icon-card__box {
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
 .icon-cards--white .icon-card__content {
   position: relative;
-  top: 20px;
+  top: 30px;
   font-weight: 100;
   padding-right: 10px;
 }
@@ -4066,7 +4071,7 @@ main {
 }
 
 .main-features__cards {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .main-world {
@@ -4360,6 +4365,7 @@ main {
 .why-we__list .h3 + .list-check {
   margin-top: 30px;
   padding-left: 30px;
+  padding-right: 40px;
 }
 
 .why-we__list .h3 {

@@ -108,9 +108,14 @@ $icon-card-deg:   8deg;
       flex-wrap: nowrap;
       margin-bottom: 0;
 
+      &__box {
+        align-items: flex-start;
+        align-content: flex-start;
+      }
+
       &__content {
         position: relative;
-        top: 20px;
+        top: 30px;
         font-weight: 100;
         padding-right: 10px;
 
