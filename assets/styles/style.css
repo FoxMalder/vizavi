@@ -2204,7 +2204,7 @@ mark {
 .error-content {
   justify-content: center;
   height: 80vh;
-  min-height: 680px;
+  min-height: 800px;
   padding: 0;
 }
 
@@ -6535,6 +6535,53 @@ main {
     align-self: flex-start;
     padding-left: 28px;
   }
+  .contact-thanks {
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+  .contact-thanks__wrap {
+    max-width: 100%;
+    margin: 0 20px;
+    min-height: 100%;
+  }
+  .contact-thanks__wrap:before {
+    width: 270px;
+    height: 385px;
+    transform: skewY(-11deg);
+  }
+  .contact-thanks__wrap:after {
+    width: 270px;
+    height: 370px;
+    top: -25px;
+  }
+  .contact-thanks__box {
+    padding: 40px 20px;
+  }
+  .contact-thanks__box .h1 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .contact-thanks__box .h1 span {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .contact-thanks__box p {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .contact-thanks__box:before {
+    border-width: 30px 46px 0 0;
+  }
+  .contact-thanks__box:after {
+    border-width: 0 0 30px 46px;
+  }
+  .contact-thanks__actions {
+    margin-top: 30px;
+  }
   .error-content {
     height: 100%;
     min-height: 500px;
@@ -6723,6 +6770,21 @@ main {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .error-content {
+    height: 100%;
+    min-height: 580px;
+  }
+  .error-content__wrap {
+    max-width: 630px;
+    padding: 0;
+  }
+  .error-content .h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .error-content__message {
+    margin-bottom: 30px;
+  }
   .footer__wrap {
     max-width: 630px;
   }

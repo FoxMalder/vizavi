@@ -209,12 +209,32 @@
   padding-top: 140px;
   padding-bottom: 90px;
 
+  @media #{$xs} {
+    overflow: hidden;
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+  @media #{$sm} {
+  }
+  @media #{$md} {
+  }
+
   &__wrap {
     position: relative;
     max-width: 800px;
     min-height: 600px;
     margin: 0 auto;
     z-index: 1;
+
+    @media #{$xs} {
+      max-width: 100%;
+      margin: 0 20px;
+      min-height: 100%;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
 
     &:before,
     &:after {
@@ -232,6 +252,16 @@
       transform: skewY(-3deg);
       transition: all .35s ease;
       z-index: 2;
+
+      @media #{$xs} {
+        width: 270px;
+        height: 385px;
+        transform: skewY(-11deg);
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
     }
 
     &:after {
@@ -243,6 +273,16 @@
       transform: skewY(-3deg);
       transition: all .35s ease;
       z-index: 1;
+
+      @media #{$xs} {
+        width: 270px;
+        height: 370px;
+        top: -25px;
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
     }
   }
 
@@ -256,6 +296,14 @@
     padding: 90px 70px;
     text-align: center;
 
+    @media #{$xs} {
+      padding: 40px 20px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
+
     .h1 {
       font-family: Roboto;
       font-style: normal;
@@ -267,6 +315,15 @@
       color: #7086A2;
       margin: 0 0 20px 0;
 
+      @media #{$xs} {
+        font-size: 16px;
+        line-height: 21px;
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
+
       span {
         font-weight: bold;
         font-size: 46px;
@@ -277,6 +334,16 @@
         color: #EA252C;
         display: block;
         margin-bottom: 30px;
+
+        @media #{$xs} {
+          font-size: 20px;
+          line-height: 26px;
+          margin-bottom: 15px;
+        }
+        @media #{$sm} {
+        }
+        @media #{$md} {
+        }
       }
     }
 
@@ -287,6 +354,17 @@
       color: #222B34;
       padding-left: 40px;
       padding-right: 40px;
+
+      @media #{$xs} {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
     }
 
     &:before,
@@ -304,6 +382,14 @@
       border-style: solid;
       border-width: 100px 150px 0 0;
       border-color: #EA252C transparent transparent transparent;
+
+      @media #{$xs} {
+        border-width: 30px 46px 0 0;
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
     }
 
     &:after {
@@ -314,11 +400,27 @@
       border-style: solid;
       border-width: 0 0 100px 150px;
       border-color: transparent transparent #EA252C transparent;
+
+      @media #{$xs} {
+        border-width: 0 0 30px 46px;
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
     }
   }
 
   &__actions {
     margin-top: 40px;
+
+    @media #{$xs} {
+      margin-top: 30px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
 
     .button {
       color: #222B34;

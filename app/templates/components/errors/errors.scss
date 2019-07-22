@@ -1,7 +1,7 @@
 .error-content {
   justify-content: center;
   height: 80vh;
-  min-height: 680px;
+  min-height: 800px;
   padding: 0;
 
   @media #{$xs} {
@@ -9,6 +9,8 @@
     min-height: 500px;
   }
   @media #{$sm} {
+    height: 100%;
+    min-height: 580px;
   }
   @media #{$md} {
   }
@@ -23,6 +25,8 @@
       padding: 0 20px;
     }
     @media #{$sm} {
+      max-width: 630px;
+      padding: 0;
     }
     @media #{$md} {
     }
@@ -45,6 +49,8 @@
       line-height: 21px;
     }
     @media #{$sm} {
+      font-size: 20px;
+      line-height: 26px;
     }
     @media #{$md} {
     }
@@ -58,6 +64,7 @@
       margin-bottom: 25px;
     }
     @media #{$sm} {
+      margin-bottom: 30px;
     }
     @media #{$md} {
     }
