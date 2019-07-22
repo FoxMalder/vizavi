@@ -11,6 +11,15 @@
     margin: 0 auto;
     height: 100%;
     font-family: 'Roboto';
+
+    @media #{$xs} {
+      max-width: $max-width-sx;
+    }
+    @media #{$sm} {
+      max-width: $max-width-sm;
+    }
+    @media #{$md} {
+    }
   }
 
   .flex {

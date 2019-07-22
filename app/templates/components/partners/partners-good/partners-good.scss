@@ -9,6 +9,15 @@ $partners-good-deg:  30px;
 
     justify-content: space-between;
     padding-bottom: 100px;
+
+    @media #{$xs} {
+      max-width: $max-width-sx;
+    }
+    @media #{$sm} {
+      max-width: $max-width-sm;
+    }
+    @media #{$md} {
+    }
   }
 
   &__description {

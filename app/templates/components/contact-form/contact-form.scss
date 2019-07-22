@@ -80,6 +80,7 @@
       margin-left: 20px;
     }
     @media #{$sm} {
+      max-width: $max-width-sm;
     }
     @media #{$md} {
     }
@@ -212,9 +213,12 @@
   @media #{$xs} {
     overflow: hidden;
     padding-top: 60px;
-    padding-bottom: 65px;
+    padding-bottom: 75px;
   }
   @media #{$sm} {
+    overflow: hidden;
+    padding-top: 90px;
+    padding-bottom: 0;
   }
   @media #{$md} {
   }
@@ -232,6 +236,8 @@
       min-height: 100%;
     }
     @media #{$sm} {
+      max-width: $max-width-sm;
+      min-height: 540px;
     }
     @media #{$md} {
     }
@@ -255,10 +261,13 @@
 
       @media #{$xs} {
         width: 270px;
-        height: 385px;
+        height: 345px;
         transform: skewY(-11deg);
       }
       @media #{$sm} {
+        width: 659px;
+        height: 410px;
+        left: -100px;
       }
       @media #{$md} {
       }
@@ -278,8 +287,11 @@
         width: 270px;
         height: 370px;
         top: -25px;
+        right: -40px;
+        left: auto;
       }
       @media #{$sm} {
+        height: 410px;
       }
       @media #{$md} {
       }
@@ -300,6 +312,7 @@
       padding: 40px 20px;
     }
     @media #{$sm} {
+      padding: 60px 50px;
     }
     @media #{$md} {
     }
@@ -320,6 +333,10 @@
         line-height: 21px;
       }
       @media #{$sm} {
+        font-size: 20px;
+        line-height: 26px;
+        padding-left: 30px;
+        padding-right: 30px;
       }
       @media #{$md} {
       }
@@ -341,6 +358,9 @@
           margin-bottom: 15px;
         }
         @media #{$sm} {
+          font-size: 30px;
+          line-height: 39px;
+          margin-bottom: 20px;
         }
         @media #{$md} {
         }
@@ -362,6 +382,10 @@
         line-height: 22px;
       }
       @media #{$sm} {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 16px;
+        line-height: 26px;
       }
       @media #{$md} {
       }
@@ -387,6 +411,7 @@
         border-width: 30px 46px 0 0;
       }
       @media #{$sm} {
+        border-width: 70px 105px 0 0;
       }
       @media #{$md} {
       }
@@ -405,6 +430,7 @@
         border-width: 0 0 30px 46px;
       }
       @media #{$sm} {
+        border-width: 0 0 70px 105px;
       }
       @media #{$md} {
       }

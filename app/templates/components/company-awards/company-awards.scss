@@ -26,6 +26,15 @@
     text-align: center;
     z-index: 2;
     position: relative;
+
+    @media #{$xs} {
+      max-width: $max-width-sx;
+    }
+    @media #{$sm} {
+      max-width: $max-width-sm;
+    }
+    @media #{$md} {
+    }
   }
 
   &__list {

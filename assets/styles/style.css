@@ -6496,6 +6496,21 @@ main {
   .check__name {
     text-align: left;
   }
+  .accounts__wrap {
+    max-width: 100%;
+  }
+  .advantage-terminal__wrap {
+    max-width: 100%;
+  }
+  .best-traders__wrap {
+    max-width: 100%;
+  }
+  .business-model__wrap {
+    max-width: 100%;
+  }
+  .company-awards__wrap {
+    max-width: 100%;
+  }
   .contact-form {
     padding-top: 30px;
     padding-bottom: 50px;
@@ -6538,7 +6553,7 @@ main {
   .contact-thanks {
     overflow: hidden;
     padding-top: 60px;
-    padding-bottom: 65px;
+    padding-bottom: 75px;
   }
   .contact-thanks__wrap {
     max-width: 100%;
@@ -6547,13 +6562,15 @@ main {
   }
   .contact-thanks__wrap:before {
     width: 270px;
-    height: 385px;
+    height: 345px;
     transform: skewY(-11deg);
   }
   .contact-thanks__wrap:after {
     width: 270px;
     height: 370px;
     top: -25px;
+    right: -40px;
+    left: auto;
   }
   .contact-thanks__box {
     padding: 40px 20px;
@@ -6581,6 +6598,9 @@ main {
   }
   .contact-thanks__actions {
     margin-top: 30px;
+  }
+  .double-background__wrap {
+    max-width: 100%;
   }
   .error-content {
     height: 100%;
@@ -6680,6 +6700,9 @@ main {
   .footer-copyright {
     height: 70px;
   }
+  .growth-plan__wrap {
+    max-width: 100%;
+  }
   .header-menu {
     display: none;
     visibility: hidden;
@@ -6715,6 +6738,36 @@ main {
     display: none;
     visibility: hidden;
     opacity: 0;
+  }
+  .headline__wrap {
+    max-width: 100%;
+  }
+  .copy-transaction__wrap {
+    max-width: 100%;
+  }
+  .new-method__wrap {
+    max-width: 100%;
+  }
+  .our-value__wrap {
+    max-width: 100%;
+  }
+  .partners-good__wrap {
+    max-width: 100%;
+  }
+  .partners-info__wrap {
+    max-width: 100%;
+  }
+  .partners-reason__wrap {
+    max-width: 100%;
+  }
+  .terminal-apps__wrap {
+    max-width: 100%;
+  }
+  .text-about__wrap {
+    max-width: 100%;
+  }
+  .text-investor__wrap {
+    max-width: 100%;
   }
   .text-page__wrap {
     max-width: 100%;
@@ -6767,9 +6820,82 @@ main {
     line-height: 13px;
     white-space: nowrap;
   }
+  .text-safety__wrap {
+    max-width: 100%;
+  }
+  .text-terminal__wrap {
+    max-width: 100%;
+  }
+  .trading-account__wrap {
+    max-width: 100%;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .accounts__wrap {
+    max-width: 630px;
+  }
+  .advantage-terminal__wrap {
+    max-width: 630px;
+  }
+  .best-traders__wrap {
+    max-width: 630px;
+  }
+  .business-model__wrap {
+    max-width: 630px;
+  }
+  .company-awards__wrap {
+    max-width: 630px;
+  }
+  .contact-form__wrap {
+    max-width: 630px;
+  }
+  .contact-thanks {
+    overflow: hidden;
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
+  .contact-thanks__wrap {
+    max-width: 630px;
+    min-height: 540px;
+  }
+  .contact-thanks__wrap:before {
+    width: 659px;
+    height: 410px;
+    left: -100px;
+  }
+  .contact-thanks__wrap:after {
+    height: 410px;
+  }
+  .contact-thanks__box {
+    padding: 60px 50px;
+  }
+  .contact-thanks__box .h1 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contact-thanks__box .h1 span {
+    font-size: 30px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+  .contact-thanks__box p {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .contact-thanks__box:before {
+    border-width: 70px 105px 0 0;
+  }
+  .contact-thanks__box:after {
+    border-width: 0 0 70px 105px;
+  }
+  .double-background__wrap {
+    max-width: 630px;
+  }
   .error-content {
     height: 100%;
     min-height: 580px;
@@ -6844,6 +6970,9 @@ main {
   .footer-copyright {
     height: 50px;
   }
+  .growth-plan__wrap {
+    max-width: 630px;
+  }
   .header-menu {
     display: none;
     visibility: hidden;
@@ -6865,6 +6994,36 @@ main {
   }
   .user-action {
     margin-left: 40px;
+  }
+  .headline__wrap {
+    max-width: 630px;
+  }
+  .copy-transaction__wrap {
+    max-width: 630px;
+  }
+  .new-method__wrap {
+    max-width: 630px;
+  }
+  .our-value__wrap {
+    max-width: 630px;
+  }
+  .partners-good__wrap {
+    max-width: 630px;
+  }
+  .partners-info__wrap {
+    max-width: 630px;
+  }
+  .partners-reason__wrap {
+    max-width: 630px;
+  }
+  .terminal-apps__wrap {
+    max-width: 630px;
+  }
+  .text-about__wrap {
+    max-width: 630px;
+  }
+  .text-investor__wrap {
+    max-width: 630px;
   }
   .text-page__wrap {
     max-width: 630px;
@@ -6892,6 +7051,15 @@ main {
   .text-content .doc-link {
     font-size: 16px;
     line-height: 26px;
+  }
+  .text-safety__wrap {
+    max-width: 630px;
+  }
+  .text-terminal__wrap {
+    max-width: 630px;
+  }
+  .trading-account__wrap {
+    max-width: 630px;
   }
 }
 

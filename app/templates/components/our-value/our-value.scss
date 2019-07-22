@@ -4,6 +4,15 @@
   &__wrap {
     max-width: 1180px;
     margin: 0 auto;
+
+    @media #{$xs} {
+      max-width: $max-width-sx;
+    }
+    @media #{$sm} {
+      max-width: $max-width-sm;
+    }
+    @media #{$md} {
+    }
   }
 
   &__cards {
