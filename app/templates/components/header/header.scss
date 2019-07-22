@@ -13,10 +13,10 @@ main {
 
     @media #{$xs} {
       max-width: 100%;
-      padding: 0 20px 0 15px;
+      padding: 0 0 0 15px;
     }
     @media #{$sm} {
-      max-width: 100%;
+      max-width: 600px;
     }
     @media #{$md} {
       max-width: 100%;

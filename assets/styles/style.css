@@ -2864,8 +2864,8 @@ mark {
 }
 
 .header-toggle {
-  width: 100%;
-  height: 100%;
+  width: 60px;
+  height: 60px;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -5382,7 +5382,7 @@ main {
   font-size: 36px;
   line-height: 47px;
   text-transform: uppercase;
-  color: #222B34;
+  color: #737e8c;
   margin: 0 0 20px 0;
 }
 
@@ -5407,6 +5407,15 @@ main {
 .text-content .h2 > span,
 .text-content .h2-red {
   color: #EA252C;
+}
+
+.text-content .title-light {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #222B34;
+  margin: 0 0 15px 0;
 }
 
 .text-content p {
@@ -5571,15 +5580,6 @@ main {
   margin-top: 40px;
 }
 
-.text-content .title-light {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 29px;
-  text-transform: uppercase;
-  color: #222B34;
-  margin: 0 0 15px 0;
-}
-
 .text-content .list-mini {
   list-style-type: none;
   margin: 0;
@@ -5596,7 +5596,7 @@ main {
   color: #7086A2;
 }
 
-.text-content .doc-link .doc-link__icon {
+.text-content .doc-link__icon {
   min-width: 25px;
   background-repeat: no-repeat;
 }
@@ -6470,6 +6470,7 @@ main {
   }
   .footer {
     position: relative;
+    margin-top: 90px;
   }
   .footer:before {
     position: absolute;
@@ -6516,13 +6517,16 @@ main {
     opacity: 0;
   }
   .header-toggle {
+    width: 75px;
+  }
+  .header-toggle {
     display: flex;
     opacity: 1;
     visibility: visible;
   }
   .header__wrap {
     max-width: 100%;
-    padding: 0 20px 0 15px;
+    padding: 0 0 0 15px;
   }
   .header__logo svg {
     height: 30px;
@@ -6543,6 +6547,57 @@ main {
     visibility: hidden;
     opacity: 0;
   }
+  .text-page__wrap {
+    max-width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .text-content h1,
+  .text-content .h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .text-content h2,
+  .text-content .h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .text-content .title-light {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .text-content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text-content .list-box {
+    margin-top: 20px;
+  }
+  .text-content .doc-link {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .text-content .doc-link__icon {
+    align-self: flex-start;
+    min-width: 20px;
+    margin-right: 10px;
+    background-size: 15px auto;
+    background-position: center;
+  }
+  .text-content .doc-link--logo .doc-link__icon {
+    background-size: 20px auto;
+    background-position: center;
+  }
+  .text-content .doc-link__type {
+    margin-left: 10px;
+  }
+  .text-content .doc-link__size {
+    font-size: 11px;
+    line-height: 13px;
+    white-space: nowrap;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -6555,12 +6610,15 @@ main {
     opacity: 0;
   }
   .header-toggle {
+    max-width: 600px;
+  }
+  .header-toggle {
     display: flex;
     opacity: 1;
     visibility: visible;
   }
   .header__wrap {
-    max-width: 100%;
+    max-width: 600px;
   }
   .language-action {
     display: none;
@@ -6577,6 +6635,29 @@ main {
     visibility: hidden;
     opacity: 0;
   }
+  .text-page__wrap {
+    max-width: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .text-content h1,
+  .text-content .h1 {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .text-content h2,
+  .text-content .h2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .text-content .title-light {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .text-content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -6587,6 +6668,9 @@ main {
     display: none;
     visibility: hidden;
     opacity: 0;
+  }
+  .header-toggle {
+    max-width: 100%;
   }
   .header-toggle {
     display: flex;
