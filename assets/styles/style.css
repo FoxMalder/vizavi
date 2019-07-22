@@ -6685,7 +6685,7 @@ main {
     opacity: 0;
   }
   .header-toggle {
-    max-width: 600px;
+    margin-left: 30px;
   }
   .header-toggle {
     display: flex;
@@ -6695,20 +6695,11 @@ main {
   .header__wrap {
     max-width: 600px;
   }
-  .language-action {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
-  }
   .search-action {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+    margin-right: 40px;
   }
   .user-action {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+    margin-left: 40px;
   }
   .text-page__wrap {
     max-width: 600px;
@@ -6743,9 +6734,6 @@ main {
     display: none;
     visibility: hidden;
     opacity: 0;
-  }
-  .header-toggle {
-    max-width: 100%;
   }
   .header-toggle {
     display: flex;

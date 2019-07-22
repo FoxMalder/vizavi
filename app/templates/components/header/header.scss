@@ -152,9 +152,7 @@ main {
     opacity: 0;
   }
   @media #{$sm} {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+
   }
   @media #{$md} {
     display: none;
@@ -272,9 +270,7 @@ main {
     opacity: 0;
   }
   @media #{$sm} {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+    margin-right: 40px;
   }
   @media #{$md} {
     display: none;
@@ -335,9 +331,7 @@ main {
     opacity: 0;
   }
   @media #{$sm} {
-    display: none;
-    visibility: hidden;
-    opacity: 0;
+    margin-left: 40px;
   }
   @media #{$md} {
     display: none;
