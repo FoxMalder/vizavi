@@ -4,10 +4,28 @@
   min-height: 680px;
   padding: 0;
 
+  @media #{$xs} {
+    height: 100%;
+    min-height: 500px;
+  }
+  @media #{$sm} {
+  }
+  @media #{$md} {
+  }
+
   &__wrap {
     max-width: 860px;
     margin: 0 auto;
     flex-direction: column;
+
+    @media #{$xs} {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   .h1 {
@@ -21,11 +39,28 @@
     color: #7086A2;
     margin: 0;
     padding: 0;
+
+    @media #{$xs} {
+      font-size: 16px;
+      line-height: 21px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   &__message {
     margin-top: 15px;
     margin-bottom: 50px;
+
+    @media #{$xs} {
+      margin-bottom: 25px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
 
     span {
       display: inline-block;
@@ -34,11 +69,43 @@
 
   &__actions {
 
+    @media #{$xs} {
+      flex-wrap: wrap;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
+
     .button {
       margin-right: 20px;
 
       &:last-child {
         margin-right: 0;
+      }
+
+      @media #{$xs} {
+        margin-right: 10px;
+        flex: 1 47%;
+        max-width: 47%;
+        min-width: 47%;
+        font-size: 12px;
+        line-height: 22px;
+
+        &:first-child {
+          margin-right: 0;
+          flex: 1 100%;
+          max-width: 100%;
+          min-width: 100%;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
       }
     }
   }
