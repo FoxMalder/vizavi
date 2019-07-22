@@ -3,6 +3,16 @@
   padding-top: 60px;
   padding-bottom: 100px;
 
+  @media #{$xs} {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  @media #{$sm} {
+  }
+  @media #{$md} {
+  }
+
   &:before,
   &:after {
     position: absolute;
@@ -19,6 +29,15 @@
     margin-right: -50%;
     transform: translate(-50%, -50%) skewY(4deg);
     transition: all .35s ease;
+
+    @media #{$xs} {
+      width: 100%;
+      height: 740px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   &:after {
@@ -32,6 +51,16 @@
     transform: translate(-50%, -50%) skewY(-4deg);
     transition: all .35s ease;
     z-index: 1;
+
+    @media #{$xs} {
+      width: 100%;
+      margin-left: 20px;
+      height: 740px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   &__wrap {
@@ -44,9 +73,28 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+
+    @media #{$xs} {
+      max-width: 100%;
+      min-height: 740px;
+      margin-left: 20px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   &__form {
+
+    @media #{$xs} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
 
     &-wrap {
       max-width: 590px;
@@ -60,11 +108,29 @@
       align-content: center;
       justify-content: center;
       flex-direction: column;
+
+      @media #{$xs} {
+        margin-top: 10§px;
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
     }
 
     .h2 {
       margin-bottom: 20px;
       color: #6E7A86;
+
+      @media #{$xs} {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
 
       span {
         color: #EA252C;
@@ -84,6 +150,14 @@
       .form-group {
         margin-bottom: 20px;
 
+        @media #{$xs} {
+          margin-bottom: 10px;
+        }
+        @media #{$sm} {
+        }
+        @media #{$md} {
+        }
+
         &:last-child {
           margin-right: 0;
         }
@@ -92,6 +166,16 @@
 
     .form-action {
       margin-top: 20px;
+
+      @media #{$xs} {
+        margin-top: 20px;
+        align-self: flex-start;
+        padding-left: 28px;
+      }
+      @media #{$sm} {
+      }
+      @media #{$md} {
+      }
     }
 
     .form-group--textarea {

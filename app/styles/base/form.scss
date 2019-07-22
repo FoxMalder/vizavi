@@ -36,6 +36,14 @@ textarea {
   margin-bottom: 30px;
   width: 100%;
 
+  @media #{$xs} {
+    margin-bottom: 10px;
+  }
+  @media #{$sm} {
+  }
+  @media #{$md} {
+  }
+
   &:last-child { margin-bottom: 0; }
 
   &.is-error {
@@ -51,9 +59,26 @@ textarea {
   align-items: stretch;
   align-content: stretch;
 
+  @media #{$xs} {
+    flex-direction: column;
+  }
+  @media #{$sm} {
+  }
+  @media #{$md} {
+  }
+
   .form-group {
     margin-bottom: 0;
     margin-right: 20px;
+
+    @media #{$xs} {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   .form-control {
@@ -82,6 +107,16 @@ textarea {
   line-height: 15px;
   font-family: 'Roboto';
   transition: all .25s ease;
+
+  @media #{$xs} {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 15px;
+  }
+  @media #{$sm} {
+  }
+  @media #{$md} {
+  }
 
   &:disabled,
   &.is-disabled,
@@ -115,18 +150,46 @@ textarea.form-control {
   margin-left: -20px;
   margin-right: -20px;
 
+  @media #{$xs} {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media #{$sm} {
+  }
+  @media #{$md} {
+  }
+
   .h3 {
     font-weight: 500;
     font-size: 24px;
     line-height: 24px;
     text-transform: uppercase;
     color: #222B34;
+
+    @media #{$xs} {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   p {
     font-size: 18px;
     line-height: 18px;
     color: #6E7A86;
+
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 22px;
+      color: #222B34;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -161,6 +224,16 @@ textarea.form-control {
   padding-left: 28px;
   font-family: 'Roboto';
   position: relative;
+
+  @media #{$xs} {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  @media #{$sm} {
+  }
+  @media #{$md} {
+  }
 
   &__box {
     position: absolute;
@@ -214,6 +287,14 @@ textarea.form-control {
     line-height: 17px;
     letter-spacing: .01em;
     color: #7481AA;
+
+    @media #{$xs} {
+      text-align: left;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
 
     a {
       color: #EA252C;
