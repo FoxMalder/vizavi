@@ -32,7 +32,7 @@ $footer-border-color: rgba(114, 124, 140, .2);
       max-width: 100%;
     }
     @media #{$sm} {
-      max-width: 100%;
+      max-width: 630px;
     }
     @media #{$md} {
       max-width: 100%;
@@ -51,12 +51,22 @@ $footer-border-color: rgba(114, 124, 140, .2);
 /* Базовые блок подвала */
 .footer-main {
 
+  &__center {
+
+    @media #{$xs} {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    @media #{$md} {
+    }
+  }
+
   &__wrap {
     padding: 30px 0;
     justify-content: space-between;
 
     @media #{$xs} {
-      padding: 30px 30px;
+      padding: 20px 30px 30px 30px;
       flex-direction: column;
     }
   }
@@ -105,13 +115,72 @@ $footer-border-color: rgba(114, 124, 140, .2);
       opacity: .2;
     }
   }
+
+  &__item {
+    flex-basis: 25%;
+    max-width: 25%;
+
+    @media #{$xs} {
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    @media #{$sm} {
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
+    }
+    @media #{$md} {
+    }
+  }
+
+  &__items {
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-around;
+
+    @media #{$xs} {
+      margin-bottom: 30px;
+      flex-basis: 100%;
+      max-width: 100%;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+    @media #{$sm} {
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
+      flex-direction: column;
+
+      .footer-navigation__item {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    @media #{$md} {
+    }
+  }
 }
 
 /* Ссылки на документы */
 .footer-docs {
 
   &__wrap {
-    padding: 30px 20px;
+    padding: 30px 30px;
+
+    @media #{$sm} {
+      padding-bottom: 10px;
+    }
   }
 
   &__list {
@@ -122,6 +191,23 @@ $footer-border-color: rgba(114, 124, 140, .2);
       align-items: flex-start;
       align-content: flex-start;
       flex-direction: column;
+    }
+    @media #{$sm} {
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      flex-wrap: wrap;
+
+      .doc-link {
+        text-align: left;
+        flex-basis: 50%;
+        max-width: 50%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+    @media #{$md} {
+      max-width: 100%;
     }
   }
 }
@@ -150,6 +236,9 @@ $footer-border-color: rgba(114, 124, 140, .2);
     @media #{$xs} {
       margin-right: 15px;
     }
+    @media #{$sm} {
+      margin-right: 25px;
+    }
   }
 }
 
@@ -164,6 +253,47 @@ $footer-border-color: rgba(114, 124, 140, .2);
   &__wrap {
     padding: 30px 60px;
     text-align: center;
+
+    @media #{$xs} {
+    }
+    @media #{$sm} {
+      padding: 30px 0;
+      display: flex;
+      align-items: stretch;
+      align-content: stretch;
+    }
+    @media #{$md} {
+    }
+  }
+
+  &__item {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-right: 0;
+    }
+
+    span {
+      margin-right: 15px;
+    }
+
+    @media #{$xs} {
+    }
+    @media #{$sm} {
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
+      margin-bottom: 0;
+      margin-right: 22px;
+
+      span {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+      }
+    }
+    @media #{$md} {
+    }
   }
 
   p {
@@ -211,6 +341,12 @@ $footer-border-color: rgba(114, 124, 140, .2);
 
   @media #{$xs} {
     height: 70px;
+  }
+  @media #{$sm} {
+    height: 50px;
+  }
+  @media #{$md} {
+
   }
 
   &__wrap {
