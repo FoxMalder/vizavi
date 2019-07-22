@@ -94,4 +94,15 @@
 
   }
 
+
+  // клик по гамбургеру
+  (function(){
+    $('.js_header-toggle').click(function(e) {
+      e.preventDefault();
+      $(this).toggleClass('is-active');
+      // $('.top-menu').toggleClass('open');
+    });
+  })();
+
+
 })(jQuery);

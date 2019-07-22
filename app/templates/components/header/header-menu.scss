@@ -7,6 +7,22 @@
   list-style-type: none;
   font-family: 'Roboto';
 
+  @media #{$xs} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media #{$sm} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media #{$md} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
   &__item {
     height: 100%;
 

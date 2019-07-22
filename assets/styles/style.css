@@ -2863,6 +2863,70 @@ mark {
   background-color: #fff;
 }
 
+.header-toggle {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header-toggle:hover .toggle-button__item {
+  background-color: #EA252C;
+}
+
+.header-toggle.is-active .toggle-button__item {
+  background-color: #000000;
+}
+
+.header-toggle.is-active .toggle-button__item:nth-child(1) {
+  transform: translate(0px, 9px) rotate(45deg);
+}
+
+.header-toggle.is-active .toggle-button__item:nth-child(2) {
+  background-color: #000000;
+  opacity: 0;
+  transform: translate(0px, 0px);
+}
+
+.header-toggle.is-active .toggle-button__item:nth-child(3) {
+  transform: translate(0px, -9px) rotate(-45deg);
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: flex-end;
+  align-content: flex-end;
+  flex-direction: column;
+  width: 30px;
+  height: 20px;
+  transition: all .3s linear;
+  position: relative;
+  justify-content: space-between;
+}
+
+.toggle-button__item {
+  background-color: #000000;
+  height: 2px;
+  width: 30px;
+  transition: all .3s linear;
+  position: relative;
+}
+
+.toggle-button__item:nth-child(2) {
+  width: 24px;
+}
+
+.toggle-button:hover .toggle-button__item {
+  background-color: #EA252C;
+}
+
 main {
   margin-top: 60px;
 }
@@ -6404,11 +6468,6 @@ main {
     width: 100%;
     margin-bottom: 20px;
   }
-  .header,
-  .company-awards {
-    display: none;
-    visibility: hidden;
-  }
   .footer {
     position: relative;
   }
@@ -6451,17 +6510,106 @@ main {
   .footer-copyright {
     height: 70px;
   }
+  .header-menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .header-toggle {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__wrap {
+    max-width: 100%;
+    padding: 0 20px 0 15px;
+  }
+  .header__logo svg {
+    height: 30px;
+    width: auto;
+  }
+  .language-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .search-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .user-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .footer__wrap {
     max-width: 100%;
   }
+  .header-menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .header-toggle {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__wrap {
+    max-width: 100%;
+  }
+  .language-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .search-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .user-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .footer__wrap {
     max-width: 100%;
+  }
+  .header-menu {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .header-toggle {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+  .header__wrap {
+    max-width: 100%;
+  }
+  .language-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .search-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .user-action {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 

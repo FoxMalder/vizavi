@@ -10,6 +10,17 @@ main {
     margin: 0 auto;
     height: 100%;
     width: 100%;
+
+    @media #{$xs} {
+      max-width: 100%;
+      padding: 0 20px 0 15px;
+    }
+    @media #{$sm} {
+      max-width: 100%;
+    }
+    @media #{$md} {
+      max-width: 100%;
+    }
   }
 
   &__main {
@@ -26,6 +37,18 @@ main {
 
   &__logo {
     margin-right: 45px;
+
+    @media #{$xs} {
+
+      svg {
+        height: 30px;
+        width: auto;
+      }
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   &__aside {
@@ -122,6 +145,22 @@ main {
   padding: 23px 0;
   border-bottom: 3px solid transparent;
   transition: all .35s ease;
+
+  @media #{$xs} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media #{$sm} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media #{$md} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 
   &__box {
     display: flex;
@@ -227,6 +266,22 @@ main {
   font-size: 14px;
   line-height: 14px;
 
+  @media #{$xs} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media #{$sm} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media #{$md} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
   &__box {
     display: flex;
     align-items: center;
@@ -273,6 +328,22 @@ main {
   font-family: 'Roboto';
   font-size: 14px;
   line-height: 14px;
+
+  @media #{$xs} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media #{$sm} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  @media #{$md} {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 
   &__icon {
     margin-right: 8px;
