@@ -6831,7 +6831,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 769px) {
   .accounts__wrap {
     max-width: 630px;
   }
@@ -7063,7 +7063,7 @@ main {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 770px) and (max-width: 991px) {
   .footer__wrap {
     max-width: 100%;
   }
