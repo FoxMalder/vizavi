@@ -6983,11 +6983,11 @@ main {
     min-width: 20px;
     margin-right: 10px;
     background-size: 15px auto;
-    background-position: center;
+    background-position: left center;
   }
   .text-content .doc-link--logo .doc-link__icon {
     background-size: 20px auto;
-    background-position: center;
+    background-position: left center;
   }
   .text-content .doc-link__type {
     margin-left: 10px;

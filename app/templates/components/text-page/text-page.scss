@@ -312,7 +312,7 @@
         min-width: 20px;
         margin-right: 10px;
         background-size: 15px auto;
-        background-position: center;
+        background-position: left center;
       }
       @media #{$sm} {
       }
@@ -327,7 +327,7 @@
 
       @media #{$xs} {
         background-size: 20px auto;
-        background-position: center;
+        background-position: left center;
       }
       @media #{$sm} {
       }
