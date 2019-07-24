@@ -4290,6 +4290,133 @@ main {
   height: 540px;
 }
 
+.one-click {
+  position: relative;
+  height: 480px;
+  min-height: 480px;
+  font-family: 'Roboto';
+}
+
+.one-click:after {
+  position: absolute;
+  content: '';
+  background: radial-gradient(470.51px at 60.62% 43.89%, rgba(0, 148, 195, 0.2) 0%, rgba(0, 148, 195, 0) 100%), #222B34;
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+  width: 100%;
+  height: 790px;
+  bottom: -659px;
+  left: 0;
+  right: 0;
+  z-index: -2;
+}
+
+.one-click__bg {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 63px);
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: #F3F4F5;
+  transform: skewY(-6deg);
+}
+
+.one-click__bgbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 1180px;
+  height: 480px;
+  background-color: #EA252C;
+  z-index: -1;
+}
+
+.one-click__wrap {
+  padding-top: 50px;
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.one-click .intro-box .h2-break {
+  color: inherit;
+  display: block;
+}
+
+.one-click__cards {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.one-click__item {
+  flex-basis: 25%;
+  max-width: 25%;
+  margin-right: 30px;
+  position: relative;
+}
+
+.one-click__item:last-child {
+  margin-right: 0;
+}
+
+.one-click__item:nth-child(4) {
+  top: -32px;
+}
+
+.one-click__item:nth-child(3) {
+  top: 0px;
+}
+
+.one-click__item:nth-child(2) {
+  top: 32px;
+}
+
+.one-click__item:nth-child(1) {
+  top: 64px;
+}
+
+.one-click__box {
+  height: 100%;
+  background: #FFFFFF;
+  transform: skewY(-6deg);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.one-click__content {
+  transform: skewY(6deg);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 50px 30px;
+}
+
+.one-click__step {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #7086A2;
+  margin-bottom: 22px;
+}
+
+.one-click__body {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 100;
+  text-align: center;
+  color: #222B34;
+}
+
+.one-click__body strong {
+  font-weight: bold;
+}
+
 .popular-terminal {
   background-color: #232D3A;
   font-family: 'Roboto';
@@ -4467,8 +4594,6 @@ main {
   right: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(0, 148, 195, 0.2) 0%, rgba(0, 148, 195, 0) 100%), #222B34;
-  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
 }
 
 .top-traders__wrap {
@@ -6794,6 +6919,9 @@ main {
   .new-method__wrap {
     max-width: 100%;
   }
+  .one-click__wrap {
+    max-width: 100%;
+  }
   .top-traders__wrap {
     max-width: 100%;
   }
@@ -7051,6 +7179,9 @@ main {
     max-width: 630px;
   }
   .new-method__wrap {
+    max-width: 630px;
+  }
+  .one-click__wrap {
     max-width: 630px;
   }
   .top-traders__wrap {
