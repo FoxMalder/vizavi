@@ -3673,6 +3673,10 @@ main {
   align-content: center;
 }
 
+.headline-feature__icon {
+  color: #ffffff;
+}
+
 .headline-feature__description {
   margin-left: 20px;
   display: flex;
@@ -4449,6 +4453,30 @@ main {
 .start-trading__cards {
   padding-top: 120px;
   padding-bottom: 60px;
+}
+
+.top-traders {
+  height: 690px;
+  position: relative;
+}
+
+.top-traders__bg {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(0, 148, 195, 0.2) 0%, rgba(0, 148, 195, 0) 100%), #222B34;
+  clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
+}
+
+.top-traders__wrap {
+  padding-top: 50px;
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 .trading-market {
@@ -6149,6 +6177,24 @@ main {
   color: #6E7A86;
 }
 
+.intro-box--dark .h2 {
+  margin: 0;
+  color: #A9B0B8;
+}
+
+.intro-box--dark .h2 span {
+  color: #ffffff;
+}
+
+.intro-box--dark .h2 span.h2-break {
+  display: block;
+  color: #A9B0B8;
+}
+
+.intro-box--dark p {
+  color: #ffffff;
+}
+
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch
@@ -6748,6 +6794,9 @@ main {
   .new-method__wrap {
     max-width: 100%;
   }
+  .top-traders__wrap {
+    max-width: 100%;
+  }
   .our-value__wrap {
     max-width: 100%;
   }
@@ -7002,6 +7051,9 @@ main {
     max-width: 630px;
   }
   .new-method__wrap {
+    max-width: 630px;
+  }
+  .top-traders__wrap {
     max-width: 630px;
   }
   .our-value__wrap {
