@@ -83,6 +83,24 @@ $main-world-height: 420px;
       }
     }
   }
+
+  &__flag {
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      background-color: #EA252C;
+      width: 90px;
+      height: 44px;
+      transform: skewY(-9.1deg);
+      top: -15px;
+      left: 0;
+      z-index: -2;
+    }
+  }
 }
 
 .main-features:before {

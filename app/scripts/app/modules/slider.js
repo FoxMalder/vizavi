@@ -35,12 +35,20 @@ $(document).ready(function(){
   owl3.owlCarousel({
     loop:  true,
     margin: 20,
-    items: 3,
+    items: 3
   });
   owlLeft3.click(function(){
     owl3.trigger('prev.owl.carousel');
   });
   owlRight3.click(function(){
     owl3.trigger('next.owl.carousel');
+  });
+
+  var owl4          = $('.js_headline-slider');
+  owl4.owlCarousel({
+    loop:   false,
+    dots:   true,
+    items:  1,
+    center: true
   });
 });

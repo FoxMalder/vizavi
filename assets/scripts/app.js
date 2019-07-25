@@ -217,5 +217,11 @@ $(document).ready(function () {
   owlRight3.click(function () {
     owl3.trigger('next.owl.carousel');
   });
+  var owl4 = $('.js_headline-slider');
+  owl4.owlCarousel({
+    dots: true,
+    items: 1,
+    center: true
+  });
 });
 //# sourceMappingURL=maps/app.js.map
