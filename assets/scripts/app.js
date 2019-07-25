@@ -209,8 +209,8 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $('#trading-market-content').easytabs({
-    defaultTab: '.t-market-control#select',
-    tabActiveClass: 'is-active',
+    animate: true,
+    animationSpeed: 1000,
     tabs: '> .trading-market__controls > .trading-market__controls-img'
   });
 });
