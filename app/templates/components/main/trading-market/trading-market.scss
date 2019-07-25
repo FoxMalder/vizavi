@@ -65,12 +65,12 @@ $trading-market-pb:          114px;   // отступ снизу
 
   &__controls {
     position: relative;
-    padding-right: 20px;
+    padding-right: 80px;
 
     &-img {
       position: absolute;
       top: 0;
-      left: 0;
+      left: -30px;
       background-image: url('../images/svg/market-web.svg');
       background-repeat: no-repeat;
       background-size: contain;
@@ -142,6 +142,8 @@ $trading-market-pb:          114px;   // отступ снизу
 
   &__name {
     font-weight: bold;
+    display: inline-block;
+    text-align: center;
   }
 
   &.is-active {
@@ -170,7 +172,7 @@ $trading-market-pb:          114px;   // отступ снизу
 
       &__name {
         position: relative;
-        left: 30px;
+        left: 50px;
         top: 10px;
       }
     }
@@ -199,8 +201,8 @@ $trading-market-pb:          114px;   // отступ снизу
   // акции
   &--cfdstock {
     position: absolute;
-    top: 0;
-    right: -15px;
+    top: 20px;
+    right: 20px;
 
     #{$t-market-control} {
 
@@ -211,8 +213,8 @@ $trading-market-pb:          114px;   // отступ снизу
 
       &__name {
         position: relative;
-        left: -10px;
-        top: 10px;
+        left: 81px;
+        top: -10px;
       }
     }
   }
@@ -220,8 +222,8 @@ $trading-market-pb:          114px;   // отступ снизу
   // металлы
   &--cfdmetals {
     position: absolute;
-    right: -15px;
-    bottom: 0;
+    right: 20px;
+    bottom: -40px;
 
     #{$t-market-control} {
 
@@ -232,8 +234,50 @@ $trading-market-pb:          114px;   // отступ снизу
 
       &__name {
         position: relative;
-        left: -10px;
-        top: 10px;
+        left: 100px;
+        top: -60px;
+      }
+    }
+  }
+
+  // индексы
+  &--cfdindexes {
+    position: absolute;
+    left: 26px;
+    bottom: -1px;
+
+    #{$t-market-control} {
+
+      &__icon {
+        width: 60px;
+        height: 60px;
+      }
+
+      &__name {
+        position: relative;
+        left: -75px;
+        top: 5px;
+      }
+    }
+  }
+
+  // товары
+  &--cfdproducts {
+    position: absolute;
+    left: 210px;
+    bottom: 5px;
+
+    #{$t-market-control} {
+
+      &__icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      &__name {
+        position: relative;
+        left: -4px;
+        top: 24px;
       }
     }
   }

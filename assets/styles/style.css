@@ -4764,13 +4764,13 @@ main {
 
 .trading-market__controls {
   position: relative;
-  padding-right: 20px;
+  padding-right: 80px;
 }
 
 .trading-market__controls-img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -30px;
   background-image: url("../images/svg/market-web.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -4837,6 +4837,8 @@ main {
 
 .t-market-control__name {
   font-weight: bold;
+  display: inline-block;
+  text-align: center;
 }
 
 .t-market-control.is-active {
@@ -4860,7 +4862,7 @@ main {
 
 .t-market-control--bitcoin .t-market-control__name {
   position: relative;
-  left: 30px;
+  left: 50px;
   top: 10px;
 }
 
@@ -4883,8 +4885,8 @@ main {
 
 .t-market-control--cfdstock {
   position: absolute;
-  top: 0;
-  right: -15px;
+  top: 20px;
+  right: 20px;
 }
 
 .t-market-control--cfdstock .t-market-control__icon {
@@ -4894,14 +4896,14 @@ main {
 
 .t-market-control--cfdstock .t-market-control__name {
   position: relative;
-  left: -10px;
-  top: 10px;
+  left: 81px;
+  top: -10px;
 }
 
 .t-market-control--cfdmetals {
   position: absolute;
-  right: -15px;
-  bottom: 0;
+  right: 20px;
+  bottom: -40px;
 }
 
 .t-market-control--cfdmetals .t-market-control__icon {
@@ -4911,8 +4913,42 @@ main {
 
 .t-market-control--cfdmetals .t-market-control__name {
   position: relative;
-  left: -10px;
-  top: 10px;
+  left: 100px;
+  top: -60px;
+}
+
+.t-market-control--cfdindexes {
+  position: absolute;
+  left: 26px;
+  bottom: -1px;
+}
+
+.t-market-control--cfdindexes .t-market-control__icon {
+  width: 60px;
+  height: 60px;
+}
+
+.t-market-control--cfdindexes .t-market-control__name {
+  position: relative;
+  left: -75px;
+  top: 5px;
+}
+
+.t-market-control--cfdproducts {
+  position: absolute;
+  left: 210px;
+  bottom: 5px;
+}
+
+.t-market-control--cfdproducts .t-market-control__icon {
+  width: 48px;
+  height: 48px;
+}
+
+.t-market-control--cfdproducts .t-market-control__name {
+  position: relative;
+  left: -4px;
+  top: 24px;
 }
 
 .why-we {
