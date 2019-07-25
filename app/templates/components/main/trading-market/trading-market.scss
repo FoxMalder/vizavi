@@ -60,6 +60,7 @@ $trading-market-pb:          114px;   // отступ снизу
     display: flex;
     align-items: stretch;
     align-content: stretch;
+    min-height: 440px;
   }
 
   &__controls {
@@ -176,12 +177,57 @@ $trading-market-pb:          114px;   // отступ снизу
   }
 
   &--currencies {
+    position: absolute;
+    left: 105px;
+    top: 66px;
 
     #{$t-market-control} {
 
       &__icon {
         width: 72px;
         height: 72px;
+      }
+
+      &__name {
+        position: relative;
+        left: -10px;
+        top: 10px;
+      }
+    }
+  }
+
+  // акции
+  &--cfdstock {
+    position: absolute;
+    top: 0;
+    right: -15px;
+
+    #{$t-market-control} {
+
+      &__icon {
+        width: 61px;
+        height: 61px;
+      }
+
+      &__name {
+        position: relative;
+        left: -10px;
+        top: 10px;
+      }
+    }
+  }
+
+  // металлы
+  &--cfdmetals {
+    position: absolute;
+    right: -15px;
+    bottom: 0;
+
+    #{$t-market-control} {
+
+      &__icon {
+        width: 85px;
+        height: 85px;
       }
 
       &__name {

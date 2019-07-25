@@ -4759,6 +4759,7 @@ main {
   display: flex;
   align-items: stretch;
   align-content: stretch;
+  min-height: 440px;
 }
 
 .trading-market__controls {
@@ -4863,12 +4864,52 @@ main {
   top: 10px;
 }
 
+.t-market-control--currencies {
+  position: absolute;
+  left: 105px;
+  top: 66px;
+}
+
 .t-market-control--currencies .t-market-control__icon {
   width: 72px;
   height: 72px;
 }
 
 .t-market-control--currencies .t-market-control__name {
+  position: relative;
+  left: -10px;
+  top: 10px;
+}
+
+.t-market-control--cfdstock {
+  position: absolute;
+  top: 0;
+  right: -15px;
+}
+
+.t-market-control--cfdstock .t-market-control__icon {
+  width: 61px;
+  height: 61px;
+}
+
+.t-market-control--cfdstock .t-market-control__name {
+  position: relative;
+  left: -10px;
+  top: 10px;
+}
+
+.t-market-control--cfdmetals {
+  position: absolute;
+  right: -15px;
+  bottom: 0;
+}
+
+.t-market-control--cfdmetals .t-market-control__icon {
+  width: 85px;
+  height: 85px;
+}
+
+.t-market-control--cfdmetals .t-market-control__name {
   position: relative;
   left: -10px;
   top: 10px;
