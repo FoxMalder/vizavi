@@ -28,4 +28,55 @@
     @media #{$md} {
     }
   }
+
+  &__info {
+    margin-right: 40px;
+    min-width: 361px;
+
+    .intro-box {
+      .h2 {
+        margin-bottom: 55px;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -25px;
+          left: -10px;
+          width: 40px;
+          height: 2px;
+          background-color: #EA252C;
+          transform: rotate(120deg);
+        }
+      }
+    }
+
+    p {
+      max-width: 300px;
+    }
+  }
+
+  &__actions {
+    margin-top: 55px;
+  }
+
+  &__list {
+    max-width: 810px;
+    min-width: 810px;
+    width: 810px;
+    flex-basis: 810px;
+    position: relative;
+
+    .traders-list__item {
+      width: 250px;
+      margin-right: 20px;
+    }
+
+    .traders-slider__left,
+    .traders-slider__right {
+      bottom: auto;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
 }

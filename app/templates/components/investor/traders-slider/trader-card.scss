@@ -11,6 +11,7 @@
 }
 
 .trader-card {
+  $tradercard: &;
   width: 250px;
   margin-right: 20px;
   font-family: 'Roboto';
@@ -84,6 +85,7 @@
     align-items: stretch;
     align-content: stretch;
     flex-direction: column;
+    width: 100%;
   }
 
   &__row {
@@ -96,6 +98,19 @@
     &--full {
       .trader-card__name {
         flex: 1 100%;
+      }
+    }
+
+    &.is-accent {
+      color: #EA252C;
+
+      .trader-card__name,
+      .trader-card__value {
+        color: #EA252C;
+      }
+
+      .trader-card__name {
+        font-weight: bold;
       }
     }
   }

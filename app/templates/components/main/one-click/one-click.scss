@@ -16,7 +16,12 @@ $one-click-card-top-step:   32px;
   &:after {
     position: absolute;
     content: '';
-    background: radial-gradient(470.51px at 60.62% 43.89%, rgba(0, 148, 195, 0.2) 0%, rgba(0, 148, 195, 0) 100%), #222B34;
+    background: radial-gradient(
+      470.51px at 60.62% 43.89%,
+      rgba(0, 148, 195, 0.2) 0%,
+      rgba(0, 148, 195, 0) 100%
+    ),
+    #222B34;
     clip-path: polygon(
       100% 0,
       100% 85%,
@@ -25,8 +30,8 @@ $one-click-card-top-step:   32px;
       0 0
     );
     width: 100%;
-    height: 790px;
-    bottom: -659px;
+    height: 850px;
+    bottom: -700px;
     left: 0;
     right: 0;
     z-index: -2;

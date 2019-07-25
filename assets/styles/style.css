@@ -4057,6 +4057,7 @@ main {
   align-items: stretch;
   align-content: stretch;
   flex-direction: column;
+  width: 100%;
 }
 
 .trader-card__row {
@@ -4069,6 +4070,19 @@ main {
 
 .trader-card__row--full .trader-card__name {
   flex: 1 1 100%;
+}
+
+.trader-card__row.is-accent {
+  color: #EA252C;
+}
+
+.trader-card__row.is-accent .trader-card__name,
+.trader-card__row.is-accent .trader-card__value {
+  color: #EA252C;
+}
+
+.trader-card__row.is-accent .trader-card__name {
+  font-weight: bold;
 }
 
 .trader-card__name, .trader-card__value {
@@ -4304,8 +4318,8 @@ main {
   background: radial-gradient(470.51px at 60.62% 43.89%, rgba(0, 148, 195, 0.2) 0%, rgba(0, 148, 195, 0) 100%), #222B34;
   clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
   width: 100%;
-  height: 790px;
-  bottom: -659px;
+  height: 850px;
+  bottom: -700px;
   left: 0;
   right: 0;
   z-index: -2;
@@ -4633,6 +4647,55 @@ main {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+}
+
+.top-traders__info {
+  margin-right: 40px;
+  min-width: 361px;
+}
+
+.top-traders__info .intro-box .h2 {
+  margin-bottom: 55px;
+  position: relative;
+}
+
+.top-traders__info .intro-box .h2:after {
+  content: '';
+  position: absolute;
+  bottom: -25px;
+  left: -10px;
+  width: 40px;
+  height: 2px;
+  background-color: #EA252C;
+  transform: rotate(120deg);
+}
+
+.top-traders__info p {
+  max-width: 300px;
+}
+
+.top-traders__actions {
+  margin-top: 55px;
+}
+
+.top-traders__list {
+  max-width: 810px;
+  min-width: 810px;
+  width: 810px;
+  flex-basis: 810px;
+  position: relative;
+}
+
+.top-traders__list .traders-list__item {
+  width: 250px;
+  margin-right: 20px;
+}
+
+.top-traders__list .traders-slider__left,
+.top-traders__list .traders-slider__right {
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .trading-market {

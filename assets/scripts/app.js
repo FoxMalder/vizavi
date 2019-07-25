@@ -192,5 +192,19 @@ $(document).ready(function () {
   owlRight2.click(function () {
     owl2.trigger('next.owl.carousel');
   });
+  var owl3 = $('.js_traders-list-main');
+  var owlLeft3 = owl3.parents('.traders-slider__list').find('.js_slider-left');
+  var owlRight3 = owl3.parents('.traders-slider__list').find('.js_slider-right');
+  owl3.owlCarousel({
+    loop: true,
+    margin: 20,
+    items: 3
+  });
+  owlLeft3.click(function () {
+    owl3.trigger('prev.owl.carousel');
+  });
+  owlRight3.click(function () {
+    owl3.trigger('next.owl.carousel');
+  });
 });
 //# sourceMappingURL=maps/app.js.map
