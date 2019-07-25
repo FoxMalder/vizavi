@@ -1,5 +1,5 @@
 $one-click-width:           1180px;
-$one-click-height:          480px;
+$one-click-height:          780px;
 $one-click-deg:             6deg;
 $one-click-bg-height:       63px;
 $one-click-card-deg:        $one-click-deg;
@@ -11,6 +11,7 @@ $one-click-card-top-step:   32px;
   height: $one-click-height;
   min-height: $one-click-height;
   font-family: 'Roboto';
+  margin-top: 90px;
 
   &:after {
     position: absolute;
@@ -44,18 +45,19 @@ $one-click-card-top-step:   32px;
 
   &__bgbox {
     position: absolute;
+    margin-top: -30px;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     width: $one-click-width;
-    height: $one-click-height;
+    height: 700px;
     background-color: #EA252C;
     z-index: -1;
   }
 
   &__wrap {
-    padding-top: 50px;
+    padding-top: 90px;
 
     max-width: $one-click-width;
     margin: 0 auto;
@@ -89,6 +91,7 @@ $one-click-card-top-step:   32px;
   &__item {
     flex-basis: 25%;
     max-width: 25%;
+    height: 401px;
     margin-right: 30px;
     position: relative;
 
@@ -107,6 +110,24 @@ $one-click-card-top-step:   32px;
     }
     &:nth-child(1) {
       top: $one-click-card-top-step * 2;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -43px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 61px;
+      height: 15px;
+      background-image: url('data:image/svg+xml,%3Csvg width="61" height="15" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M60.114 5.212a.75.75 0 0 0-.166-1.047L54.488.197a.75.75 0 0 0-.882 1.214l4.854 3.527-3.527 4.854a.75.75 0 1 0 1.214.881l3.967-5.46zM.364 14.898l59.26-9.386-.234-1.481L.13 13.417l.234 1.482z" fill="%2397A8BC" fill-rule="nonzero"/%3E%3C/svg%3E');
     }
   }
 
@@ -127,7 +148,15 @@ $one-click-card-top-step:   32px;
     padding: 50px 30px;
   }
 
-  &__icon {}
+  &__icon {
+    min-height: 80px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 
   &__step {
     font-weight: bold;
