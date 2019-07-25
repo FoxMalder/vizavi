@@ -4708,6 +4708,8 @@ main {
   height: 660px;
   padding-top: 52px;
   padding-bottom: 114px;
+  margin-top: 120px;
+  font-family: 'Roboto';
 }
 
 .trading-market:after {
@@ -4750,6 +4752,126 @@ main {
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+.trading-market__content {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.trading-market__controls {
+  position: relative;
+  padding-right: 20px;
+}
+
+.trading-market__controls-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../images/svg/market-web.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left left;
+  width: 543px;
+  height: 381px;
+}
+
+.trading-market__body .h3 {
+  color: #222B34;
+  font-size: 26px;
+  line-height: 43px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.trading-market__body p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  color: #222B34;
+  position: relative;
+  padding-left: 40px;
+}
+
+.trading-market__body p:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #EA252C;
+  transform: rotate(120deg);
+}
+
+.t-market-control {
+  position: relative;
+  text-decoration: none;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #7086A2;
+}
+
+.t-market-control__box {
+  position: relative;
+}
+
+.t-market-control__icon {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #7086A2;
+  width: 60px;
+  height: 60px;
+  color: #ffffff;
+}
+
+.t-market-control__name {
+  font-weight: bold;
+}
+
+.t-market-control.is-active {
+  color: #E92B22;
+}
+
+.t-market-control.is-active .t-market-control__icon {
+  background-color: #E92B22;
+}
+
+.t-market-control--bitcoin {
+  position: absolute;
+  right: -15px;
+  top: 140px;
+}
+
+.t-market-control--bitcoin .t-market-control__icon {
+  width: 72px;
+  height: 72px;
+}
+
+.t-market-control--bitcoin .t-market-control__name {
+  position: relative;
+  left: 30px;
+  top: 10px;
+}
+
+.t-market-control--currencies .t-market-control__icon {
+  width: 72px;
+  height: 72px;
+}
+
+.t-market-control--currencies .t-market-control__name {
+  position: relative;
+  left: -10px;
+  top: 10px;
 }
 
 .why-we {

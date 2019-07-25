@@ -207,4 +207,11 @@ $(document).ready(function () {
     owl3.trigger('next.owl.carousel');
   });
 });
+$(document).ready(function () {
+  $('#trading-market-content').easytabs({
+    defaultTab: '.t-market-control#select',
+    tabActiveClass: 'is-active',
+    tabs: '> .trading-market__controls > .trading-market__controls-img'
+  });
+});
 //# sourceMappingURL=maps/app.js.map

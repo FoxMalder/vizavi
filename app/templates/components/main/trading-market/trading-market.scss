@@ -10,6 +10,8 @@ $trading-market-pb:          114px;   // отступ снизу
   height: $trading-market-height;
   padding-top: $trading-market-pt;
   padding-bottom: $trading-market-pb;
+  margin-top: 120px;
+  font-family: 'Roboto';
 
   &:after {
     position: absolute;
@@ -51,5 +53,142 @@ $trading-market-pb:          114px;   // отступ снизу
     align-items: center;
     align-content: center;
     justify-content: center;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  &__controls {
+    position: relative;
+    padding-right: 20px;
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url('../images/svg/market-web.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: left left;
+      width: 543px;
+      height: 381px;
+    }
+  }
+
+  &__body {
+
+    .h3 {
+      color: #222B34;
+      font-size: 26px;
+      line-height: 43px;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0 0 30px 0;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 29px;
+      color: #222B34;
+      position: relative;
+      padding-left: 40px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 40px;
+        height: 2px;
+        background-color: #EA252C;
+        transform: rotate(120deg);
+      }
+    }
+  }
+}
+
+.t-market-control {
+  $t-market-control: &;
+  position: relative;
+  text-decoration: none;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 13px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #7086A2;
+
+  &__box {
+    position: relative;
+  }
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #7086A2;
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &.is-active {
+    color: #E92B22;
+
+    #{$t-market-control} {
+
+      &__icon {
+        background-color: #E92B22;
+      }
+    }
+  }
+
+  // список и позиции отдельных кнопок
+  &--bitcoin {
+    position: absolute;
+    right: -15px;
+    top: 140px;
+
+    #{$t-market-control} {
+
+      &__icon {
+        width: 72px;
+        height: 72px;
+      }
+
+      &__name {
+        position: relative;
+        left: 30px;
+        top: 10px;
+      }
+    }
+  }
+
+  &--currencies {
+
+    #{$t-market-control} {
+
+      &__icon {
+        width: 72px;
+        height: 72px;
+      }
+
+      &__name {
+        position: relative;
+        left: -10px;
+        top: 10px;
+      }
+    }
   }
 }
