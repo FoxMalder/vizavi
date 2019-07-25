@@ -20,6 +20,11 @@
       vertical-align: bottom;
     }
   }
+
+  &--main {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 $cut-bubble-deg:   5deg;

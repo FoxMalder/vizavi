@@ -101,7 +101,7 @@
 $(document).ready(function () {
   $('#trading-market-content').easytabs({
     animate: true,
-    animationSpeed: 200,
+    animationSpeed: 'fast',
     defaultTab: "span#is-select",
     tabs: '> div > div > span',
     tabActiveClass: 'is-active',

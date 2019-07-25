@@ -2051,6 +2051,11 @@ mark {
   vertical-align: bottom;
 }
 
+.cut-bubble--main {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .cut-bubble-message {
   position: relative;
 }
@@ -4759,7 +4764,8 @@ main {
   display: flex;
   align-items: stretch;
   align-content: stretch;
-  min-height: 440px;
+  min-height: 460px;
+  max-height: 460px;
 }
 
 .trading-market__controls {
@@ -4806,6 +4812,10 @@ main {
   height: 2px;
   background-color: #EA252C;
   transform: rotate(120deg);
+}
+
+.trading-market__body p strong {
+  font-weight: bold;
 }
 
 .t-market-control {
@@ -4860,6 +4870,11 @@ main {
   height: 72px;
 }
 
+.t-market-control--bitcoin .t-market-control__icon svg {
+  position: relative;
+  right: -2px;
+}
+
 .t-market-control--bitcoin .t-market-control__name {
   position: relative;
   left: 50px;
@@ -4909,6 +4924,11 @@ main {
 .t-market-control--cfdmetals .t-market-control__icon {
   width: 85px;
   height: 85px;
+}
+
+.t-market-control--cfdmetals .t-market-control__icon svg {
+  position: relative;
+  top: -3px;
 }
 
 .t-market-control--cfdmetals .t-market-control__name {

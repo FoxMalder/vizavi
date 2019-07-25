@@ -60,7 +60,8 @@ $trading-market-pb:          114px;   // отступ снизу
     display: flex;
     align-items: stretch;
     align-content: stretch;
-    min-height: 440px;
+    min-height: 460px;
+    max-height: 460px;
   }
 
   &__controls {
@@ -108,6 +109,10 @@ $trading-market-pb:          114px;   // отступ снизу
         height: 2px;
         background-color: #EA252C;
         transform: rotate(120deg);
+      }
+
+      strong {
+        font-weight: bold;
       }
     }
   }
@@ -168,6 +173,11 @@ $trading-market-pb:          114px;   // отступ снизу
       &__icon {
         width: 72px;
         height: 72px;
+
+        svg {
+          position: relative;
+          right: -2px;
+        }
       }
 
       &__name {
@@ -230,6 +240,11 @@ $trading-market-pb:          114px;   // отступ снизу
       &__icon {
         width: 85px;
         height: 85px;
+
+        svg {
+          position: relative;
+          top: -3px;
+        }
       }
 
       &__name {
