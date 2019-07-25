@@ -116,6 +116,10 @@ $trading-market-pb:          114px;   // отступ снизу
       }
     }
   }
+
+  &__actions {
+    padding-left: 40px;
+  }
 }
 
 .t-market-control {
