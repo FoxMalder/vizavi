@@ -94,7 +94,7 @@
     font-size: 18px;
     line-height: 30px;
     color: #FFFFFF;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   &__buttons {
@@ -106,6 +106,10 @@
       margin-right: 20px;
       font-size: 20px;
       line-height: 20px;
+
+      &-with-icon__icon {
+        margin-right: 13px;
+      }
 
       &:last-child {
         margin-right: 0;
