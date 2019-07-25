@@ -30,8 +30,8 @@ $(document).ready(function(){
   });
 
   var owl3          = $('.js_traders-list-main');
-  var owlLeft3      = owl3.parents('.traders-slider__list').find('.js_slider-left');
-  var owlRight3     = owl3.parents('.traders-slider__list').find('.js_slider-right');
+  var owlLeft3      = owl3.parents('.top-traders__list').find('.js_slider-left');
+  var owlRight3     = owl3.parents('.top-traders__list').find('.js_slider-right');
   owl3.owlCarousel({
     loop:  true,
     margin: 20,

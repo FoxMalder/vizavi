@@ -98,6 +98,17 @@
   }
 })(jQuery);
 
+$(document).ready(function () {
+  $('#trading-market-content').easytabs({
+    animate: true,
+    animationSpeed: 200,
+    defaultTab: "span#is-select",
+    tabs: '> div > div > span',
+    tabActiveClass: 'is-active',
+    panelActiveClass: "active-content-div",
+    updateHash: false
+  });
+});
 $(function () {
   $('#graph-container_1').highcharts({
     chart: {
@@ -193,8 +204,8 @@ $(document).ready(function () {
     owl2.trigger('next.owl.carousel');
   });
   var owl3 = $('.js_traders-list-main');
-  var owlLeft3 = owl3.parents('.traders-slider__list').find('.js_slider-left');
-  var owlRight3 = owl3.parents('.traders-slider__list').find('.js_slider-right');
+  var owlLeft3 = owl3.parents('.top-traders__list').find('.js_slider-left');
+  var owlRight3 = owl3.parents('.top-traders__list').find('.js_slider-right');
   owl3.owlCarousel({
     loop: true,
     margin: 20,
@@ -205,14 +216,6 @@ $(document).ready(function () {
   });
   owlRight3.click(function () {
     owl3.trigger('next.owl.carousel');
-  });
-});
-$(document).ready(function () {
-  $('#trading-market-content').easytabs({
-    animate: true,
-    animationSpeed: 1000,
-    tabs: '> .trading-market__controls > .trading-market__controls-img',
-    tabActiveClass: 'is-active'
   });
 });
 //# sourceMappingURL=maps/app.js.map

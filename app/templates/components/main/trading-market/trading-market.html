@@ -14,7 +14,7 @@
       <div class="trading-market__controls col-half">
         <!-- begin .trading-market__controls-img -->
         <div class="trading-market__controls-img">
-          <a href="#tm_bitcoin" class="t-market-control t-market-control--bitcoin">
+          <span id="is-select"><a href="#tm_bitcoin" class="t-market-control t-market-control--bitcoin is-active">
             <span class="t-market-control__box">
               <span class="t-market-control__icon">
                 <svg width="25" height="38">
@@ -23,8 +23,8 @@
               </span>
               <span class="t-market-control__name">Bitcoin</span>
             </span>
-          </a>
-          <a href="#tm_currencies" class="t-market-control t-market-control--currencies">
+          </a></span>
+          <span><a href="#tm_currencies" class="t-market-control t-market-control--currencies">
             <span class="t-market-control__box">
               <span class="t-market-control__icon">
                 <svg width="43" height="35">
@@ -33,7 +33,7 @@
               </span>
               <span class="t-market-control__name">Валюты</span>
             </span>
-          </a>
+          </a></span>
         </div>
         <!-- end .trading-market__controls-img -->
       </div>
@@ -43,21 +43,6 @@
         <h2 class="h2"><span>6 рынков</span> для торговли</h2>
         <!-- begin .panel-container -->
         <div class="panel-container">
-          <!-- begin #tm_bitcoin -->
-          <div id="tm_bitcoin">
-            <!-- begin .trading-market__body -->
-            <div class="trading-market__body">
-              <h3 class="h3">Криптовалюты</h3>
-              <p>Прогрессивный финансовый актив. <strong>Торгуется 24&nbsp;часа в&nbsp;сутки, 7&nbsp;дней в&nbsp;неделю</strong>, чем выгодно отличается от&nbsp;остальных торговых инструментов. Вы&nbsp;можете торговать наиболее популярными криптовалютами без посредничества банков и&nbsp;других финансовых организаций.</p>
-              <!-- begin .trading-market__actions -->
-              <div class="trading-market__actions">
-                <a href="javascript:void(0);" class="button button-light">Начать торговать</a>
-              </div>
-              <!-- end .trading-market__actions -->
-            </div>
-            <!-- end .trading-market__body -->
-          </div>
-          <!-- end #tm_bitcoin -->
           <!-- begin #tm_currencies -->
           <div id="tm_currencies">
             <!-- begin .trading-market__body -->
@@ -73,6 +58,21 @@
             <!-- end .trading-market__body -->
           </div>
           <!-- end #tm_currencies -->
+          <!-- begin #tm_bitcoin -->
+          <div id="tm_bitcoin">
+            <!-- begin .trading-market__body -->
+            <div class="trading-market__body">
+              <h3 class="h3">Криптовалюты</h3>
+              <p>Прогрессивный финансовый актив. <strong>Торгуется 24&nbsp;часа в&nbsp;сутки, 7&nbsp;дней в&nbsp;неделю</strong>, чем выгодно отличается от&nbsp;остальных торговых инструментов. Вы&nbsp;можете торговать наиболее популярными криптовалютами без посредничества банков и&nbsp;других финансовых организаций.</p>
+              <!-- begin .trading-market__actions -->
+              <div class="trading-market__actions">
+                <a href="javascript:void(0);" class="button button-light">Начать торговать</a>
+              </div>
+              <!-- end .trading-market__actions -->
+            </div>
+            <!-- end .trading-market__body -->
+          </div>
+          <!-- end #tm_bitcoin -->
         </div>
         <!-- end .panel-container -->
       </div>
