@@ -47,7 +47,7 @@
     .owl-dot {
       display: inline-block;
       zoom: 1;
-      *display: inline;
+      *display: inline; // scss-lint:disable
 
       span {
         width: 8px;
