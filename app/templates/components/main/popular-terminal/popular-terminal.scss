@@ -12,21 +12,24 @@
   }
 
   &__info {
-    min-width: 650px;
-    width: 650px;
+    // min-width: 650px;
+    // width: 650px;
   }
 
   &__screen {
     align-self: flex-start;
-    width: 780px;
-    min-width: 780px;
+    // width: 780px;
+    // min-width: 780px;
 
     .metatrader-picture {
       position: relative;
     }
 
     img {
+      position: absolute;
+      min-width: 725px;
       vertical-align: bottom;
+      right: -50px;
     }
   }
 
@@ -49,7 +52,7 @@
 
   &__body {
     margin-top: 45px;
-    padding-right: 40px;
+    padding-right: 0;
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
@@ -76,6 +79,10 @@
       margin-bottom: 0;
       position: relative;
       z-index: 1;
+
+      strong {
+        font-weight: bold;
+      }
     }
   }
 

@@ -110,7 +110,7 @@
   <link rel="image_src"                href="/assets/images/i/og.png" />
 
 
-    <link href="assets/styles/style.css?v=abdccfc880840031fa38d3ff9daa0d30" rel="stylesheet" />
+    <link href="assets/styles/style.css?v=b6f53477ba72396249ebac4850f3f2ef" rel="stylesheet" />
 
     <script>document.documentElement.className = document.documentElement.className.replace(/(\s|^)no-js(\s|$)/, '$1js$2');</script>
   
@@ -949,7 +949,25 @@
     <div class="cut-bubble__picture col-half cut-bubble-picture">
       <!-- begin .cut-bubble-picture__box -->
       <div class="cut-bubble-picture__box">
-        <img src="assets/images/main/vizavi.png" alt="">
+        <picture class="picture-box">
+          <source
+            class="vizavi-picture"
+            type="image/webp"
+            draggable="false"
+            srcset="assets/images/main/vizavi-phone-angle.webp,
+                    assets/images/main/vizavi-phone-angle@2x.webp 2x,
+                    assets/images/main/vizavi-phone-angle@3x.webp 3x
+                    ">
+          <img
+            class="vizavi-picture"
+            alt="Vizavi на вашем телефоне"
+            draggable="false"
+            src="assets/images/main/vizavi-phone-angle.png"
+            srcset="assets/images/main/vizavi-phone-angle.png,
+                    assets/images/main/vizavi-phone-angle@2x.png 2x,
+                    assets/images/main/vizavi-phone-angle@3x.png 3x
+                    ">
+        </picture>
       </div>
       <!-- end .cut-bubble-picture__box -->
     </div>
@@ -1202,9 +1220,9 @@
   <!-- begin .popular-terminal -->
 <div class="popular-terminal">
   <!-- begin .popular-terminal__wrap -->
-  <div class="popular-terminal__wrap flex flex-center">
+  <div class="popular-terminal__wrap flex">
     <!-- begin .popular-terminal__info -->
-    <div class="popular-terminal__info">
+    <div class="popular-terminal__info col-half">
       <!-- begin .popular-terminal__headline -->
       <div class="popular-terminal__headline">
         <h2 class="h2"><span class="h2-break">Торгуйте</span> в <span>самом популярном</span> терминале в мире</h2>
@@ -1259,7 +1277,7 @@
     </div>
     <!-- end .popular-terminal__info -->
     <!-- begin .popular-terminal__screen -->
-    <div class="popular-terminal__screen">
+    <div class="popular-terminal__screen col-half">
       <picture class="picture-box">
         <source
           class="metatrader-picture"

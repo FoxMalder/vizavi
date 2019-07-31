@@ -2181,6 +2181,7 @@ mark {
 
 .cut-bubble__picture img {
   vertical-align: bottom;
+  padding-right: 50px;
 }
 
 .cut-bubble--main {
@@ -4934,15 +4935,8 @@ main {
   color: #ffffff;
 }
 
-.popular-terminal__info {
-  min-width: 650px;
-  width: 650px;
-}
-
 .popular-terminal__screen {
   align-self: flex-start;
-  width: 780px;
-  min-width: 780px;
 }
 
 .popular-terminal__screen .metatrader-picture {
@@ -4950,7 +4944,10 @@ main {
 }
 
 .popular-terminal__screen img {
+  position: absolute;
+  min-width: 725px;
   vertical-align: bottom;
+  right: -50px;
 }
 
 .popular-terminal__headline .h2 {
@@ -4969,7 +4966,7 @@ main {
 
 .popular-terminal__body {
   margin-top: 45px;
-  padding-right: 40px;
+  padding-right: 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
@@ -4992,6 +4989,10 @@ main {
   margin-bottom: 0;
   position: relative;
   z-index: 1;
+}
+
+.popular-terminal__body p strong {
+  font-weight: bold;
 }
 
 .popular-terminal__actions {

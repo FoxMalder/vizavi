@@ -25,7 +25,25 @@
     <div class="cut-bubble__picture col-half cut-bubble-picture">
       <!-- begin .cut-bubble-picture__box -->
       <div class="cut-bubble-picture__box">
-        <img src="assets/images/main/vizavi.png" alt="">
+        <picture class="picture-box">
+          <source
+            class="vizavi-picture"
+            type="image/webp"
+            draggable="false"
+            srcset="assets/images/main/vizavi-phone-angle.webp,
+                    assets/images/main/vizavi-phone-angle@2x.webp 2x,
+                    assets/images/main/vizavi-phone-angle@3x.webp 3x
+                    ">
+          <img
+            class="vizavi-picture"
+            alt="Vizavi на вашем телефоне"
+            draggable="false"
+            src="assets/images/main/vizavi-phone-angle.png"
+            srcset="assets/images/main/vizavi-phone-angle.png,
+                    assets/images/main/vizavi-phone-angle@2x.png 2x,
+                    assets/images/main/vizavi-phone-angle@3x.png 3x
+                    ">
+        </picture>
       </div>
       <!-- end .cut-bubble-picture__box -->
     </div>
