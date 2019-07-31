@@ -3994,6 +3994,7 @@ main {
 /* Спидометер */
 .headline--fast-order:before {
   background-image: url("../images/main/headline/headline-bg-fast-order.png");
+  mix-blend-mode: normal;
 }
 
 .headline--fast-order .headline__content {
