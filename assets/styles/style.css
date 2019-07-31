@@ -2474,6 +2474,7 @@ mark {
 .footer-navigation__item {
   flex-basis: 25%;
   max-width: 25%;
+  min-width: 25%;
 }
 
 .footer-navigation__items {
@@ -2483,6 +2484,12 @@ mark {
   align-items: flex-start;
   align-content: flex-start;
   justify-content: space-around;
+}
+
+.footer-navigation__items .footer-navigation__item {
+  flex-basis: 50%;
+  min-width: 50%;
+  max-width: 50%;
 }
 
 /* Ссылки на документы */
