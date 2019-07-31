@@ -276,8 +276,9 @@
 
   .headline__picture {
     position: absolute;
-    right: -50px;
-    top: 20px;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
 
     img {
       vertical-align: middle;
