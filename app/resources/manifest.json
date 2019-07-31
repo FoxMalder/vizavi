@@ -1,11 +1,11 @@
 {
   "lang": "ru",
-  "short_name": "SPT",
-  "name": "Start Project Template",
-  "description": "A template for a quick start",
+  "short_name": "Vizavi",
+  "name": "Vizavi",
+  "description": "Vizavi - Европейский брокер с безупречной репутацией",
   "start_url": "/?utm_source=homescreen&utm_medium=pwa-icon",
-  "theme_color": "#ffffff",
-  "background_color": "#FFFFFF",
+  "theme_color": "#EA252C",
+  "background_color": "#EA252C",
   "display": "standalone",
   "icons": [
     {
