@@ -1070,7 +1070,7 @@ a:focus {
 }
 
 a:hover, a.hover {
-  color: #CC0000;
+  color: #EA252C;
   transition: .2s ease;
 }
 
@@ -7463,8 +7463,18 @@ main {
   .business-model__wrap {
     max-width: 100%;
   }
+  .business-model__bg {
+    flex-direction: column;
+    height: auto;
+  }
   .company-awards__wrap {
     max-width: 100%;
+  }
+  .company-awards__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
   }
   .contact-form {
     padding-top: 30px;
@@ -7721,6 +7731,9 @@ main {
   .our-value__wrap {
     max-width: 100%;
   }
+  .our-value__cards {
+    overflow: scroll;
+  }
   .partners-good__wrap {
     max-width: 100%;
   }
@@ -7735,6 +7748,14 @@ main {
   }
   .text-about__wrap {
     max-width: 100%;
+  }
+  .text-about__quote {
+    flex-direction: column;
+    height: auto;
+    background: linear-gradient(bottom, #F3F4F5 450px, transparent 451px), linear-gradient(0deg, #EA252C 100%, transparent 50.1%);
+  }
+  .text-about .caption-row {
+    flex-direction: column;
   }
   .text-investor__wrap {
     max-width: 100%;

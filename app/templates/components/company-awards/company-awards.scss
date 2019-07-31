@@ -43,6 +43,17 @@
     font-family: 'Roboto';
     text-align: center;
     height: auto;
+
+    @media #{$xs} {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   &__item {

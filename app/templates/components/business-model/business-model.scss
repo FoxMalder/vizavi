@@ -23,6 +23,15 @@
       linear-gradient( 105deg, #EA252C 500px, transparent 501px),
       linear-gradient( 0deg, #F3F4F5 100%, transparent 50.1%);
     height: 350px;
+
+    @media #{$xs} {
+      flex-direction: column;
+      height: auto;
+    }
+    @media #{$sm} {
+    }
+    @media #{$md} {
+    }
   }
 
   &__quote {
