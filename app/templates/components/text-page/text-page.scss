@@ -7,14 +7,14 @@
     padding-bottom: 60px;
 
     @media #{$mobile} {
-      max-width: $max-width-sx;
+      max-width: $max-width-mobile;
       padding-top: 30px;
       padding-bottom: 30px;
       padding-left: 20px;
       padding-right: 20px;
     }
     @media #{$mobile-big} {
-      max-width: $max-width-sm;
+      max-width: $max-width-tablet;
       padding-top: 50px;
       padding-bottom: 100px;
     }

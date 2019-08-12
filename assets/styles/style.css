@@ -7841,6 +7841,15 @@ main {
   .company-awards__wrap {
     max-width: 630px;
   }
+  .contact-form {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
+  .contact-form:before {
+    width: 100%;
+    height: 740px;
+  }
   .contact-form__wrap {
     max-width: 630px;
   }

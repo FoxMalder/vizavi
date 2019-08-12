@@ -11,10 +11,10 @@ $partners-good-deg:  30px;
     padding-bottom: 100px;
 
     @media #{$mobile} {
-      max-width: $max-width-sx;
+      max-width: $max-width-mobile;
     }
     @media #{$mobile-big} {
-      max-width: $max-width-sm;
+      max-width: $max-width-tablet;
     }
     @media #{$tablet} {
     }

@@ -21,7 +21,7 @@ const config       = require('../config');
 
 // Стили
 gulp.task('styles', function() {
-  return runSequence(['styles:build', 'styles:lint']);
+  return runSequence(['styles:build']);
 });
 
 // Список PostCSS-плагинов
