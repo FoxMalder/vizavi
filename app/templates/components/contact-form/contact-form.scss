@@ -3,14 +3,14 @@
   padding-top: 60px;
   padding-bottom: 100px;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     padding-top: 30px;
     padding-bottom: 50px;
     overflow: hidden;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   &:before,
@@ -30,13 +30,13 @@
     transform: translate(-50%, -50%) skewY(4deg);
     transition: all .35s ease;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       width: 100%;
       height: 740px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -52,14 +52,14 @@
     transition: all .35s ease;
     z-index: 1;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       width: 100%;
       margin-left: 20px;
       height: 740px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -74,27 +74,27 @@
     align-content: center;
     justify-content: center;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: 100%;
       min-height: 740px;
       margin-left: 20px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: $max-width-sm;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
   &__form {
 
-    @media #{$xs} {
+    @media #{$mobile} {
       padding-left: 20px;
       padding-right: 20px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     &-wrap {
@@ -110,12 +110,12 @@
       justify-content: center;
       flex-direction: column;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         margin-top: 10§px;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
 
@@ -123,14 +123,14 @@
       margin-bottom: 20px;
       color: #6E7A86;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         font-size: 20px;
         line-height: 26px;
         margin-bottom: 10px;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
 
       span {
@@ -151,12 +151,12 @@
       .form-group {
         margin-bottom: 20px;
 
-        @media #{$xs} {
+        @media #{$mobile} {
           margin-bottom: 10px;
         }
-        @media #{$sm} {
+        @media #{$mobile-big} {
         }
-        @media #{$md} {
+        @media #{$tablet} {
         }
 
         &:last-child {
@@ -168,14 +168,14 @@
     .form-action {
       margin-top: 20px;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         margin-top: 20px;
         align-self: flex-start;
         padding-left: 28px;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
 
@@ -210,17 +210,17 @@
   padding-top: 140px;
   padding-bottom: 90px;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     overflow: hidden;
     padding-top: 60px;
     padding-bottom: 75px;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
     overflow: hidden;
     padding-top: 90px;
     padding-bottom: 0;
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   &__wrap {
@@ -230,16 +230,16 @@
     margin: 0 auto;
     z-index: 1;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: 100%;
       margin: 0 20px;
       min-height: 100%;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: $max-width-sm;
       min-height: 540px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     &:before,
@@ -259,17 +259,17 @@
       transition: all .35s ease;
       z-index: 2;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         width: 270px;
         height: 345px;
         transform: skewY(-11deg);
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
         width: 659px;
         height: 410px;
         left: -100px;
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
 
@@ -283,17 +283,17 @@
       transition: all .35s ease;
       z-index: 1;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         width: 270px;
         height: 370px;
         top: -25px;
         right: -40px;
         left: auto;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
         height: 410px;
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
   }
@@ -308,13 +308,13 @@
     padding: 90px 70px;
     text-align: center;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       padding: 40px 20px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       padding: 60px 50px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     .h1 {
@@ -328,17 +328,17 @@
       color: #7086A2;
       margin: 0 0 20px 0;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         font-size: 16px;
         line-height: 21px;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
         font-size: 20px;
         line-height: 26px;
         padding-left: 30px;
         padding-right: 30px;
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
 
       span {
@@ -352,17 +352,17 @@
         display: block;
         margin-bottom: 30px;
 
-        @media #{$xs} {
+        @media #{$mobile} {
           font-size: 20px;
           line-height: 26px;
           margin-bottom: 15px;
         }
-        @media #{$sm} {
+        @media #{$mobile-big} {
           font-size: 30px;
           line-height: 39px;
           margin-bottom: 20px;
         }
-        @media #{$md} {
+        @media #{$tablet} {
         }
       }
     }
@@ -375,19 +375,19 @@
       padding-left: 40px;
       padding-right: 40px;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         padding-left: 0;
         padding-right: 0;
         font-size: 14px;
         line-height: 22px;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
         padding-left: 0;
         padding-right: 0;
         font-size: 16px;
         line-height: 26px;
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
 
@@ -407,13 +407,13 @@
       border-width: 100px 150px 0 0;
       border-color: #EA252C transparent transparent transparent;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         border-width: 30px 46px 0 0;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
         border-width: 70px 105px 0 0;
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
 
@@ -426,13 +426,13 @@
       border-width: 0 0 100px 150px;
       border-color: transparent transparent #EA252C transparent;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         border-width: 0 0 30px 46px;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
         border-width: 0 0 70px 105px;
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
   }
@@ -440,12 +440,12 @@
   &__actions {
     margin-top: 40px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       margin-top: 30px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     .button {

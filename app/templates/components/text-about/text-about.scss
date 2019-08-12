@@ -5,13 +5,13 @@
     max-width: 1180px;
     margin: 0 auto;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: $max-width-sx;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: $max-width-sm;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -23,16 +23,16 @@
       (linear-gradient( 0deg, #EA252C 100%, transparent 50.1%));
     height: 300px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       flex-direction: column;
       height: auto;
       background:
         (linear-gradient( bottom, #F3F4F5 450px, transparent 451px)),
         (linear-gradient( 0deg, #EA252C 100%, transparent 50.1%));
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     &-photo {
@@ -75,12 +75,12 @@
     align-content: center;
     font-family: 'Roboto';
 
-    @media #{$xs} {
+    @media #{$mobile} {
       flex-direction: column;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     &__title {

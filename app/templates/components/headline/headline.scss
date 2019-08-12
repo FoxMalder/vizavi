@@ -36,13 +36,13 @@
     z-index: 1;
     position: relative;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: $max-width-sx;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: $max-width-sm;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 

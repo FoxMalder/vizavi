@@ -14,11 +14,11 @@
 
   color: #FFFFFF;
 
-  @media #{$xs} {
+  @media #{$mobile} {
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   &__item {

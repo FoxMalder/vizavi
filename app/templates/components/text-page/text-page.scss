@@ -6,19 +6,19 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: $max-width-sx;
       padding-top: 30px;
       padding-bottom: 30px;
       padding-left: 20px;
       padding-right: 20px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: $max-width-sm;
       padding-top: 50px;
       padding-bottom: 100px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 }
@@ -41,15 +41,15 @@
       color: #EA252C;
     }
 
-    @media #{$xs} {
+    @media #{$mobile} {
       font-size: 20px;
       line-height: 26px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       font-size: 30px;
       line-height: 39px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -69,15 +69,15 @@
       color: #EA252C;
     }
 
-    @media #{$xs} {
+    @media #{$mobile} {
       font-size: 16px;
       line-height: 26px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       font-size: 16px;
       line-height: 26px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -89,15 +89,15 @@
     color: #222B34;
     margin: 0 0 15px 0;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       font-size: 16px;
       line-height: 26px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       font-size: 16px;
       line-height: 26px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -114,15 +114,15 @@
       color: #737e8c;
     }
 
-    @media #{$xs} {
+    @media #{$mobile} {
       font-size: 14px;
       line-height: 22px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       font-size: 16px;
       line-height: 26px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -268,12 +268,12 @@
   .list-box {
     margin-top: 40px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       margin-top: 20px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -292,31 +292,31 @@
     line-height: 29px;
     color: #7086A2;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       font-size: 14px;
       line-height: 22px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       font-size: 16px;
       line-height: 26px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     &__icon {
       min-width: 25px;
       background-repeat: no-repeat;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         align-self: flex-start;
         min-width: 20px;
         margin-right: 10px;
         background-size: 15px auto;
         background-position: left center;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
 
@@ -325,13 +325,13 @@
       width: 25px;
       height: 25px;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         background-size: 20px auto;
         background-position: left center;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
 
@@ -341,12 +341,12 @@
       align-items: center;
       align-content: center;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         margin-left: 10px;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
 
       &-name {
@@ -395,14 +395,14 @@
       line-height: 15px;
       color: #A9B0B8;
 
-      @media #{$xs} {
+      @media #{$mobile} {
         font-size: 11px;
         line-height: 13px;
         white-space: nowrap;
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
 

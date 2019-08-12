@@ -27,13 +27,13 @@
     z-index: 2;
     position: relative;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: $max-width-sx;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: $max-width-sm;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -44,15 +44,15 @@
     text-align: center;
     height: auto;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       flex-direction: column;
       justify-content: center;
       align-items: center;
       align-content: center;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 

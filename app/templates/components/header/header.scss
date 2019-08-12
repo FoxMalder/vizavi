@@ -11,14 +11,14 @@ main {
     height: 100%;
     width: 100%;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: 100%;
       padding: 0 0 0 15px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: 600px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
       max-width: 100%;
     }
   }
@@ -38,16 +38,16 @@ main {
   &__logo {
     margin-right: 45px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
 
       svg {
         height: 30px;
         width: auto;
       }
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -146,15 +146,15 @@ main {
   border-bottom: 3px solid transparent;
   transition: all .35s ease;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     display: none;
     visibility: hidden;
     opacity: 0;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
 
   }
-  @media #{$md} {
+  @media #{$tablet} {
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -264,15 +264,15 @@ main {
   font-size: 14px;
   line-height: 14px;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     display: none;
     visibility: hidden;
     opacity: 0;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
     margin-right: 40px;
   }
-  @media #{$md} {
+  @media #{$tablet} {
     display: none;
     visibility: hidden;
     opacity: 0;
@@ -325,15 +325,15 @@ main {
   font-size: 14px;
   line-height: 14px;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     display: none;
     visibility: hidden;
     opacity: 0;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
     margin-left: 40px;
   }
-  @media #{$md} {
+  @media #{$tablet} {
     display: none;
     visibility: hidden;
     opacity: 0;

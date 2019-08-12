@@ -36,12 +36,12 @@ textarea {
   margin-bottom: 30px;
   width: 100%;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     margin-bottom: 10px;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   &:last-child { margin-bottom: 0; }
@@ -59,25 +59,25 @@ textarea {
   align-items: stretch;
   align-content: stretch;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     flex-direction: column;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   .form-group {
     margin-bottom: 0;
     margin-right: 20px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       margin-right: 0;
       margin-bottom: 10px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -108,14 +108,14 @@ textarea {
   font-family: 'Roboto';
   transition: all .25s ease;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     font-size: 12px;
     line-height: 14px;
     padding: 15px;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   &:disabled,
@@ -150,13 +150,13 @@ textarea.form-control {
   margin-left: -20px;
   margin-right: -20px;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     margin-left: 0;
     margin-right: 0;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   .h3 {
@@ -166,13 +166,13 @@ textarea.form-control {
     text-transform: uppercase;
     color: #222B34;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       font-size: 20px;
       line-height: 26px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -181,14 +181,14 @@ textarea.form-control {
     line-height: 18px;
     color: #6E7A86;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       font-size: 14px;
       line-height: 22px;
       color: #222B34;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     &:last-child {
@@ -225,14 +225,14 @@ textarea.form-control {
   font-family: 'Roboto';
   position: relative;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     display: flex;
     align-items: flex-start;
     align-content: flex-start;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   &__box {
@@ -288,12 +288,12 @@ textarea.form-control {
     letter-spacing: .01em;
     color: #7481AA;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       text-align: left;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     a {

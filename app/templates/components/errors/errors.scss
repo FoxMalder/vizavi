@@ -4,15 +4,15 @@
   min-height: 800px;
   padding: 0;
 
-  @media #{$xs} {
+  @media #{$mobile} {
     height: 100%;
     min-height: 500px;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
     height: 100%;
     min-height: 580px;
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
   &__wrap {
@@ -20,15 +20,15 @@
     margin: 0 auto;
     flex-direction: column;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: 100%;
       padding: 0 20px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: 630px;
       padding: 0;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -44,15 +44,15 @@
     margin: 0;
     padding: 0;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       font-size: 16px;
       line-height: 21px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       font-size: 20px;
       line-height: 26px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -60,13 +60,13 @@
     margin-top: 15px;
     margin-bottom: 50px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       margin-bottom: 25px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       margin-bottom: 30px;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     span {
@@ -76,14 +76,14 @@
 
   &__actions {
 
-    @media #{$xs} {
+    @media #{$mobile} {
       flex-wrap: wrap;
       padding-left: 30px;
       padding-right: 30px;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
 
     .button {
@@ -93,7 +93,7 @@
         margin-right: 0;
       }
 
-      @media #{$xs} {
+      @media #{$mobile} {
         margin-right: 10px;
         flex: 1 47%;
         max-width: 47%;
@@ -110,9 +110,9 @@
           margin-bottom: 20px;
         }
       }
-      @media #{$sm} {
+      @media #{$mobile-big} {
       }
-      @media #{$md} {
+      @media #{$tablet} {
       }
     }
   }

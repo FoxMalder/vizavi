@@ -5,13 +5,13 @@
     max-width: 1180px;
     margin: 0 auto;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       max-width: $max-width-sx;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
       max-width: $max-width-sm;
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 
@@ -19,12 +19,12 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
-    @media #{$xs} {
+    @media #{$mobile} {
       overflow: scroll;
     }
-    @media #{$sm} {
+    @media #{$mobile-big} {
     }
-    @media #{$md} {
+    @media #{$tablet} {
     }
   }
 }

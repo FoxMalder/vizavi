@@ -7,17 +7,17 @@
   list-style-type: none;
   font-family: 'Roboto';
 
-  @media #{$xs} {
+  @media #{$mobile} {
     display: none;
     visibility: hidden;
     opacity: 0;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
     display: none;
     visibility: hidden;
     opacity: 0;
   }
-  @media #{$md} {
+  @media #{$tablet} {
     display: none;
     visibility: hidden;
     opacity: 0;

@@ -35,16 +35,16 @@
     }
   }
 
-  @media #{$xs} {
+  @media #{$mobile} {
     width: 75px;
   }
-  @media #{$sm} {
+  @media #{$mobile-big} {
     margin-left: 30px;
   }
-  @media #{$md} {
+  @media #{$tablet} {
   }
 
-  @each $devide-width in $xs, $sm, $md {
+  @each $devide-width in $mobile, $mobile-big, $tablet {
     @media #{$devide-width} {
       display: flex;
       opacity: 1;
