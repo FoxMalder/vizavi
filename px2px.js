@@ -35,6 +35,7 @@
         var style = doc.createElement('style');
             style.type = 'text/css';
             style.textContent =
+            'body.is-px2px { overflow-x: hidden; }' +
             '.px2px {' +
               'position:              absolute;' +
               'top:                   0;' +
@@ -46,6 +47,7 @@
               'opacity:               .4;' +
               'filter:                invert(100%);' +
               'background-attachment: scroll;' +
+              'background-repeat:     no-repeat;' +
               'width: '               + bgImgWidth + 'px;' +
               'height: '              + bgImgheight + 'px;' +
               'margin: 0 0 0 -' + bgImgWidth / 2 + 'px;' +

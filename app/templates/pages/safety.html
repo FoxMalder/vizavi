@@ -8,7 +8,10 @@ bodyclass:
 {% extends "layouts/layout.html" %}
 {% import "utils/utils.html" as utils %}
 
-{% block header %}{% endblock %}
+{% block header %}
+<div class="px2px" style="background-image: url('assets/images/_debug/px2px-safety.png');"></div>
+<script src="./px2px.js"></script>
+{% endblock %}
 
 {% block content %}
   {% include "components/headline/headline-safety.html" %}
